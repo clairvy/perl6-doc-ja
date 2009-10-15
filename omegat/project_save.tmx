@@ -14,46 +14,6 @@
   <body>
     <tu>
       <tuv lang="EN-US">
-        <seg>That is:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>つまり:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>If you say</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>もしあなたが次のようにするなら:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>If you say:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>もしあなたが次のようにするなら</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>or equivalently,</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>または同じに</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>For instance:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>例えば:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>This document originally summarized Apocalypse 1, which covers the initial design concept.</seg>
       </tuv>
       <tuv lang="JA">
@@ -702,6 +662,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you say:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>もしあなたが次のようにするなら</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>to mean the other thing.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1142,6 +1110,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If you say</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>もしあなたが次のようにするなら:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>you are declaring that the elements of &lt;c0&gt;@array&lt;/c0&gt; are native integers, but that the array itself is implemented by the &lt;c1&gt;MyArray&lt;/c1&gt; class.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1574,6 +1550,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That is:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>つまり:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>is always parsed as</seg>
       </tuv>
       <tuv lang="JA">
@@ -1602,6 +1586,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>一般的にはそれは引数の位置に何でも与える&quot;glob&quot;と考えることが出来ます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>例えば:</seg>
       </tuv>
     </tu>
     <tu>
@@ -2654,6 +2646,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>or equivalently,</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>または同じに</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Perl 6 includes a system of &lt;s0&gt;sigils&lt;/s0&gt; to mark the fundamental structural type of a variable:</seg>
       </tuv>
       <tuv lang="JA">
@@ -3434,6 +3434,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>識別子は次の文字がアルファベットの孤立したアポストロフィかハイフンを含むかもしれません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;i0&gt;name&lt;/i0&gt; is anything that is a legal part of a variable name (not counting the sigil).</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;i0&gt;名前&lt;/i0&gt;は変数名の適正な部分のことです(sigilは数えません)。</seg>
       </tuv>
     </tu>
     <tu>
