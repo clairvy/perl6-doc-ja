@@ -1,5 +1,5 @@
 perl6-doc-ja: Perl 6ドキュメント日本語化プロジェクト
 
-Perl6::Doc(http://search.cpan.org/dist/Perl6-Doc/)に含まれるドキュメントを
-日本語に翻訳するプロジェクトです。OmegaT(http://www.omegat.org/)でプロジェクト
+Perl6::Doc(http://search.cpan.org/dist/Perl6-Doc/) に含まれるドキュメントを
+日本語に翻訳するプロジェクトです。OmegaT(http://www.omegat.org/) でプロジェクト
 を読み込み、翻訳していきます。
