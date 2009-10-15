@@ -1,0 +1,81 @@
+プロジェクトの翻訳状況
+
+合計
+	分節数	31026
+	ワード数	369490
+	文字数（空白を除く）	1884598
+	文字数（空白を含む）	2273690
+未翻訳分節数：
+	分節数	30553
+	ワード数	361911
+	文字数（空白を除く）	1847165
+	文字数（空白を含む）	2229144
+繰り返しを除いた：
+	分節数	27946
+	ワード数	361627
+	文字数（空白を除く）	1838002
+	文字数（空白を含む）	2218083
+繰り返しを除いた未翻訳分節数：
+	分節数	27517
+	ワード数	354154
+	文字数（空白を除く）	1800945
+	文字数（空白を含む）	2173975
+
+現在開いているファイルの翻訳状況：
+
+ファイル名	全体ワード数	未訳ワード数	全体文字数（空白を除く）	未訳文字数 (空白を除く)	全体文字数（空白を含む）	未訳文字数 (空白を含む)
+Apocalypse\A01.html	3220	3220	14700	14700	17743	17743
+Apocalypse\A02.html	10504	10504	51433	51433	61673	61673
+Apocalypse\A03.html	8126	8124	39954	39947	47661	47653
+Apocalypse\A04.html	16370	16370	80868	80868	97595	97595
+Apocalypse\A05.html	19062	19047	94889	94847	116669	116617
+Apocalypse\A06.html	30664	30653	151782	151748	181093	181052
+Apocalypse\A12.html	34202	34186	170544	170489	202765	202700
+Exegesis\E02.html	4612	4612	23207	23207	27942	27942
+Exegesis\E03.html	8511	8509	44517	44510	53148	53140
+Exegesis\E04.html	9538	9538	48909	48909	58733	58733
+Exegesis\E05.html	10856	10856	56720	56720	69442	69442
+Exegesis\E06.html	16441	16441	83725	83725	99696	99696
+Exegesis\E07.html	20231	20231	114056	114056	144356	144356
+Magazine\M01-perl-6-announcement.html	2004	2004	9839	9839	11687	11687
+Magazine\M02-what-is-perl-6.html	2851	2851	15247	15247	17823	17823
+Magazine\M03-pugs-interview.html	2975	2975	15311	15311	17802	17802
+Magazine\M04-everyday-perl-6.html	2151	2151	10293	10293	12786	12786
+Magazine\M05-yet-another-perl-6-operator.html	1180	1180	5955	5955	7224	7224
+Magazine\M06-perl-6-parameter-passing.html	2019	2019	9601	9601	11478	11478
+Synopsis\S01-overview.html	792	404	3841	1905	4566	2263
+Synopsis\S02-bits.html	23403	16310	118468	83324	144680	102847
+Synopsis\S03-operators.html	22129	22123	112526	112496	137160	137127
+Synopsis\S04-control.html	9917	9916	48717	48714	58754	58751
+Synopsis\S05-regex.html	18564	18546	97407	97336	118284	118204
+Synopsis\S06-routines.html	17040	17037	88514	88506	106252	106242
+Synopsis\S07-iterators.html	1784	1784	8816	8816	10487	10487
+Synopsis\S09-data.html	7339	7333	37510	37485	45312	45284
+Synopsis\S10-packages.html	1216	1216	6153	6153	7318	7318
+Synopsis\S11-modules.html	4029	4024	20725	20704	24468	24444
+Synopsis\S12-objects.html	13473	13470	68008	68000	81646	81636
+Synopsis\S13-overloading.html	1371	1365	7044	7026	8321	8299
+Synopsis\S14-roles-and-parametric-types.html	3129	3129	15771	15771	18634	18634
+Synopsis\S16-io.html	695	695	3712	3712	4356	4356
+Synopsis\S17-concurrency.html	2897	2897	16403	16403	19337	19337
+Synopsis\S19-commandline.html	2539	2539	14052	14052	16596	16596
+Synopsis\S21-calling-foreign-code.html	220	218	1172	1160	1342	1329
+Synopsis\S22-package-format.html	1045	1045	5444	5444	6692	6692
+Synopsis\S28-special-names.html	1395	1395	7994	7994	11522	11522
+Synopsis\S29-functions.html	4157	4157	22063	22063	25801	25801
+Synopsis\S31-pragmatic-modules.html	285	285	1433	1433	1674	1674
+Synopsis\S32-setting-library\Abstraction.html	136	136	821	821	929	929
+Synopsis\S32-setting-library\Basics.html	1064	1064	5444	5444	6433	6433
+Synopsis\S32-setting-library\Callable.html	331	331	1950	1950	2267	2267
+Synopsis\S32-setting-library\Containers.html	4349	4349	22004	22004	26081	26081
+Synopsis\S32-setting-library\Exception.html	151	151	857	857	984	984
+Synopsis\S32-setting-library\IO.html	4805	4805	24789	24789	29004	29004
+Synopsis\S32-setting-library\Numeric.html	1011	1011	5022	5022	5950	5950
+Synopsis\S32-setting-library\Rules.html	135	135	768	768	893	893
+Synopsis\S32-setting-library\Str.html	3290	3290	16758	16758	19860	19860
+Synopsis\S32-setting-library\Temporal.html	701	701	4095	4095	4752	4752
+man_pages\perlintro.html	10	10	49	49	58	58
+man_pages\perlobjintro.html	7	7	41	41	47	47
+man_pages\perlreintro.html	5473	5471	27502	27490	33854	33841
+man_pages\perlsyn.html	5	5	21	21	25	25
+table_index.html	5086	5086	27154	27154	32035	32035
