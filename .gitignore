@@ -3,3 +3,4 @@
 *.idx
 *.ifo
 omegat/project_stats.txt
+target/**/*
