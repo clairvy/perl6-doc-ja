@@ -358,6 +358,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As with &lt;c4&gt;=begin&lt;/c4&gt; and &lt;c5&gt;=end&lt;/c5&gt;, a comment started in code reverts to code afterwards.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c4&gt;=begin&lt;/c4&gt;と&lt;c5&gt;=end&lt;/c5&gt;のように、コメントはコードの前から後まで続きます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See S26 for more on embedded documentation.</seg>
       </tuv>
       <tuv lang="JA">
