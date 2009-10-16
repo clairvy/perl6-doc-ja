@@ -3,7 +3,7 @@
 <tmx version="1.1">
   <header
     creationtool="OmegaT"
-    creationtoolversion="2.0.4"
+    creationtoolversion="2.0.5"
     segtype="sentence"
     o-tmf="OmegaT TMX"
     adminlang="EN-US"
@@ -334,42 +334,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(However, bare &lt;c5&gt;=begin&lt;/c5&gt; and &lt;c6&gt;=end&lt;/c6&gt; probably aren't good enough, because all comments in them will show up in the formatted output.) &lt;br7/&gt;</seg>
+        <seg>(However, bare &lt;c5&gt;=begin&lt;/c5&gt; and &lt;c6&gt;=end&lt;/c6&gt; probably aren't good enough, because all comments in them will show up in the formatted output.)</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(しかしながら、裸の&lt;c5&gt;=begin&lt;/c5&gt;と&lt;c6&gt;=end&lt;/c6&gt;はたぶん十分ではないでしょう。それらの中のコメントがフォーマットされて出力されてしまうからです。)&lt;br7/&gt;</seg>
+        <seg>(しかし、裸の&lt;c5&gt;=begin&lt;/c5&gt;と&lt;c6&gt;=end&lt;/c6&gt;ではおそらく不十分です。その中の全てのコメントがフォーマットされて表示されてしまうからです。)</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>We have single paragraph comments with &lt;c9&gt;=for comment&lt;/c9&gt; as well.</seg>
+        <seg>We have single paragraph comments with &lt;c0&gt;=for comment&lt;/c0&gt; as well.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>さらに、単一のパラグラフコメント&lt;c9&gt;=for comment&lt;/c9&gt;があります。</seg>
+        <seg>さらに、単独のパラグラフコメント&lt;c0&gt;=for comment&lt;/c0&gt;があります。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>That lets &lt;c10&gt;=for&lt;/c10&gt; keep its meaning as the equivalent of a &lt;c11&gt;=begin&lt;/c11&gt; and &lt;c12&gt;=end&lt;/c12&gt; combined.</seg>
+        <seg>That lets &lt;c1&gt;=for&lt;/c1&gt; keep its meaning as the equivalent of a &lt;c2&gt;=begin&lt;/c2&gt; and &lt;c3&gt;=end&lt;/c3&gt; combined.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これは&lt;c10&gt;=for&lt;/c10&gt;を&lt;c11&gt;=begin&lt;/c11&gt;と&lt;c12&gt;=end&lt;/c12&gt;を結合した状態と同じにします。</seg>
+        <seg>これは&lt;c1&gt;=for&lt;/c1&gt;を&lt;c2&gt;=begin&lt;/c2&gt;と&lt;c3&gt;=end&lt;/c3&gt;が結合したものと同等の意味を持つようにさせます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>As with &lt;c13&gt;=begin&lt;/c13&gt; and &lt;c14&gt;=end&lt;/c14&gt;, a comment started in code reverts to code afterwards.</seg>
+        <seg>As with &lt;c4&gt;=begin&lt;/c4&gt; and &lt;c5&gt;=end&lt;/c5&gt;, a comment started in code reverts to code afterwards.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c13&gt;=begin&lt;/c13&gt;と&lt;c14&gt;=end&lt;/c14&gt;のように、コメントはコードの前から始まってコードの後まで続きます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Since there is a newline before the first &lt;c17&gt;=&lt;/c17&gt;, the POD form of comment counts as whitespace equivalent to a newline.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>最初の&lt;c17&gt;=&lt;/c17&gt;の前に改行が現れるまで、POD形式のコメントは改行と同じく空白としてカウントされます。</seg>
+        <seg>&lt;c4&gt;=begin&lt;/c4&gt;と&lt;c5&gt;=end&lt;/c5&gt;のように、コメントはコードの前から後まで続きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -406,26 +398,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>All other uses of &lt;c5&gt;#&lt;/c5&gt; are interpreted as single-line comments that work just as in Perl 5, starting with a &lt;c6&gt;#&lt;/c6&gt; character and ending at the subsequent newline.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>他の&lt;c5&gt;#&lt;/c5&gt;の使用法はPerl 5のように1行コメントとして働き、&lt;c6&gt;#&lt;/c6&gt;で始まって次の改行で終わります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>They count as whitespace equivalent to newline for purposes of separation.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>それらは分割を目的とした改行と同じく空白として数えられます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Unlike in Perl 5, &lt;c7&gt;#&lt;/c7&gt; may &lt;i8&gt;not&lt;/i8&gt; be used as the delimiter in quoting constructs.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Perl 5と違い、&lt;c7&gt;#&lt;/c7&gt;はクォートを構築する区切り文字として使用されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -442,14 +418,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>括弧は普通の引用括弧と同じにネストするでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>There must be no space between the &lt;c2&gt;#&lt;/c2&gt; and the opening bracket character.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>括弧の開始と&lt;c2&gt;#&lt;/c2&gt;の間に空白があることは出来ません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -638,14 +606,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(Unary uses of backslash may therefore never be followed by whitespace or they would be taken as an unspace.) &lt;br0/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(単項のバックスラッシュの使用は空白が続かないかもしれないし、unspaceとして持って行かれるかもしれません。)&lt;br0/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Other postfix operators may also make use of unspace:</seg>
       </tuv>
       <tuv lang="JA">
@@ -670,14 +630,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(Unless, of course, you override the unspace rule itself...) &lt;br0/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(もちろんunspaceのルール自身を上書きしないなら)&lt;br0/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Although we say that the unspace hides the whitespace from the parser, it does not hide whitespace from the lexer.</seg>
       </tuv>
       <tuv lang="JA">
@@ -698,14 +650,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>加えて、unspaceが改行を含むなら行として数えられます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>A &lt;c2&gt;#&lt;/c2&gt; following such a newline is always an end-of-line comment, as described above.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>そのような改行に続く&lt;c2&gt;#&lt;/c2&gt;は上記のように常に行コメントです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -822,22 +766,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>For instance, if you were to add your own &lt;c7&gt;infix:&lt;++&gt;&lt;/c7&gt; operator, then it must have space before it.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>例えば&lt;c7&gt;infix:&lt;++&gt;&lt;/c7&gt;という2項演算子を追加したいなら、その前に必ず空白が必要です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The normal autoincrementing &lt;c8&gt;postfix:&lt;++&gt;&lt;/c8&gt; operator may never have space before it, but may be written in any of these forms:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>通常の&lt;c8&gt;postfix:&lt;++&gt;&lt;/c8&gt;演算子はその前に空白を持ちませんが、これらのどの形式でも書くことが出来ます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>A consequence of the postfix rule is that (except when delimiting a quote or terminating an unspace) a dot with whitespace in front of it is always considered a method call on &lt;c0&gt;$_&lt;/c0&gt; where a term is expected.</seg>
       </tuv>
       <tuv lang="JA">
@@ -866,14 +794,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>例えばフォートランっぽい&lt;c1&gt;infix:&lt;.EQ.&gt;&lt;/c1&gt;を定義して下さい。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>But you'll have to be sure to always put whitespace in front of it, or it would be interpreted as a postfix method call instead.) &lt;br2/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>しかし常に前に空白を置かなければならないか、代わりに後置のメソッド呼び出しと解釈されるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -918,22 +838,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>One consequence of all this is that you may no longer write a Num as &lt;c2&gt;42.&lt;/c2&gt; with just a trailing dot.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>これらの結果の一つとして、ただの終端ドットを伴うNumとしての&lt;c2&gt;42.&lt;/c2&gt;はもはや書けません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>You must instead say either &lt;c3&gt;42&lt;/c3&gt; or &lt;c4&gt;42.0&lt;/c4&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c3&gt;42&lt;/c3&gt;か&lt;c4&gt;42.0&lt;/c4&gt;としなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>In other words, a dot following a number can only be a decimal point if the following character is a digit.</seg>
       </tuv>
       <tuv lang="JA">
@@ -946,14 +850,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>それ以外の場合は後置のドットはいくつかの種類のメソッド呼び出しの開始と解釈されるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>(The &lt;c5&gt;.123&lt;/c5&gt; form with a leading dot is still allowed however when a term is expected, and is equivalent to &lt;c6&gt;0.123&lt;/c6&gt; rather than &lt;c7&gt;$_.123&lt;/c7&gt;.)</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(項が期待される時はドットが先行する&lt;c5&gt;.123&lt;/c5&gt;という形式がまだ許可されます。これは&lt;c7&gt;$_.123&lt;/c7&gt;ではなく&lt;c6&gt;0.123&lt;/c6&gt;になります。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1310,22 +1206,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Hence, both methods allow an optional argument to specify the meaning exactly if it cannot be known from context.) &lt;br6/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>従って、コンテキストから分からない場合は両方のメソッドは意味を正確に指定する任意の引数を受け取ります。)&lt;br6/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>There is no &lt;c8&gt;.length&lt;/c8&gt; method for either arrays or strings, because &lt;c9&gt;length&lt;/c9&gt; does not specify a unit.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c8&gt;.length&lt;/c8&gt;は配列か文字列のどちらにもありません。なぜなら&lt;c9&gt;length&lt;/c9&gt;は単位を指定していないからです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Built-in object types start with an uppercase letter.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1338,14 +1218,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>これは不変の型を含みます。(例えば&lt;c0&gt;Int&lt;/c0&gt;、&lt;c1&gt;Num&lt;/c1&gt;、&lt;c2&gt;Complex&lt;/c2&gt;、&lt;c3&gt;Rat&lt;/c3&gt;、&lt;c4&gt;Str&lt;/c4&gt;、&lt;c5&gt;Bit&lt;/c5&gt;、&lt;c6&gt;Regex&lt;/c6&gt;、&lt;c7&gt;Set&lt;/c7&gt;、&lt;c8&gt;Block&lt;/c8&gt;、&lt;c9&gt;List&lt;/c9&gt;、&lt;c10&gt;Seq&lt;/c10&gt;)変更可能な型(コンテナ)も同様です。&lt;c11&gt;Scalar&lt;/c11&gt;、&lt;c12&gt;Array&lt;/c12&gt;、&lt;c13&gt;Hash&lt;/c13&gt;、&lt;c14&gt;Buf&lt;/c14&gt;、&lt;c15&gt;Routine&lt;/c15&gt;、&lt;c16&gt;Module&lt;/c16&gt;など。そしてインスタンス化できない&lt;c17&gt;Callable&lt;/c17&gt;、&lt;c18&gt;Failure&lt;/c18&gt;、&lt;c19&gt;Integral&lt;/c19&gt;も同様です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Non-object (native) types are lowercase: &lt;c22&gt;int&lt;/c22&gt;, &lt;c23&gt;num&lt;/c23&gt;, &lt;c24&gt;complex&lt;/c24&gt;, &lt;c25&gt;rat&lt;/c25&gt;, &lt;c26&gt;buf&lt;/c26&gt;, &lt;c27&gt;bit&lt;/c27&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>オブジェクトでない(ネイティブ)型は小文字です: &lt;c22&gt;int&lt;/c22&gt;、&lt;c23&gt;num&lt;/c23&gt;、&lt;c24&gt;complex&lt;/c24&gt;、&lt;c25&gt;rat&lt;/c25&gt;、&lt;c26&gt;buf&lt;/c26&gt;、&lt;c27&gt;bit&lt;/c27&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1374,22 +1246,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Note, however, that sometimes repeated autoboxing can slow your program more than the native type can speed it up.) &lt;br28/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>しかし、autoboxingの繰り返しがネイティブ型のスピードアップ以上にプログラムを遅くすることも時々あります。)&lt;br28/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The &lt;c30&gt;junction&lt;/c30&gt; type is considered a native type because its internal representation is fixed, and you may not usefully derive from it because the intent of junctions is to autothread any method calls on them.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c30&gt;junction&lt;/c30&gt;型はネイティブ型とみなされます。なぜならそれの内部表現は固定されており、junctionはメソッド呼び出しを自動スレッド化することを意図しているので、あなたはそれを有効に継承することは出来ないでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Some object types can behave as value types.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1402,14 +1258,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>全てのオブジェクトはハッシュと値ベースの比較のために一意に識別するための&quot;WHICH&quot;という値を出力できます。 </seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Normal objects just use their address in memory, but if a class wishes to behave as a value type, it can define a &lt;c33&gt;.WHICH&lt;/c33&gt; method that makes different objects look like the same object if they happen to have the same contents.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>通常のオブジェクトは単にそれらのメモリアドレス使いますが、クラスが値型として振る舞いたいと望むなら、異なるオブジェクトが偶然に同じ内容を持っている場合に同じオブジェクトのように見せる&lt;c33&gt;.WHICH&lt;/c33&gt;メソッドを定義できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1506,78 +1354,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>(ネイティブ&lt;c5&gt;int&lt;/c5&gt;の演算は2の歩数をネイティブにサポートしないマシンではこれをサポートする必要はありません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>You must convert to and from &lt;c6&gt;Int&lt;/c6&gt; to do portable bitops on such ancient hardware.) &lt;br7/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>あなたは&lt;c6&gt;Int&lt;/c6&gt;への変換や逆のことをそのような古いハードウェアの移植性のあるビット演算に出来るようにしなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>(&lt;c9&gt;Num&lt;/c9&gt; may support arbitrary-precision floating-point arithmetic, but is not required to unless we can do so portably and efficiently.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(&lt;c9&gt;Num&lt;/c9&gt;は任意の精度の浮動小数点演算をサポートするでしょう。しかし移植性が高く効率的に行うことが出来ないのであれば必要有りません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;c10&gt;Num&lt;/c10&gt; must support the largest native floating point format that runs at full speed.) &lt;br11/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c10&gt;Num&lt;/c10&gt;は最も大きいネイティブ浮動小数点フォーマットをフルスピードで実行できるようにしなければなりません。)&lt;br11/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;c13&gt;Rat&lt;/c13&gt; supports arbitrary precision rational arithmetic.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c13&gt;Rat&lt;/c13&gt;は任意の精度の有理数演算をサポートします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>However, dividing two &lt;c14&gt;Int&lt;/c14&gt; objects using &lt;c15&gt;infix:&lt;/&gt;&lt;/c15&gt; produces a fraction of &lt;c16&gt;Num&lt;/c16&gt; type, not a ratio.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>しかしながら、2つの&lt;c14&gt;Int&lt;/c14&gt;オブジェクトを&lt;c15&gt;infix:&lt;/&gt;&lt;/c15&gt;で除算すると&lt;c16&gt;Num&lt;/c16&gt;型の端数を生成し、ratioではありません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>You can produce a ratio by using &lt;c17&gt;infix:&lt;div&gt;&lt;/c17&gt; on two integers instead.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>代わりに&lt;c17&gt;infix:&lt;div&gt;&lt;/c17&gt;を使ってratioを生成できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Lower-case types like &lt;c20&gt;int&lt;/c20&gt; and &lt;c21&gt;num&lt;/c21&gt; imply the native machine representation for integers and floating-point numbers, respectively, and do not promote to arbitrary precision, though larger representations are always allowed for temporary values.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c20&gt;int&lt;/c20&gt;、&lt;c21&gt;num&lt;/c21&gt;のような小文字型はマシンネイティブの整数と浮動小数点表現を暗示します。それぞれは任意の精度を促進しませんが、テンポラリな値についてはより大きな表現が常に許可されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Unless qualified with a number of bits, &lt;c22&gt;int&lt;/c22&gt; and &lt;c23&gt;num&lt;/c23&gt; types represent the largest native integer and floating-point types that run at full speed.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ビットの数で修飾されない&lt;c22&gt;int&lt;/c22&gt;と&lt;c23&gt;num&lt;/c23&gt;型は最大速度で実行される最も大きな整数と浮動小数点を表現します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Numeric values in untyped variables use &lt;c26&gt;Int&lt;/c26&gt; and &lt;c27&gt;Num&lt;/c27&gt; semantics rather than &lt;c28&gt;int&lt;/c28&gt; and &lt;c29&gt;num&lt;/c29&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>型指定されない数値では&lt;c26&gt;Int&lt;/c26&gt;と&lt;c27&gt;Num&lt;/c27&gt;が&lt;c28&gt;int&lt;/c28&gt;と&lt;c29&gt;num&lt;/c29&gt;に優先されて使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1694,30 +1470,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The subtraction of two &lt;c9&gt;StrPos&lt;/c9&gt; objects gives a &lt;c10&gt;StrLen&lt;/c10&gt; object, which is also not an integer, because the string between two positions also has multiple integer interpretations depending on the units.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>2つの&lt;c9&gt;StrPos&lt;/c9&gt;オブジェクトの減算は&lt;c10&gt;StrLen&lt;/c10&gt;オブジェクトを与えます。それは整数ではありません。なぜなら2つの位置の間の文字列は単位によって複数の整数の解釈を持つからです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>A given &lt;c11&gt;StrLen&lt;/c11&gt; may know that it represents 18 bytes, 7 codepoints, 3 graphemes, and 1 letter in Malayalam, but it might only know this lazily because it actually just hangs onto the two &lt;c12&gt;StrPos&lt;/c12&gt; endpoints within the string that in turn may or may not just lazily point into the string.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>与えられた&lt;c11&gt;StrLen&lt;/c11&gt;は18 bytes、7 codepoints、3 graphemes、1 letter in Malayalamという表現を知っているでしょう。but it might only know this lazily because it actually just hangs onto the two &lt;c12&gt;StrPos&lt;/c12&gt; endpoints within the string that in turn may or may not just lazily point into the string.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>(The lazy implementation of &lt;c13&gt;StrLen&lt;/c13&gt; is much like a &lt;c14&gt;Range&lt;/c14&gt; object in that respect.) &lt;br15/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(&lt;c13&gt;StrLen&lt;/c13&gt;のいいかげんな実装は&lt;c14&gt;Range&lt;/c14&gt;オブジェクトの関連です。)&lt;br15/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>If you use integers as arguments where position objects are expected, it will be assumed that you mean the units of the current lexically scoped Unicode abstraction level.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1738,14 +1490,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>もちろんそのような次元数は文字列が適切な抽象化レベルを提供しないなら失敗するでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>If a &lt;c2&gt;StrPos&lt;/c2&gt; or &lt;c3&gt;StrLen&lt;/c3&gt; is forced into a numeric context, it will assume the units of the current Unicode abstraction level.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c2&gt;StrPos&lt;/c2&gt;か&lt;c3&gt;StrLen&lt;/c3&gt;が数値コンテキストで強制されると、現在のユニコード抽象化レベルの単位と見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1806,42 +1550,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Unlike &lt;c18&gt;Str&lt;/c18&gt; types, &lt;c19&gt;Buf&lt;/c19&gt; types prefer to deal with integer string positions, and map these directly to the underlying compact array as indices.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c18&gt;Str&lt;/c18&gt;型と異なり、&lt;c19&gt;Buf&lt;/c19&gt;型は整数の文字列位置で対処することを好みます。そしてそれらを直接に基礎的でコンパクトな配列にインデックスとしてマップします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>That is, these are not necessarily byte positions--an integer position just counts over the number of underlying positions, where one position means one cell of the underlying integer type.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>それは必ずしもバイト位置ではありません ― 整数位置は単に基礎的な位置の数を数えるだけです。それはあるセルを意味するある位置の基礎的な整数型です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Builtin string operations on &lt;c20&gt;Buf&lt;/c20&gt; types return integers and expect integers when dealing with positions.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c20&gt;Buf&lt;/c20&gt;型の組み込みの文字列操作は整数を返し、位置を処理する時には整数を期待します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>As a limiting case, &lt;c21&gt;buf8&lt;/c21&gt; is just an old-school byte string, and the positions are byte positions.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>限られた場合で、&lt;c21&gt;buf8&lt;/c21&gt;はただの古いバイト文字列で、位置はバイト位置です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Note, though, that if you remap a section of &lt;c22&gt;buf32&lt;/c22&gt; memory to be &lt;c23&gt;buf8&lt;/c23&gt;, you'll have to multiply all your positions by 4.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ただし、&lt;c22&gt;buf32&lt;/c22&gt;のメモリを&lt;c23&gt;buf8&lt;/c23&gt;にリマップするなら全てのポジションを4倍する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1950,14 +1662,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Most of the built-in numeric operators treat an argument of &lt;c4&gt;*&lt;/c4&gt; as indicating the desire to create a function of a single unknown, so:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ほとんどの組み込み数値演算子は&lt;c4&gt;*&lt;/c4&gt;の引数を単一の未知の関数を作成することを満たすと認識します。つまり以下の式は:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>produces a function of a single argument:</seg>
       </tuv>
       <tuv lang="JA">
@@ -2014,42 +1718,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The final element of an array is subscripted as &lt;c4&gt;@a[*-1]&lt;/c4&gt;, which means that when the subscripting operation discovers a &lt;c5&gt;Code&lt;/c5&gt; object for a subscript, it calls it and supplies an argument indicating the number of elements in (that dimension of) the array.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>配列の最後の要素の添字は&lt;c4&gt;@a[*-1]&lt;/c4&gt;で表され、添字操作が &lt;c5&gt;Code&lt;/c5&gt;オブジェクトを添字に見つけると、それが呼ばれて配列の要素数を供給します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>See S09.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>S09を参照して下さい。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>A variant of &lt;c8&gt;*&lt;/c8&gt; is the &lt;c9&gt;**&lt;/c9&gt; term, which is of type &lt;c10&gt;HyperWhatever&lt;/c10&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c8&gt;*&lt;/c8&gt;の変化形は&lt;c9&gt;**&lt;/c9&gt;で、&lt;c10&gt;HyperWhatever&lt;/c10&gt;型です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>It is generally understood to be a multidimension form of &lt;c11&gt;*&lt;/c11&gt; when that makes sense.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>これは一般的には多次元形式の&lt;c11&gt;*&lt;/c11&gt;と理解されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>When modified by an operator that would turn &lt;c12&gt;*&lt;/c12&gt; into a function of one argument, &lt;c13&gt;**&lt;/c13&gt; instead turns into a function with a slurpy argument, of type &lt;c14&gt;Code:(*@)&lt;/c14&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>演算子によって&lt;c12&gt;*&lt;/c12&gt;が1つの引数の関数に変換される時、 &lt;c13&gt;**&lt;/c13&gt;は代わりにslurpyな引数の関数、&lt;c14&gt;Code:(*@)&lt;/c14&gt;になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2070,34 +1742,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The meaning of &lt;c5&gt;Whatever&lt;/c5&gt; is always controlled by its immediate context.) &lt;br6/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c5&gt;Whatever&lt;/c5&gt;の意味は常にその場のコンテキストによってコントロールされます。)&lt;br6/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Other uses for &lt;c8&gt;*&lt;/c8&gt; and &lt;c9&gt;**&lt;/c9&gt; will doubtless suggest themselves over time.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c8&gt;*&lt;/c8&gt;と&lt;c9&gt;**&lt;/c9&gt;の他の用途はそのうちにそれら自身で示されるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>These can be given meaning via the MMD system, if not the compiler.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>コンパイラがそうでなければ、これらはMMDシステムによって意味を与えられることができます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>In general a &lt;c10&gt;Whatever&lt;/c10&gt; should be interpreted as maximizing the degrees of freedom in a dwimmy way, not as a nihilistic &quot;don't care anymore--just shoot me&quot;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>一般的に&lt;c10&gt;Whatever&lt;/c10&gt;は期待通りに動作するように自由度を最大限にするものとして解釈されるべきです。虚無的な「何も気にするな―ただ私を打て」ではなく。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3110,14 +2758,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;c2&gt;$x&lt;/c2&gt; may be bound to any object, including any object that can be bound to any other sigil.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c2&gt;$x&lt;/c2&gt;はどのような他のsigilにもバインドされることができるどのようなオブジェクトも含む、どの様なオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Such a scalar variable is always treated as a singular item in any kind of list context, regardless of whether the object is essentially composite or unitary.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3134,78 +2774,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>In particular, when interpolating into list context, &lt;c3&gt;$x&lt;/c3&gt; never expands its object to anything other than the object itself as a single item, even if the object is a container object containing multiple items.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>特にリストコンテキストに差し込む時に、オブジェクトが複数のアイテムを含むコンテナでさえ&lt;c3&gt;$x&lt;/c3&gt;は他の何にも展開されず、単一アイテムのオブジェクト自身になります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;c6&gt;@x&lt;/c6&gt; may be bound to an object of the &lt;c7&gt;Array&lt;/c7&gt; class, but it may also be bound to any object that does the &lt;c8&gt;Positional&lt;/c8&gt; role, such as a &lt;c9&gt;List&lt;/c9&gt;, &lt;c10&gt;Seq&lt;/c10&gt;, &lt;c11&gt;Range&lt;/c11&gt;, &lt;c12&gt;Buf&lt;/c12&gt;, or &lt;c13&gt;Capture&lt;/c13&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c6&gt;@x&lt;/c6&gt;は&lt;c7&gt;Array&lt;/c7&gt;クラスのオブジェクトにバインドされるでしょう。しかし&lt;c9&gt;List&lt;/c9&gt;、&lt;c10&gt;Seq&lt;/c10&gt;、&lt;c11&gt;Range&lt;/c11&gt;、&lt;c12&gt;Buf&lt;/c12&gt;または&lt;c13&gt;Capture&lt;/c13&gt;のような&lt;c8&gt;Positional&lt;/c8&gt; roleを行うオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The &lt;c14&gt;Positional&lt;/c14&gt; role implies the ability to support &lt;c15&gt;postcircumfix:&lt;[ ]&gt;&lt;/c15&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c14&gt;Positional&lt;/c14&gt; roleは&lt;c15&gt;postcircumfix:&lt;[ ]&gt;&lt;/c15&gt;をサポートする能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Likewise, &lt;c18&gt;%x&lt;/c18&gt; may be bound to any object that does the &lt;c19&gt;Associative&lt;/c19&gt; role, such as &lt;c20&gt;Pair&lt;/c20&gt;, &lt;c21&gt;Mapping&lt;/c21&gt;, &lt;c22&gt;Set&lt;/c22&gt;, &lt;c23&gt;Bag&lt;/c23&gt;, &lt;c24&gt;KeyHash&lt;/c24&gt;, or &lt;c25&gt;Capture&lt;/c25&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>同様に&lt;c18&gt;%x&lt;/c18&gt;は&lt;c20&gt;Pair&lt;/c20&gt;、&lt;c21&gt;Mapping&lt;/c21&gt;、&lt;c22&gt;Set&lt;/c22&gt;、&lt;c23&gt;Bag&lt;/c23&gt;、&lt;c24&gt;KeyHash&lt;/c24&gt;または&lt;c25&gt;Capture&lt;/c25&gt;のような&lt;c19&gt;Associative&lt;/c19&gt; roleを行うどのようなオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The &lt;c26&gt;Associative&lt;/c26&gt; role implies the ability to support &lt;c27&gt;postcircumfix:&lt;{ }&gt;&lt;/c27&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c26&gt;Associative&lt;/c26&gt; roleは&lt;c27&gt;postcircumfix:&lt;{ }&gt;&lt;/c27&gt;をサポートする能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;c30&gt;&amp;x&lt;/c30&gt; may be bound to any object that does the &lt;c31&gt;Callable&lt;/c31&gt; role, such as any &lt;c32&gt;Block&lt;/c32&gt; or &lt;c33&gt;Routine&lt;/c33&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c30&gt;&amp;x&lt;/c30&gt;は&lt;c32&gt;Block&lt;/c32&gt;や&lt;c33&gt;Routine&lt;/c33&gt;のような&lt;c31&gt;Callable&lt;/c31&gt; roleを行うどのようなオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The &lt;c34&gt;Callable&lt;/c34&gt; role implies the ability to support &lt;c35&gt;postcircumfix:&lt;( )&gt;&lt;/c35&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c34&gt;Callable&lt;/c34&gt; roleは&lt;c35&gt;postcircumfix:&lt;( )&gt;&lt;/c35&gt;をサポートする能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;c38&gt;::x&lt;/c38&gt; may be bound to any object that does the &lt;c39&gt;Abstraction&lt;/c39&gt; role, such as a package, module, class, role, grammar, or any other type object, or any immutable value object that can be used as a type.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c38&gt;::x&lt;/c38&gt;はパッケージ、モジュール、クラス、他のタイプオブジェクト、タイプとして使用できる変更可能な値型オブジェクトのような &lt;c39&gt;Abstraction&lt;/c39&gt; roleを行うどのようなオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>This &lt;c40&gt;Abstraction&lt;/c40&gt; role implies the ability to do various symbol table and/or typological manipulations which may or may not be supported by any given abstraction.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c40&gt;Abstraction&lt;/c40&gt; roleは様々なシンボルテーブルと/または類型的な操作（与えられた抽象化によってサポートされていてもいなくてもよい）を行う能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Mostly though it just means that you want to give some abstraction an official name that you can then use later in the compilation without any sigil.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3218,38 +2786,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>どのような場合でも、sigilによって意味づけされた最小のコンテナroleは最新のバインディング時にチェックされ、文法エラーがすぐに検出できるなら（コンパイル時のような）早期に失敗します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>If you wish to bind an object that doesn't yet do the appropriate role, you must either stick with the generic &lt;c43&gt;$&lt;/c43&gt; sigil, or mix in the appropriate role before binding to a more specific sigil.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>もしまだ適切なroleを行わないオブジェクトをバインドしたい場合、ジェネリックな&lt;c43&gt;$&lt;/c43&gt; sigilを押しつけるか、より特定したsigilにバインドする前に適切なroleを混合するかどちらかにしなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>An object is allowed to support both &lt;c46&gt;Positional&lt;/c46&gt; and &lt;c47&gt;Associative&lt;/c47&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>オブジェクトは&lt;c46&gt;Positional&lt;/c46&gt;と&lt;c47&gt;Associative&lt;/c47&gt;の両方をサポートすることが許されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>An object that does not support &lt;c48&gt;Positional&lt;/c48&gt; may not be bound directly to &lt;c49&gt;@x&lt;/c49&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c48&gt;Positional&lt;/c48&gt;をサポートしないオブジェクトは直接に&lt;c49&gt;@x&lt;/c49&gt;にバインドされることはできません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>However, any construct such as &lt;c50&gt;%x&lt;/c50&gt; that can interpolate the contents of such an object into list context can automatically construct a list value that may then be bound to an array variable.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>しかしながら、リストコンテキストでそのようなオブジェクトの内容を挿入できる&lt;c50&gt;%x&lt;/c50&gt;のような構造は配列変数にバインドできるようなリスト値を自動的に構築できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3398,22 +2934,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>To format an array value separated by commas, supply a second argument: &lt;c4&gt;.fmt('%03d', ', ')&lt;/c4&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>配列をコンマで区切った値にフォーマットするには2つ目の引数を与えて下さい: &lt;c4&gt;.fmt('%03d', ', ')&lt;/c4&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>To format a hash value or list of pairs, include formats for both key and value in the first string: &lt;c5&gt;.fmt('%s: %s', &quot;\n&quot;)&lt;/c5&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ハッシュかpairsのリストをフォーマットするには最初の文字列にキーとハッシュ両方をフォーマットに含めて下さい: &lt;c5&gt;.fmt('%s: %s', &quot;\n&quot;)&lt;/c5&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Subscripts now consistently dereference the container produced by whatever was to their left.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3494,14 +3014,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>See S09 for more on slice context.) &lt;br1/&gt;</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>sliceコンテキストの詳細はS09を参照して下さい。) &lt;br1/&gt;</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>If you need to force inner context to item (scalar), we now have convenient single-character context specifiers such as + for numbers and ~ for strings:</seg>
       </tuv>
       <tuv lang="JA">
@@ -3574,30 +3086,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Like &lt;c3&gt;List&lt;/c3&gt; objects, &lt;c4&gt;Capture&lt;/c4&gt; objects are immutable in the abstract, but evaluate their arguments lazily.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c3&gt;List&lt;/c3&gt;オブジェクトのように&lt;c4&gt;Capture&lt;/c4&gt;オブジェクトは抽象的には不変ですが、引数の評価はいいかげんです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Before everything inside a &lt;c5&gt;Capture&lt;/c5&gt; is fully evaluated (which happens at compile time when all the arguments are constants), the eventual value may well be unknown.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c5&gt;Capture&lt;/c5&gt;内の全てのものが完全に評価される前(全ての引数が定数の場合はコンパイル時に起こる)、結果として生ずる値は未知かもしれません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;c8&gt;Capture&lt;/c8&gt; objects may contain multiple unresolved iterators such as feeds or slices.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c8&gt;Capture&lt;/c8&gt;オブジェクトはフィードやスライスのような複数の未解決のイテレータを含むでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>How these are resolved depends on what they are eventually bound to.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3610,14 +3098,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>他がそうでない場合に、いくつかのバインディングは複数の次元に敏感です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>You may retrieve parts from a &lt;c11&gt;Capture&lt;/c11&gt; object with a prefix sigil operator:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>前置のsigil演算子で&lt;c11&gt;Capture&lt;/c11&gt;オブジェクトからパーツを取得するでしょう:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3646,26 +3126,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The special syntax form &lt;c2&gt;$()&lt;/c2&gt; translates into &lt;c3&gt;$( $.ast // Str($/) )&lt;/c3&gt; to operate on the current match object; similarly &lt;c4&gt;@()&lt;/c4&gt; and &lt;c5&gt;%()&lt;/c5&gt; can extract positional and named submatches.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>特別な文法形式&lt;c2&gt;$()&lt;/c2&gt;は&lt;c3&gt;$( $.ast // Str($/) )&lt;/c3&gt;に変換され、それは現在のマッチオブジェクトを操作するためのものです。似たように&lt;c4&gt;@()&lt;/c4&gt;と&lt;c5&gt;%()&lt;/c5&gt;はポジショナルと名前付きサブマッチを抽出できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>You can think of them as &quot;fat&quot; references, that is, references that can capture not only the current identity of a single object, but also the relative identities of several related objects.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>それらは&quot;fat&quot;リファレンスと考えることができます。それは現在のシングルオブジェクトのアイデンティティだけでなく、関連するいくつかのオブジェクトを取り込みます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Conversely, you can think of Perl 5 references as a degenerate form of &lt;c9&gt;Capture&lt;/c9&gt; when you want to refer only to a single item.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>逆に、Perl 5のリファレンスはシングルアイテムを参照したい時の&lt;c9&gt;Capture&lt;/c9&gt;の縮小した形式と考えることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3698,14 +3162,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>型変数にバインドされたシグネチャオブジェクト(上記の例のように)は追加の型制約を適用するために他のシグネチャと共に使用されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>When applied to a &lt;c2&gt;Capture&lt;/c2&gt; argument, the signature allows you to take the types of the capture's arguments from &lt;c3&gt;MySig&lt;/c3&gt;, but declare the (untyped) variable names yourself via an additional signature in parentheses:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&lt;c2&gt;Capture&lt;/c2&gt;引数に適用された時、シグネチャは&lt;c3&gt;MySig&lt;/c3&gt;からcaptureの引数の型を受け取ることができます。しかし(型の指定が無い)変数名を括弧内の追加のシグネチャによってあなた自身が宣言すると:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4014,10 +3470,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>A &lt;i3&gt;name&lt;/i3&gt; is anything that is a legal part of a variable name (not counting the sigil).</seg>
+        <seg>A &lt;i0&gt;name&lt;/i0&gt; is anything that is a legal part of a variable name (not counting the sigil).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;i3&gt;名前&lt;/i3&gt;はsigilを数えない変数名の適正な部分です。</seg>
+        <seg>&lt;i0&gt;名前&lt;/i0&gt;は変数名の適正な部分のことです(sigilは数えません)。</seg>
       </tuv>
     </tu>
     <tu>

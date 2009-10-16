@@ -3,7 +3,7 @@
 <tmx version="1.4">
   <header
     creationtool="OmegaT"
-    creationtoolversion="2.0.4"
+    creationtoolversion="2.0.5"
     segtype="sentence"
     o-tmf="OmegaT TMX"
     adminlang="EN-US"
@@ -334,42 +334,34 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>(However, bare <bpt i='5' x='5'>&lt;c5&gt;</bpt>=begin<ept i='5'>&lt;/c5&gt;</ept> and <bpt i='6' x='6'>&lt;c6&gt;</bpt>=end<ept i='6'>&lt;/c6&gt;</ept> probably aren't good enough, because all comments in them will show up in the formatted output.) <ph x='7'>&lt;br7/&gt;</ph></seg>
+        <seg>(However, bare <bpt i='5' x='5'>&lt;c5&gt;</bpt>=begin<ept i='5'>&lt;/c5&gt;</ept> and <bpt i='6' x='6'>&lt;c6&gt;</bpt>=end<ept i='6'>&lt;/c6&gt;</ept> probably aren't good enough, because all comments in them will show up in the formatted output.)</seg>
       </tuv>
       <tuv xml:lang="JA">
-        <seg>(しかしながら、裸の<bpt i='5' x='5'>&lt;c5&gt;</bpt>=begin<ept i='5'>&lt;/c5&gt;</ept>と<bpt i='6' x='6'>&lt;c6&gt;</bpt>=end<ept i='6'>&lt;/c6&gt;</ept>はたぶん十分ではないでしょう。それらの中のコメントがフォーマットされて出力されてしまうからです。)<ph x='7'>&lt;br7/&gt;</ph></seg>
+        <seg>(しかし、裸の<bpt i='5' x='5'>&lt;c5&gt;</bpt>=begin<ept i='5'>&lt;/c5&gt;</ept>と<bpt i='6' x='6'>&lt;c6&gt;</bpt>=end<ept i='6'>&lt;/c6&gt;</ept>ではおそらく不十分です。その中の全てのコメントがフォーマットされて表示されてしまうからです。)</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>We have single paragraph comments with <bpt i='9' x='9'>&lt;c9&gt;</bpt>=for comment<ept i='9'>&lt;/c9&gt;</ept> as well.</seg>
+        <seg>We have single paragraph comments with <bpt i='0' x='0'>&lt;c0&gt;</bpt>=for comment<ept i='0'>&lt;/c0&gt;</ept> as well.</seg>
       </tuv>
       <tuv xml:lang="JA">
-        <seg>さらに、単一のパラグラフコメント<bpt i='9' x='9'>&lt;c9&gt;</bpt>=for comment<ept i='9'>&lt;/c9&gt;</ept>があります。</seg>
+        <seg>さらに、単独のパラグラフコメント<bpt i='0' x='0'>&lt;c0&gt;</bpt>=for comment<ept i='0'>&lt;/c0&gt;</ept>があります。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>That lets <bpt i='10' x='10'>&lt;c10&gt;</bpt>=for<ept i='10'>&lt;/c10&gt;</ept> keep its meaning as the equivalent of a <bpt i='11' x='11'>&lt;c11&gt;</bpt>=begin<ept i='11'>&lt;/c11&gt;</ept> and <bpt i='12' x='12'>&lt;c12&gt;</bpt>=end<ept i='12'>&lt;/c12&gt;</ept> combined.</seg>
+        <seg>That lets <bpt i='1' x='1'>&lt;c1&gt;</bpt>=for<ept i='1'>&lt;/c1&gt;</ept> keep its meaning as the equivalent of a <bpt i='2' x='2'>&lt;c2&gt;</bpt>=begin<ept i='2'>&lt;/c2&gt;</ept> and <bpt i='3' x='3'>&lt;c3&gt;</bpt>=end<ept i='3'>&lt;/c3&gt;</ept> combined.</seg>
       </tuv>
       <tuv xml:lang="JA">
-        <seg>これは<bpt i='10' x='10'>&lt;c10&gt;</bpt>=for<ept i='10'>&lt;/c10&gt;</ept>を<bpt i='11' x='11'>&lt;c11&gt;</bpt>=begin<ept i='11'>&lt;/c11&gt;</ept>と<bpt i='12' x='12'>&lt;c12&gt;</bpt>=end<ept i='12'>&lt;/c12&gt;</ept>を結合した状態と同じにします。</seg>
+        <seg>これは<bpt i='1' x='1'>&lt;c1&gt;</bpt>=for<ept i='1'>&lt;/c1&gt;</ept>を<bpt i='2' x='2'>&lt;c2&gt;</bpt>=begin<ept i='2'>&lt;/c2&gt;</ept>と<bpt i='3' x='3'>&lt;c3&gt;</bpt>=end<ept i='3'>&lt;/c3&gt;</ept>が結合したものと同等の意味を持つようにさせます。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>As with <bpt i='13' x='13'>&lt;c13&gt;</bpt>=begin<ept i='13'>&lt;/c13&gt;</ept> and <bpt i='14' x='14'>&lt;c14&gt;</bpt>=end<ept i='14'>&lt;/c14&gt;</ept>, a comment started in code reverts to code afterwards.</seg>
+        <seg>As with <bpt i='4' x='4'>&lt;c4&gt;</bpt>=begin<ept i='4'>&lt;/c4&gt;</ept> and <bpt i='5' x='5'>&lt;c5&gt;</bpt>=end<ept i='5'>&lt;/c5&gt;</ept>, a comment started in code reverts to code afterwards.</seg>
       </tuv>
       <tuv xml:lang="JA">
-        <seg><bpt i='13' x='13'>&lt;c13&gt;</bpt>=begin<ept i='13'>&lt;/c13&gt;</ept>と<bpt i='14' x='14'>&lt;c14&gt;</bpt>=end<ept i='14'>&lt;/c14&gt;</ept>のように、コメントはコードの前から始まってコードの後まで続きます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Since there is a newline before the first <bpt i='17' x='17'>&lt;c17&gt;</bpt>=<ept i='17'>&lt;/c17&gt;</ept>, the POD form of comment counts as whitespace equivalent to a newline.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>最初の<bpt i='17' x='17'>&lt;c17&gt;</bpt>=<ept i='17'>&lt;/c17&gt;</ept>の前に改行が現れるまで、POD形式のコメントは改行と同じく空白としてカウントされます。</seg>
+        <seg><bpt i='4' x='4'>&lt;c4&gt;</bpt>=begin<ept i='4'>&lt;/c4&gt;</ept>と<bpt i='5' x='5'>&lt;c5&gt;</bpt>=end<ept i='5'>&lt;/c5&gt;</ept>のように、コメントはコードの前から後まで続きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -406,26 +398,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>All other uses of <bpt i='5' x='5'>&lt;c5&gt;</bpt>#<ept i='5'>&lt;/c5&gt;</ept> are interpreted as single-line comments that work just as in Perl 5, starting with a <bpt i='6' x='6'>&lt;c6&gt;</bpt>#<ept i='6'>&lt;/c6&gt;</ept> character and ending at the subsequent newline.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>他の<bpt i='5' x='5'>&lt;c5&gt;</bpt>#<ept i='5'>&lt;/c5&gt;</ept>の使用法はPerl 5のように1行コメントとして働き、<bpt i='6' x='6'>&lt;c6&gt;</bpt>#<ept i='6'>&lt;/c6&gt;</ept>で始まって次の改行で終わります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>They count as whitespace equivalent to newline for purposes of separation.</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>それらは分割を目的とした改行と同じく空白として数えられます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Unlike in Perl 5, <bpt i='7' x='7'>&lt;c7&gt;</bpt>#<ept i='7'>&lt;/c7&gt;</ept> may <bpt i='8' x='8'>&lt;i8&gt;</bpt>not<ept i='8'>&lt;/i8&gt;</ept> be used as the delimiter in quoting constructs.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>Perl 5と違い、<bpt i='7' x='7'>&lt;c7&gt;</bpt>#<ept i='7'>&lt;/c7&gt;</ept>はクォートを構築する区切り文字として使用されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -442,14 +418,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>括弧は普通の引用括弧と同じにネストするでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>There must be no space between the <bpt i='2' x='2'>&lt;c2&gt;</bpt>#<ept i='2'>&lt;/c2&gt;</ept> and the opening bracket character.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>括弧の開始と<bpt i='2' x='2'>&lt;c2&gt;</bpt>#<ept i='2'>&lt;/c2&gt;</ept>の間に空白があることは出来ません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -638,14 +606,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>(Unary uses of backslash may therefore never be followed by whitespace or they would be taken as an unspace.) <ph x='0'>&lt;br0/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>(単項のバックスラッシュの使用は空白が続かないかもしれないし、unspaceとして持って行かれるかもしれません。)<ph x='0'>&lt;br0/&gt;</ph></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Other postfix operators may also make use of unspace:</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -670,14 +630,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>(Unless, of course, you override the unspace rule itself...) <ph x='0'>&lt;br0/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>(もちろんunspaceのルール自身を上書きしないなら)<ph x='0'>&lt;br0/&gt;</ph></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Although we say that the unspace hides the whitespace from the parser, it does not hide whitespace from the lexer.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -698,14 +650,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>加えて、unspaceが改行を含むなら行として数えられます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>A <bpt i='2' x='2'>&lt;c2&gt;</bpt>#<ept i='2'>&lt;/c2&gt;</ept> following such a newline is always an end-of-line comment, as described above.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>そのような改行に続く<bpt i='2' x='2'>&lt;c2&gt;</bpt>#<ept i='2'>&lt;/c2&gt;</ept>は上記のように常に行コメントです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -822,22 +766,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>For instance, if you were to add your own <bpt i='7' x='7'>&lt;c7&gt;</bpt>infix:&lt;++&gt;<ept i='7'>&lt;/c7&gt;</ept> operator, then it must have space before it.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>例えば<bpt i='7' x='7'>&lt;c7&gt;</bpt>infix:&lt;++&gt;<ept i='7'>&lt;/c7&gt;</ept>という2項演算子を追加したいなら、その前に必ず空白が必要です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>The normal autoincrementing <bpt i='8' x='8'>&lt;c8&gt;</bpt>postfix:&lt;++&gt;<ept i='8'>&lt;/c8&gt;</ept> operator may never have space before it, but may be written in any of these forms:</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>通常の<bpt i='8' x='8'>&lt;c8&gt;</bpt>postfix:&lt;++&gt;<ept i='8'>&lt;/c8&gt;</ept>演算子はその前に空白を持ちませんが、これらのどの形式でも書くことが出来ます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>A consequence of the postfix rule is that (except when delimiting a quote or terminating an unspace) a dot with whitespace in front of it is always considered a method call on <bpt i='0' x='0'>&lt;c0&gt;</bpt>$_<ept i='0'>&lt;/c0&gt;</ept> where a term is expected.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -866,14 +794,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>例えばフォートランっぽい<bpt i='1' x='1'>&lt;c1&gt;</bpt>infix:&lt;.EQ.&gt;<ept i='1'>&lt;/c1&gt;</ept>を定義して下さい。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>But you'll have to be sure to always put whitespace in front of it, or it would be interpreted as a postfix method call instead.) <ph x='2'>&lt;br2/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>しかし常に前に空白を置かなければならないか、代わりに後置のメソッド呼び出しと解釈されるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -918,22 +838,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>One consequence of all this is that you may no longer write a Num as <bpt i='2' x='2'>&lt;c2&gt;</bpt>42.<ept i='2'>&lt;/c2&gt;</ept> with just a trailing dot.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>これらの結果の一つとして、ただの終端ドットを伴うNumとしての<bpt i='2' x='2'>&lt;c2&gt;</bpt>42.<ept i='2'>&lt;/c2&gt;</ept>はもはや書けません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>You must instead say either <bpt i='3' x='3'>&lt;c3&gt;</bpt>42<ept i='3'>&lt;/c3&gt;</ept> or <bpt i='4' x='4'>&lt;c4&gt;</bpt>42.0<ept i='4'>&lt;/c4&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='3' x='3'>&lt;c3&gt;</bpt>42<ept i='3'>&lt;/c3&gt;</ept>か<bpt i='4' x='4'>&lt;c4&gt;</bpt>42.0<ept i='4'>&lt;/c4&gt;</ept>としなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>In other words, a dot following a number can only be a decimal point if the following character is a digit.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -946,14 +850,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>それ以外の場合は後置のドットはいくつかの種類のメソッド呼び出しの開始と解釈されるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>(The <bpt i='5' x='5'>&lt;c5&gt;</bpt>.123<ept i='5'>&lt;/c5&gt;</ept> form with a leading dot is still allowed however when a term is expected, and is equivalent to <bpt i='6' x='6'>&lt;c6&gt;</bpt>0.123<ept i='6'>&lt;/c6&gt;</ept> rather than <bpt i='7' x='7'>&lt;c7&gt;</bpt>$_.123<ept i='7'>&lt;/c7&gt;</ept>.)</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>(項が期待される時はドットが先行する<bpt i='5' x='5'>&lt;c5&gt;</bpt>.123<ept i='5'>&lt;/c5&gt;</ept>という形式がまだ許可されます。これは<bpt i='7' x='7'>&lt;c7&gt;</bpt>$_.123<ept i='7'>&lt;/c7&gt;</ept>ではなく<bpt i='6' x='6'>&lt;c6&gt;</bpt>0.123<ept i='6'>&lt;/c6&gt;</ept>になります。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1310,22 +1206,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Hence, both methods allow an optional argument to specify the meaning exactly if it cannot be known from context.) <ph x='6'>&lt;br6/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>従って、コンテキストから分からない場合は両方のメソッドは意味を正確に指定する任意の引数を受け取ります。)<ph x='6'>&lt;br6/&gt;</ph></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>There is no <bpt i='8' x='8'>&lt;c8&gt;</bpt>.length<ept i='8'>&lt;/c8&gt;</ept> method for either arrays or strings, because <bpt i='9' x='9'>&lt;c9&gt;</bpt>length<ept i='9'>&lt;/c9&gt;</ept> does not specify a unit.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='8' x='8'>&lt;c8&gt;</bpt>.length<ept i='8'>&lt;/c8&gt;</ept>は配列か文字列のどちらにもありません。なぜなら<bpt i='9' x='9'>&lt;c9&gt;</bpt>length<ept i='9'>&lt;/c9&gt;</ept>は単位を指定していないからです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Built-in object types start with an uppercase letter.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -1338,14 +1218,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>これは不変の型を含みます。(例えば<bpt i='0' x='0'>&lt;c0&gt;</bpt>Int<ept i='0'>&lt;/c0&gt;</ept>、<bpt i='1' x='1'>&lt;c1&gt;</bpt>Num<ept i='1'>&lt;/c1&gt;</ept>、<bpt i='2' x='2'>&lt;c2&gt;</bpt>Complex<ept i='2'>&lt;/c2&gt;</ept>、<bpt i='3' x='3'>&lt;c3&gt;</bpt>Rat<ept i='3'>&lt;/c3&gt;</ept>、<bpt i='4' x='4'>&lt;c4&gt;</bpt>Str<ept i='4'>&lt;/c4&gt;</ept>、<bpt i='5' x='5'>&lt;c5&gt;</bpt>Bit<ept i='5'>&lt;/c5&gt;</ept>、<bpt i='6' x='6'>&lt;c6&gt;</bpt>Regex<ept i='6'>&lt;/c6&gt;</ept>、<bpt i='7' x='7'>&lt;c7&gt;</bpt>Set<ept i='7'>&lt;/c7&gt;</ept>、<bpt i='8' x='8'>&lt;c8&gt;</bpt>Block<ept i='8'>&lt;/c8&gt;</ept>、<bpt i='9' x='9'>&lt;c9&gt;</bpt>List<ept i='9'>&lt;/c9&gt;</ept>、<bpt i='10' x='10'>&lt;c10&gt;</bpt>Seq<ept i='10'>&lt;/c10&gt;</ept>)変更可能な型(コンテナ)も同様です。<bpt i='11' x='11'>&lt;c11&gt;</bpt>Scalar<ept i='11'>&lt;/c11&gt;</ept>、<bpt i='12' x='12'>&lt;c12&gt;</bpt>Array<ept i='12'>&lt;/c12&gt;</ept>、<bpt i='13' x='13'>&lt;c13&gt;</bpt>Hash<ept i='13'>&lt;/c13&gt;</ept>、<bpt i='14' x='14'>&lt;c14&gt;</bpt>Buf<ept i='14'>&lt;/c14&gt;</ept>、<bpt i='15' x='15'>&lt;c15&gt;</bpt>Routine<ept i='15'>&lt;/c15&gt;</ept>、<bpt i='16' x='16'>&lt;c16&gt;</bpt>Module<ept i='16'>&lt;/c16&gt;</ept>など。そしてインスタンス化できない<bpt i='17' x='17'>&lt;c17&gt;</bpt>Callable<ept i='17'>&lt;/c17&gt;</ept>、<bpt i='18' x='18'>&lt;c18&gt;</bpt>Failure<ept i='18'>&lt;/c18&gt;</ept>、<bpt i='19' x='19'>&lt;c19&gt;</bpt>Integral<ept i='19'>&lt;/c19&gt;</ept>も同様です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Non-object (native) types are lowercase: <bpt i='22' x='22'>&lt;c22&gt;</bpt>int<ept i='22'>&lt;/c22&gt;</ept>, <bpt i='23' x='23'>&lt;c23&gt;</bpt>num<ept i='23'>&lt;/c23&gt;</ept>, <bpt i='24' x='24'>&lt;c24&gt;</bpt>complex<ept i='24'>&lt;/c24&gt;</ept>, <bpt i='25' x='25'>&lt;c25&gt;</bpt>rat<ept i='25'>&lt;/c25&gt;</ept>, <bpt i='26' x='26'>&lt;c26&gt;</bpt>buf<ept i='26'>&lt;/c26&gt;</ept>, <bpt i='27' x='27'>&lt;c27&gt;</bpt>bit<ept i='27'>&lt;/c27&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>オブジェクトでない(ネイティブ)型は小文字です: <bpt i='22' x='22'>&lt;c22&gt;</bpt>int<ept i='22'>&lt;/c22&gt;</ept>、<bpt i='23' x='23'>&lt;c23&gt;</bpt>num<ept i='23'>&lt;/c23&gt;</ept>、<bpt i='24' x='24'>&lt;c24&gt;</bpt>complex<ept i='24'>&lt;/c24&gt;</ept>、<bpt i='25' x='25'>&lt;c25&gt;</bpt>rat<ept i='25'>&lt;/c25&gt;</ept>、<bpt i='26' x='26'>&lt;c26&gt;</bpt>buf<ept i='26'>&lt;/c26&gt;</ept>、<bpt i='27' x='27'>&lt;c27&gt;</bpt>bit<ept i='27'>&lt;/c27&gt;</ept>。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1374,22 +1246,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Note, however, that sometimes repeated autoboxing can slow your program more than the native type can speed it up.) <ph x='28'>&lt;br28/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>しかし、autoboxingの繰り返しがネイティブ型のスピードアップ以上にプログラムを遅くすることも時々あります。)<ph x='28'>&lt;br28/&gt;</ph></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>The <bpt i='30' x='30'>&lt;c30&gt;</bpt>junction<ept i='30'>&lt;/c30&gt;</ept> type is considered a native type because its internal representation is fixed, and you may not usefully derive from it because the intent of junctions is to autothread any method calls on them.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='30' x='30'>&lt;c30&gt;</bpt>junction<ept i='30'>&lt;/c30&gt;</ept>型はネイティブ型とみなされます。なぜならそれの内部表現は固定されており、junctionはメソッド呼び出しを自動スレッド化することを意図しているので、あなたはそれを有効に継承することは出来ないでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Some object types can behave as value types.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -1402,14 +1258,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>全てのオブジェクトはハッシュと値ベースの比較のために一意に識別するための&quot;WHICH&quot;という値を出力できます。 </seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Normal objects just use their address in memory, but if a class wishes to behave as a value type, it can define a <bpt i='33' x='33'>&lt;c33&gt;</bpt>.WHICH<ept i='33'>&lt;/c33&gt;</ept> method that makes different objects look like the same object if they happen to have the same contents.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>通常のオブジェクトは単にそれらのメモリアドレス使いますが、クラスが値型として振る舞いたいと望むなら、異なるオブジェクトが偶然に同じ内容を持っている場合に同じオブジェクトのように見せる<bpt i='33' x='33'>&lt;c33&gt;</bpt>.WHICH<ept i='33'>&lt;/c33&gt;</ept>メソッドを定義できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1506,78 +1354,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>(ネイティブ<bpt i='5' x='5'>&lt;c5&gt;</bpt>int<ept i='5'>&lt;/c5&gt;</ept>の演算は2の歩数をネイティブにサポートしないマシンではこれをサポートする必要はありません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>You must convert to and from <bpt i='6' x='6'>&lt;c6&gt;</bpt>Int<ept i='6'>&lt;/c6&gt;</ept> to do portable bitops on such ancient hardware.) <ph x='7'>&lt;br7/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>あなたは<bpt i='6' x='6'>&lt;c6&gt;</bpt>Int<ept i='6'>&lt;/c6&gt;</ept>への変換や逆のことをそのような古いハードウェアの移植性のあるビット演算に出来るようにしなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>(<bpt i='9' x='9'>&lt;c9&gt;</bpt>Num<ept i='9'>&lt;/c9&gt;</ept> may support arbitrary-precision floating-point arithmetic, but is not required to unless we can do so portably and efficiently.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>(<bpt i='9' x='9'>&lt;c9&gt;</bpt>Num<ept i='9'>&lt;/c9&gt;</ept>は任意の精度の浮動小数点演算をサポートするでしょう。しかし移植性が高く効率的に行うことが出来ないのであれば必要有りません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i='10' x='10'>&lt;c10&gt;</bpt>Num<ept i='10'>&lt;/c10&gt;</ept> must support the largest native floating point format that runs at full speed.) <ph x='11'>&lt;br11/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='10' x='10'>&lt;c10&gt;</bpt>Num<ept i='10'>&lt;/c10&gt;</ept>は最も大きいネイティブ浮動小数点フォーマットをフルスピードで実行できるようにしなければなりません。)<ph x='11'>&lt;br11/&gt;</ph></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i='13' x='13'>&lt;c13&gt;</bpt>Rat<ept i='13'>&lt;/c13&gt;</ept> supports arbitrary precision rational arithmetic.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='13' x='13'>&lt;c13&gt;</bpt>Rat<ept i='13'>&lt;/c13&gt;</ept>は任意の精度の有理数演算をサポートします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>However, dividing two <bpt i='14' x='14'>&lt;c14&gt;</bpt>Int<ept i='14'>&lt;/c14&gt;</ept> objects using <bpt i='15' x='15'>&lt;c15&gt;</bpt>infix:<it pos='end' x='15'>&lt;/&gt;&lt;/c15&gt;</it> produces a fraction of <bpt i='16' x='16'>&lt;c16&gt;</bpt>Num<ept i='16'>&lt;/c16&gt;</ept> type, not a ratio.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>しかしながら、2つの<bpt i='14' x='14'>&lt;c14&gt;</bpt>Int<ept i='14'>&lt;/c14&gt;</ept>オブジェクトを<bpt i='15' x='15'>&lt;c15&gt;</bpt>infix:<it pos='end' x='15'>&lt;/&gt;&lt;/c15&gt;</it>で除算すると<bpt i='16' x='16'>&lt;c16&gt;</bpt>Num<ept i='16'>&lt;/c16&gt;</ept>型の端数を生成し、ratioではありません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>You can produce a ratio by using <bpt i='17' x='17'>&lt;c17&gt;</bpt>infix:&lt;div&gt;<ept i='17'>&lt;/c17&gt;</ept> on two integers instead.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>代わりに<bpt i='17' x='17'>&lt;c17&gt;</bpt>infix:&lt;div&gt;<ept i='17'>&lt;/c17&gt;</ept>を使ってratioを生成できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Lower-case types like <bpt i='20' x='20'>&lt;c20&gt;</bpt>int<ept i='20'>&lt;/c20&gt;</ept> and <bpt i='21' x='21'>&lt;c21&gt;</bpt>num<ept i='21'>&lt;/c21&gt;</ept> imply the native machine representation for integers and floating-point numbers, respectively, and do not promote to arbitrary precision, though larger representations are always allowed for temporary values.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='20' x='20'>&lt;c20&gt;</bpt>int<ept i='20'>&lt;/c20&gt;</ept>、<bpt i='21' x='21'>&lt;c21&gt;</bpt>num<ept i='21'>&lt;/c21&gt;</ept>のような小文字型はマシンネイティブの整数と浮動小数点表現を暗示します。それぞれは任意の精度を促進しませんが、テンポラリな値についてはより大きな表現が常に許可されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Unless qualified with a number of bits, <bpt i='22' x='22'>&lt;c22&gt;</bpt>int<ept i='22'>&lt;/c22&gt;</ept> and <bpt i='23' x='23'>&lt;c23&gt;</bpt>num<ept i='23'>&lt;/c23&gt;</ept> types represent the largest native integer and floating-point types that run at full speed.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>ビットの数で修飾されない<bpt i='22' x='22'>&lt;c22&gt;</bpt>int<ept i='22'>&lt;/c22&gt;</ept>と<bpt i='23' x='23'>&lt;c23&gt;</bpt>num<ept i='23'>&lt;/c23&gt;</ept>型は最大速度で実行される最も大きな整数と浮動小数点を表現します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Numeric values in untyped variables use <bpt i='26' x='26'>&lt;c26&gt;</bpt>Int<ept i='26'>&lt;/c26&gt;</ept> and <bpt i='27' x='27'>&lt;c27&gt;</bpt>Num<ept i='27'>&lt;/c27&gt;</ept> semantics rather than <bpt i='28' x='28'>&lt;c28&gt;</bpt>int<ept i='28'>&lt;/c28&gt;</ept> and <bpt i='29' x='29'>&lt;c29&gt;</bpt>num<ept i='29'>&lt;/c29&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>型指定されない数値では<bpt i='26' x='26'>&lt;c26&gt;</bpt>Int<ept i='26'>&lt;/c26&gt;</ept>と<bpt i='27' x='27'>&lt;c27&gt;</bpt>Num<ept i='27'>&lt;/c27&gt;</ept>が<bpt i='28' x='28'>&lt;c28&gt;</bpt>int<ept i='28'>&lt;/c28&gt;</ept>と<bpt i='29' x='29'>&lt;c29&gt;</bpt>num<ept i='29'>&lt;/c29&gt;</ept>に優先されて使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1694,30 +1470,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>The subtraction of two <bpt i='9' x='9'>&lt;c9&gt;</bpt>StrPos<ept i='9'>&lt;/c9&gt;</ept> objects gives a <bpt i='10' x='10'>&lt;c10&gt;</bpt>StrLen<ept i='10'>&lt;/c10&gt;</ept> object, which is also not an integer, because the string between two positions also has multiple integer interpretations depending on the units.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>2つの<bpt i='9' x='9'>&lt;c9&gt;</bpt>StrPos<ept i='9'>&lt;/c9&gt;</ept>オブジェクトの減算は<bpt i='10' x='10'>&lt;c10&gt;</bpt>StrLen<ept i='10'>&lt;/c10&gt;</ept>オブジェクトを与えます。それは整数ではありません。なぜなら2つの位置の間の文字列は単位によって複数の整数の解釈を持つからです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>A given <bpt i='11' x='11'>&lt;c11&gt;</bpt>StrLen<ept i='11'>&lt;/c11&gt;</ept> may know that it represents 18 bytes, 7 codepoints, 3 graphemes, and 1 letter in Malayalam, but it might only know this lazily because it actually just hangs onto the two <bpt i='12' x='12'>&lt;c12&gt;</bpt>StrPos<ept i='12'>&lt;/c12&gt;</ept> endpoints within the string that in turn may or may not just lazily point into the string.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>与えられた<bpt i='11' x='11'>&lt;c11&gt;</bpt>StrLen<ept i='11'>&lt;/c11&gt;</ept>は18 bytes、7 codepoints、3 graphemes、1 letter in Malayalamという表現を知っているでしょう。but it might only know this lazily because it actually just hangs onto the two <bpt i='12' x='12'>&lt;c12&gt;</bpt>StrPos<ept i='12'>&lt;/c12&gt;</ept> endpoints within the string that in turn may or may not just lazily point into the string.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>(The lazy implementation of <bpt i='13' x='13'>&lt;c13&gt;</bpt>StrLen<ept i='13'>&lt;/c13&gt;</ept> is much like a <bpt i='14' x='14'>&lt;c14&gt;</bpt>Range<ept i='14'>&lt;/c14&gt;</ept> object in that respect.) <ph x='15'>&lt;br15/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>(<bpt i='13' x='13'>&lt;c13&gt;</bpt>StrLen<ept i='13'>&lt;/c13&gt;</ept>のいいかげんな実装は<bpt i='14' x='14'>&lt;c14&gt;</bpt>Range<ept i='14'>&lt;/c14&gt;</ept>オブジェクトの関連です。)<ph x='15'>&lt;br15/&gt;</ph></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>If you use integers as arguments where position objects are expected, it will be assumed that you mean the units of the current lexically scoped Unicode abstraction level.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -1738,14 +1490,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>もちろんそのような次元数は文字列が適切な抽象化レベルを提供しないなら失敗するでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>If a <bpt i='2' x='2'>&lt;c2&gt;</bpt>StrPos<ept i='2'>&lt;/c2&gt;</ept> or <bpt i='3' x='3'>&lt;c3&gt;</bpt>StrLen<ept i='3'>&lt;/c3&gt;</ept> is forced into a numeric context, it will assume the units of the current Unicode abstraction level.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='2' x='2'>&lt;c2&gt;</bpt>StrPos<ept i='2'>&lt;/c2&gt;</ept>か<bpt i='3' x='3'>&lt;c3&gt;</bpt>StrLen<ept i='3'>&lt;/c3&gt;</ept>が数値コンテキストで強制されると、現在のユニコード抽象化レベルの単位と見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1806,42 +1550,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Unlike <bpt i='18' x='18'>&lt;c18&gt;</bpt>Str<ept i='18'>&lt;/c18&gt;</ept> types, <bpt i='19' x='19'>&lt;c19&gt;</bpt>Buf<ept i='19'>&lt;/c19&gt;</ept> types prefer to deal with integer string positions, and map these directly to the underlying compact array as indices.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='18' x='18'>&lt;c18&gt;</bpt>Str<ept i='18'>&lt;/c18&gt;</ept>型と異なり、<bpt i='19' x='19'>&lt;c19&gt;</bpt>Buf<ept i='19'>&lt;/c19&gt;</ept>型は整数の文字列位置で対処することを好みます。そしてそれらを直接に基礎的でコンパクトな配列にインデックスとしてマップします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>That is, these are not necessarily byte positions--an integer position just counts over the number of underlying positions, where one position means one cell of the underlying integer type.</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>それは必ずしもバイト位置ではありません ― 整数位置は単に基礎的な位置の数を数えるだけです。それはあるセルを意味するある位置の基礎的な整数型です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Builtin string operations on <bpt i='20' x='20'>&lt;c20&gt;</bpt>Buf<ept i='20'>&lt;/c20&gt;</ept> types return integers and expect integers when dealing with positions.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='20' x='20'>&lt;c20&gt;</bpt>Buf<ept i='20'>&lt;/c20&gt;</ept>型の組み込みの文字列操作は整数を返し、位置を処理する時には整数を期待します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>As a limiting case, <bpt i='21' x='21'>&lt;c21&gt;</bpt>buf8<ept i='21'>&lt;/c21&gt;</ept> is just an old-school byte string, and the positions are byte positions.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>限られた場合で、<bpt i='21' x='21'>&lt;c21&gt;</bpt>buf8<ept i='21'>&lt;/c21&gt;</ept>はただの古いバイト文字列で、位置はバイト位置です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Note, though, that if you remap a section of <bpt i='22' x='22'>&lt;c22&gt;</bpt>buf32<ept i='22'>&lt;/c22&gt;</ept> memory to be <bpt i='23' x='23'>&lt;c23&gt;</bpt>buf8<ept i='23'>&lt;/c23&gt;</ept>, you'll have to multiply all your positions by 4.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>ただし、<bpt i='22' x='22'>&lt;c22&gt;</bpt>buf32<ept i='22'>&lt;/c22&gt;</ept>のメモリを<bpt i='23' x='23'>&lt;c23&gt;</bpt>buf8<ept i='23'>&lt;/c23&gt;</ept>にリマップするなら全てのポジションを4倍する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1950,14 +1662,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Most of the built-in numeric operators treat an argument of <bpt i='4' x='4'>&lt;c4&gt;</bpt>*<ept i='4'>&lt;/c4&gt;</ept> as indicating the desire to create a function of a single unknown, so:</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>ほとんどの組み込み数値演算子は<bpt i='4' x='4'>&lt;c4&gt;</bpt>*<ept i='4'>&lt;/c4&gt;</ept>の引数を単一の未知の関数を作成することを満たすと認識します。つまり以下の式は:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>produces a function of a single argument:</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -2014,42 +1718,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>The final element of an array is subscripted as <bpt i='4' x='4'>&lt;c4&gt;</bpt>@a[*-1]<ept i='4'>&lt;/c4&gt;</ept>, which means that when the subscripting operation discovers a <bpt i='5' x='5'>&lt;c5&gt;</bpt>Code<ept i='5'>&lt;/c5&gt;</ept> object for a subscript, it calls it and supplies an argument indicating the number of elements in (that dimension of) the array.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>配列の最後の要素の添字は<bpt i='4' x='4'>&lt;c4&gt;</bpt>@a[*-1]<ept i='4'>&lt;/c4&gt;</ept>で表され、添字操作が <bpt i='5' x='5'>&lt;c5&gt;</bpt>Code<ept i='5'>&lt;/c5&gt;</ept>オブジェクトを添字に見つけると、それが呼ばれて配列の要素数を供給します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>See S09.</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>S09を参照して下さい。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>A variant of <bpt i='8' x='8'>&lt;c8&gt;</bpt>*<ept i='8'>&lt;/c8&gt;</ept> is the <bpt i='9' x='9'>&lt;c9&gt;</bpt>**<ept i='9'>&lt;/c9&gt;</ept> term, which is of type <bpt i='10' x='10'>&lt;c10&gt;</bpt>HyperWhatever<ept i='10'>&lt;/c10&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='8' x='8'>&lt;c8&gt;</bpt>*<ept i='8'>&lt;/c8&gt;</ept>の変化形は<bpt i='9' x='9'>&lt;c9&gt;</bpt>**<ept i='9'>&lt;/c9&gt;</ept>で、<bpt i='10' x='10'>&lt;c10&gt;</bpt>HyperWhatever<ept i='10'>&lt;/c10&gt;</ept>型です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>It is generally understood to be a multidimension form of <bpt i='11' x='11'>&lt;c11&gt;</bpt>*<ept i='11'>&lt;/c11&gt;</ept> when that makes sense.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>これは一般的には多次元形式の<bpt i='11' x='11'>&lt;c11&gt;</bpt>*<ept i='11'>&lt;/c11&gt;</ept>と理解されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>When modified by an operator that would turn <bpt i='12' x='12'>&lt;c12&gt;</bpt>*<ept i='12'>&lt;/c12&gt;</ept> into a function of one argument, <bpt i='13' x='13'>&lt;c13&gt;</bpt>**<ept i='13'>&lt;/c13&gt;</ept> instead turns into a function with a slurpy argument, of type <bpt i='14' x='14'>&lt;c14&gt;</bpt>Code:(*@)<ept i='14'>&lt;/c14&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>演算子によって<bpt i='12' x='12'>&lt;c12&gt;</bpt>*<ept i='12'>&lt;/c12&gt;</ept>が1つの引数の関数に変換される時、 <bpt i='13' x='13'>&lt;c13&gt;</bpt>**<ept i='13'>&lt;/c13&gt;</ept>は代わりにslurpyな引数の関数、<bpt i='14' x='14'>&lt;c14&gt;</bpt>Code:(*@)<ept i='14'>&lt;/c14&gt;</ept>になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2070,34 +1742,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>The meaning of <bpt i='5' x='5'>&lt;c5&gt;</bpt>Whatever<ept i='5'>&lt;/c5&gt;</ept> is always controlled by its immediate context.) <ph x='6'>&lt;br6/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='5' x='5'>&lt;c5&gt;</bpt>Whatever<ept i='5'>&lt;/c5&gt;</ept>の意味は常にその場のコンテキストによってコントロールされます。)<ph x='6'>&lt;br6/&gt;</ph></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Other uses for <bpt i='8' x='8'>&lt;c8&gt;</bpt>*<ept i='8'>&lt;/c8&gt;</ept> and <bpt i='9' x='9'>&lt;c9&gt;</bpt>**<ept i='9'>&lt;/c9&gt;</ept> will doubtless suggest themselves over time.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='8' x='8'>&lt;c8&gt;</bpt>*<ept i='8'>&lt;/c8&gt;</ept>と<bpt i='9' x='9'>&lt;c9&gt;</bpt>**<ept i='9'>&lt;/c9&gt;</ept>の他の用途はそのうちにそれら自身で示されるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>These can be given meaning via the MMD system, if not the compiler.</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>コンパイラがそうでなければ、これらはMMDシステムによって意味を与えられることができます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>In general a <bpt i='10' x='10'>&lt;c10&gt;</bpt>Whatever<ept i='10'>&lt;/c10&gt;</ept> should be interpreted as maximizing the degrees of freedom in a dwimmy way, not as a nihilistic &quot;don't care anymore--just shoot me&quot;.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>一般的に<bpt i='10' x='10'>&lt;c10&gt;</bpt>Whatever<ept i='10'>&lt;/c10&gt;</ept>は期待通りに動作するように自由度を最大限にするものとして解釈されるべきです。虚無的な「何も気にするな―ただ私を打て」ではなく。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3110,14 +2758,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg><bpt i='2' x='2'>&lt;c2&gt;</bpt>$x<ept i='2'>&lt;/c2&gt;</ept> may be bound to any object, including any object that can be bound to any other sigil.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='2' x='2'>&lt;c2&gt;</bpt>$x<ept i='2'>&lt;/c2&gt;</ept>はどのような他のsigilにもバインドされることができるどのようなオブジェクトも含む、どの様なオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Such a scalar variable is always treated as a singular item in any kind of list context, regardless of whether the object is essentially composite or unitary.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -3134,78 +2774,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>In particular, when interpolating into list context, <bpt i='3' x='3'>&lt;c3&gt;</bpt>$x<ept i='3'>&lt;/c3&gt;</ept> never expands its object to anything other than the object itself as a single item, even if the object is a container object containing multiple items.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>特にリストコンテキストに差し込む時に、オブジェクトが複数のアイテムを含むコンテナでさえ<bpt i='3' x='3'>&lt;c3&gt;</bpt>$x<ept i='3'>&lt;/c3&gt;</ept>は他の何にも展開されず、単一アイテムのオブジェクト自身になります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i='6' x='6'>&lt;c6&gt;</bpt>@x<ept i='6'>&lt;/c6&gt;</ept> may be bound to an object of the <bpt i='7' x='7'>&lt;c7&gt;</bpt>Array<ept i='7'>&lt;/c7&gt;</ept> class, but it may also be bound to any object that does the <bpt i='8' x='8'>&lt;c8&gt;</bpt>Positional<ept i='8'>&lt;/c8&gt;</ept> role, such as a <bpt i='9' x='9'>&lt;c9&gt;</bpt>List<ept i='9'>&lt;/c9&gt;</ept>, <bpt i='10' x='10'>&lt;c10&gt;</bpt>Seq<ept i='10'>&lt;/c10&gt;</ept>, <bpt i='11' x='11'>&lt;c11&gt;</bpt>Range<ept i='11'>&lt;/c11&gt;</ept>, <bpt i='12' x='12'>&lt;c12&gt;</bpt>Buf<ept i='12'>&lt;/c12&gt;</ept>, or <bpt i='13' x='13'>&lt;c13&gt;</bpt>Capture<ept i='13'>&lt;/c13&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='6' x='6'>&lt;c6&gt;</bpt>@x<ept i='6'>&lt;/c6&gt;</ept>は<bpt i='7' x='7'>&lt;c7&gt;</bpt>Array<ept i='7'>&lt;/c7&gt;</ept>クラスのオブジェクトにバインドされるでしょう。しかし<bpt i='9' x='9'>&lt;c9&gt;</bpt>List<ept i='9'>&lt;/c9&gt;</ept>、<bpt i='10' x='10'>&lt;c10&gt;</bpt>Seq<ept i='10'>&lt;/c10&gt;</ept>、<bpt i='11' x='11'>&lt;c11&gt;</bpt>Range<ept i='11'>&lt;/c11&gt;</ept>、<bpt i='12' x='12'>&lt;c12&gt;</bpt>Buf<ept i='12'>&lt;/c12&gt;</ept>または<bpt i='13' x='13'>&lt;c13&gt;</bpt>Capture<ept i='13'>&lt;/c13&gt;</ept>のような<bpt i='8' x='8'>&lt;c8&gt;</bpt>Positional<ept i='8'>&lt;/c8&gt;</ept> roleを行うオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>The <bpt i='14' x='14'>&lt;c14&gt;</bpt>Positional<ept i='14'>&lt;/c14&gt;</ept> role implies the ability to support <bpt i='15' x='15'>&lt;c15&gt;</bpt>postcircumfix:&lt;[ ]&gt;<ept i='15'>&lt;/c15&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='14' x='14'>&lt;c14&gt;</bpt>Positional<ept i='14'>&lt;/c14&gt;</ept> roleは<bpt i='15' x='15'>&lt;c15&gt;</bpt>postcircumfix:&lt;[ ]&gt;<ept i='15'>&lt;/c15&gt;</ept>をサポートする能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Likewise, <bpt i='18' x='18'>&lt;c18&gt;</bpt>%x<ept i='18'>&lt;/c18&gt;</ept> may be bound to any object that does the <bpt i='19' x='19'>&lt;c19&gt;</bpt>Associative<ept i='19'>&lt;/c19&gt;</ept> role, such as <bpt i='20' x='20'>&lt;c20&gt;</bpt>Pair<ept i='20'>&lt;/c20&gt;</ept>, <bpt i='21' x='21'>&lt;c21&gt;</bpt>Mapping<ept i='21'>&lt;/c21&gt;</ept>, <bpt i='22' x='22'>&lt;c22&gt;</bpt>Set<ept i='22'>&lt;/c22&gt;</ept>, <bpt i='23' x='23'>&lt;c23&gt;</bpt>Bag<ept i='23'>&lt;/c23&gt;</ept>, <bpt i='24' x='24'>&lt;c24&gt;</bpt>KeyHash<ept i='24'>&lt;/c24&gt;</ept>, or <bpt i='25' x='25'>&lt;c25&gt;</bpt>Capture<ept i='25'>&lt;/c25&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>同様に<bpt i='18' x='18'>&lt;c18&gt;</bpt>%x<ept i='18'>&lt;/c18&gt;</ept>は<bpt i='20' x='20'>&lt;c20&gt;</bpt>Pair<ept i='20'>&lt;/c20&gt;</ept>、<bpt i='21' x='21'>&lt;c21&gt;</bpt>Mapping<ept i='21'>&lt;/c21&gt;</ept>、<bpt i='22' x='22'>&lt;c22&gt;</bpt>Set<ept i='22'>&lt;/c22&gt;</ept>、<bpt i='23' x='23'>&lt;c23&gt;</bpt>Bag<ept i='23'>&lt;/c23&gt;</ept>、<bpt i='24' x='24'>&lt;c24&gt;</bpt>KeyHash<ept i='24'>&lt;/c24&gt;</ept>または<bpt i='25' x='25'>&lt;c25&gt;</bpt>Capture<ept i='25'>&lt;/c25&gt;</ept>のような<bpt i='19' x='19'>&lt;c19&gt;</bpt>Associative<ept i='19'>&lt;/c19&gt;</ept> roleを行うどのようなオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>The <bpt i='26' x='26'>&lt;c26&gt;</bpt>Associative<ept i='26'>&lt;/c26&gt;</ept> role implies the ability to support <bpt i='27' x='27'>&lt;c27&gt;</bpt>postcircumfix:&lt;{ }&gt;<ept i='27'>&lt;/c27&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='26' x='26'>&lt;c26&gt;</bpt>Associative<ept i='26'>&lt;/c26&gt;</ept> roleは<bpt i='27' x='27'>&lt;c27&gt;</bpt>postcircumfix:&lt;{ }&gt;<ept i='27'>&lt;/c27&gt;</ept>をサポートする能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i='30' x='30'>&lt;c30&gt;</bpt>&amp;x<ept i='30'>&lt;/c30&gt;</ept> may be bound to any object that does the <bpt i='31' x='31'>&lt;c31&gt;</bpt>Callable<ept i='31'>&lt;/c31&gt;</ept> role, such as any <bpt i='32' x='32'>&lt;c32&gt;</bpt>Block<ept i='32'>&lt;/c32&gt;</ept> or <bpt i='33' x='33'>&lt;c33&gt;</bpt>Routine<ept i='33'>&lt;/c33&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='30' x='30'>&lt;c30&gt;</bpt>&amp;x<ept i='30'>&lt;/c30&gt;</ept>は<bpt i='32' x='32'>&lt;c32&gt;</bpt>Block<ept i='32'>&lt;/c32&gt;</ept>や<bpt i='33' x='33'>&lt;c33&gt;</bpt>Routine<ept i='33'>&lt;/c33&gt;</ept>のような<bpt i='31' x='31'>&lt;c31&gt;</bpt>Callable<ept i='31'>&lt;/c31&gt;</ept> roleを行うどのようなオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>The <bpt i='34' x='34'>&lt;c34&gt;</bpt>Callable<ept i='34'>&lt;/c34&gt;</ept> role implies the ability to support <bpt i='35' x='35'>&lt;c35&gt;</bpt>postcircumfix:&lt;( )&gt;<ept i='35'>&lt;/c35&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='34' x='34'>&lt;c34&gt;</bpt>Callable<ept i='34'>&lt;/c34&gt;</ept> roleは<bpt i='35' x='35'>&lt;c35&gt;</bpt>postcircumfix:&lt;( )&gt;<ept i='35'>&lt;/c35&gt;</ept>をサポートする能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i='38' x='38'>&lt;c38&gt;</bpt>::x<ept i='38'>&lt;/c38&gt;</ept> may be bound to any object that does the <bpt i='39' x='39'>&lt;c39&gt;</bpt>Abstraction<ept i='39'>&lt;/c39&gt;</ept> role, such as a package, module, class, role, grammar, or any other type object, or any immutable value object that can be used as a type.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='38' x='38'>&lt;c38&gt;</bpt>::x<ept i='38'>&lt;/c38&gt;</ept>はパッケージ、モジュール、クラス、他のタイプオブジェクト、タイプとして使用できる変更可能な値型オブジェクトのような <bpt i='39' x='39'>&lt;c39&gt;</bpt>Abstraction<ept i='39'>&lt;/c39&gt;</ept> roleを行うどのようなオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>This <bpt i='40' x='40'>&lt;c40&gt;</bpt>Abstraction<ept i='40'>&lt;/c40&gt;</ept> role implies the ability to do various symbol table and/or typological manipulations which may or may not be supported by any given abstraction.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='40' x='40'>&lt;c40&gt;</bpt>Abstraction<ept i='40'>&lt;/c40&gt;</ept> roleは様々なシンボルテーブルと/または類型的な操作（与えられた抽象化によってサポートされていてもいなくてもよい）を行う能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Mostly though it just means that you want to give some abstraction an official name that you can then use later in the compilation without any sigil.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -3218,38 +2786,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>どのような場合でも、sigilによって意味づけされた最小のコンテナroleは最新のバインディング時にチェックされ、文法エラーがすぐに検出できるなら（コンパイル時のような）早期に失敗します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>If you wish to bind an object that doesn't yet do the appropriate role, you must either stick with the generic <bpt i='43' x='43'>&lt;c43&gt;</bpt>$<ept i='43'>&lt;/c43&gt;</ept> sigil, or mix in the appropriate role before binding to a more specific sigil.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>もしまだ適切なroleを行わないオブジェクトをバインドしたい場合、ジェネリックな<bpt i='43' x='43'>&lt;c43&gt;</bpt>$<ept i='43'>&lt;/c43&gt;</ept> sigilを押しつけるか、より特定したsigilにバインドする前に適切なroleを混合するかどちらかにしなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>An object is allowed to support both <bpt i='46' x='46'>&lt;c46&gt;</bpt>Positional<ept i='46'>&lt;/c46&gt;</ept> and <bpt i='47' x='47'>&lt;c47&gt;</bpt>Associative<ept i='47'>&lt;/c47&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>オブジェクトは<bpt i='46' x='46'>&lt;c46&gt;</bpt>Positional<ept i='46'>&lt;/c46&gt;</ept>と<bpt i='47' x='47'>&lt;c47&gt;</bpt>Associative<ept i='47'>&lt;/c47&gt;</ept>の両方をサポートすることが許されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>An object that does not support <bpt i='48' x='48'>&lt;c48&gt;</bpt>Positional<ept i='48'>&lt;/c48&gt;</ept> may not be bound directly to <bpt i='49' x='49'>&lt;c49&gt;</bpt>@x<ept i='49'>&lt;/c49&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='48' x='48'>&lt;c48&gt;</bpt>Positional<ept i='48'>&lt;/c48&gt;</ept>をサポートしないオブジェクトは直接に<bpt i='49' x='49'>&lt;c49&gt;</bpt>@x<ept i='49'>&lt;/c49&gt;</ept>にバインドされることはできません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>However, any construct such as <bpt i='50' x='50'>&lt;c50&gt;</bpt>%x<ept i='50'>&lt;/c50&gt;</ept> that can interpolate the contents of such an object into list context can automatically construct a list value that may then be bound to an array variable.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>しかしながら、リストコンテキストでそのようなオブジェクトの内容を挿入できる<bpt i='50' x='50'>&lt;c50&gt;</bpt>%x<ept i='50'>&lt;/c50&gt;</ept>のような構造は配列変数にバインドできるようなリスト値を自動的に構築できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3398,22 +2934,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>To format an array value separated by commas, supply a second argument: <bpt i='4' x='4'>&lt;c4&gt;</bpt>.fmt('%03d', ', ')<ept i='4'>&lt;/c4&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>配列をコンマで区切った値にフォーマットするには2つ目の引数を与えて下さい: <bpt i='4' x='4'>&lt;c4&gt;</bpt>.fmt('%03d', ', ')<ept i='4'>&lt;/c4&gt;</ept></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>To format a hash value or list of pairs, include formats for both key and value in the first string: <bpt i='5' x='5'>&lt;c5&gt;</bpt>.fmt('%s: %s', &quot;\n&quot;)<ept i='5'>&lt;/c5&gt;</ept>.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>ハッシュかpairsのリストをフォーマットするには最初の文字列にキーとハッシュ両方をフォーマットに含めて下さい: <bpt i='5' x='5'>&lt;c5&gt;</bpt>.fmt('%s: %s', &quot;\n&quot;)<ept i='5'>&lt;/c5&gt;</ept></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Subscripts now consistently dereference the container produced by whatever was to their left.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -3494,14 +3014,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>See S09 for more on slice context.) <ph x='1'>&lt;br1/&gt;</ph></seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>sliceコンテキストの詳細はS09を参照して下さい。) <ph x='1'>&lt;br1/&gt;</ph></seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>If you need to force inner context to item (scalar), we now have convenient single-character context specifiers such as + for numbers and ~ for strings:</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -3574,30 +3086,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Like <bpt i='3' x='3'>&lt;c3&gt;</bpt>List<ept i='3'>&lt;/c3&gt;</ept> objects, <bpt i='4' x='4'>&lt;c4&gt;</bpt>Capture<ept i='4'>&lt;/c4&gt;</ept> objects are immutable in the abstract, but evaluate their arguments lazily.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='3' x='3'>&lt;c3&gt;</bpt>List<ept i='3'>&lt;/c3&gt;</ept>オブジェクトのように<bpt i='4' x='4'>&lt;c4&gt;</bpt>Capture<ept i='4'>&lt;/c4&gt;</ept>オブジェクトは抽象的には不変ですが、引数の評価はいいかげんです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Before everything inside a <bpt i='5' x='5'>&lt;c5&gt;</bpt>Capture<ept i='5'>&lt;/c5&gt;</ept> is fully evaluated (which happens at compile time when all the arguments are constants), the eventual value may well be unknown.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='5' x='5'>&lt;c5&gt;</bpt>Capture<ept i='5'>&lt;/c5&gt;</ept>内の全てのものが完全に評価される前(全ての引数が定数の場合はコンパイル時に起こる)、結果として生ずる値は未知かもしれません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg><bpt i='8' x='8'>&lt;c8&gt;</bpt>Capture<ept i='8'>&lt;/c8&gt;</ept> objects may contain multiple unresolved iterators such as feeds or slices.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='8' x='8'>&lt;c8&gt;</bpt>Capture<ept i='8'>&lt;/c8&gt;</ept>オブジェクトはフィードやスライスのような複数の未解決のイテレータを含むでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>How these are resolved depends on what they are eventually bound to.</seg>
       </tuv>
       <tuv xml:lang="JA">
@@ -3610,14 +3098,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>他がそうでない場合に、いくつかのバインディングは複数の次元に敏感です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>You may retrieve parts from a <bpt i='11' x='11'>&lt;c11&gt;</bpt>Capture<ept i='11'>&lt;/c11&gt;</ept> object with a prefix sigil operator:</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>前置のsigil演算子で<bpt i='11' x='11'>&lt;c11&gt;</bpt>Capture<ept i='11'>&lt;/c11&gt;</ept>オブジェクトからパーツを取得するでしょう:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3646,26 +3126,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>The special syntax form <bpt i='2' x='2'>&lt;c2&gt;</bpt>$()<ept i='2'>&lt;/c2&gt;</ept> translates into <bpt i='3' x='3'>&lt;c3&gt;</bpt>$( $.ast // Str($/) )<ept i='3'>&lt;/c3&gt;</ept> to operate on the current match object; similarly <bpt i='4' x='4'>&lt;c4&gt;</bpt>@()<ept i='4'>&lt;/c4&gt;</ept> and <bpt i='5' x='5'>&lt;c5&gt;</bpt>%()<ept i='5'>&lt;/c5&gt;</ept> can extract positional and named submatches.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>特別な文法形式<bpt i='2' x='2'>&lt;c2&gt;</bpt>$()<ept i='2'>&lt;/c2&gt;</ept>は<bpt i='3' x='3'>&lt;c3&gt;</bpt>$( $.ast // Str($/) )<ept i='3'>&lt;/c3&gt;</ept>に変換され、それは現在のマッチオブジェクトを操作するためのものです。似たように<bpt i='4' x='4'>&lt;c4&gt;</bpt>@()<ept i='4'>&lt;/c4&gt;</ept>と<bpt i='5' x='5'>&lt;c5&gt;</bpt>%()<ept i='5'>&lt;/c5&gt;</ept>はポジショナルと名前付きサブマッチを抽出できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>You can think of them as &quot;fat&quot; references, that is, references that can capture not only the current identity of a single object, but also the relative identities of several related objects.</seg>
       </tuv>
       <tuv xml:lang="JA">
         <seg>それらは&quot;fat&quot;リファレンスと考えることができます。それは現在のシングルオブジェクトのアイデンティティだけでなく、関連するいくつかのオブジェクトを取り込みます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Conversely, you can think of Perl 5 references as a degenerate form of <bpt i='9' x='9'>&lt;c9&gt;</bpt>Capture<ept i='9'>&lt;/c9&gt;</ept> when you want to refer only to a single item.</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg>逆に、Perl 5のリファレンスはシングルアイテムを参照したい時の<bpt i='9' x='9'>&lt;c9&gt;</bpt>Capture<ept i='9'>&lt;/c9&gt;</ept>の縮小した形式と考えることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3698,14 +3162,6 @@
       </tuv>
       <tuv xml:lang="JA">
         <seg>型変数にバインドされたシグネチャオブジェクト(上記の例のように)は追加の型制約を適用するために他のシグネチャと共に使用されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>When applied to a <bpt i='2' x='2'>&lt;c2&gt;</bpt>Capture<ept i='2'>&lt;/c2&gt;</ept> argument, the signature allows you to take the types of the capture's arguments from <bpt i='3' x='3'>&lt;c3&gt;</bpt>MySig<ept i='3'>&lt;/c3&gt;</ept>, but declare the (untyped) variable names yourself via an additional signature in parentheses:</seg>
-      </tuv>
-      <tuv xml:lang="JA">
-        <seg><bpt i='2' x='2'>&lt;c2&gt;</bpt>Capture<ept i='2'>&lt;/c2&gt;</ept>引数に適用された時、シグネチャは<bpt i='3' x='3'>&lt;c3&gt;</bpt>MySig<ept i='3'>&lt;/c3&gt;</ept>からcaptureの引数の型を受け取ることができます。しかし(型の指定が無い)変数名を括弧内の追加のシグネチャによってあなた自身が宣言すると:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4014,10 +3470,10 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>A <bpt i='3' x='3'>&lt;i3&gt;</bpt>name<ept i='3'>&lt;/i3&gt;</ept> is anything that is a legal part of a variable name (not counting the sigil).</seg>
+        <seg>A <bpt i='0' x='0'>&lt;i0&gt;</bpt>name<ept i='0'>&lt;/i0&gt;</ept> is anything that is a legal part of a variable name (not counting the sigil).</seg>
       </tuv>
       <tuv xml:lang="JA">
-        <seg><bpt i='3' x='3'>&lt;i3&gt;</bpt>名前<ept i='3'>&lt;/i3&gt;</ept>はsigilを数えない変数名の適正な部分です。</seg>
+        <seg><bpt i='0' x='0'>&lt;i0&gt;</bpt>名前<ept i='0'>&lt;/i0&gt;</ept>は変数名の適正な部分のことです(sigilは数えません)。</seg>
       </tuv>
     </tu>
     <tu>

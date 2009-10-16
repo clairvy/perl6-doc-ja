@@ -3,7 +3,7 @@
 <tmx version="1.1">
   <header
     creationtool="OmegaT"
-    creationtoolversion="2.0.4"
+    creationtoolversion="2.0.5"
     segtype="sentence"
     o-tmf="OmegaT TMX"
     adminlang="EN-US"
@@ -334,10 +334,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(However, bare =begin and =end probably aren't good enough, because all comments in them will show up in the formatted output.) </seg>
+        <seg>(However, bare =begin and =end probably aren't good enough, because all comments in them will show up in the formatted output.)</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(しかしながら、裸の=beginと=endはたぶん十分ではないでしょう。それらの中のコメントがフォーマットされて出力されてしまうからです。)</seg>
+        <seg>(しかし、裸の=beginと=endではおそらく不十分です。その中の全てのコメントがフォーマットされて表示されてしまうからです。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -345,7 +345,7 @@
         <seg>We have single paragraph comments with =for comment as well.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>さらに、単一のパラグラフコメント=for commentがあります。</seg>
+        <seg>さらに、単独のパラグラフコメント=for commentがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -353,7 +353,7 @@
         <seg>That lets =for keep its meaning as the equivalent of a =begin and =end combined.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これは=forを=beginと=endを結合した状態と同じにします。</seg>
+        <seg>これは=forを=beginと=endが結合したものと同等の意味を持つようにさせます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -361,15 +361,7 @@
         <seg>As with =begin and =end, a comment started in code reverts to code afterwards.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>=beginと=endのように、コメントはコードの前から始まってコードの後まで続きます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Since there is a newline before the first =, the POD form of comment counts as whitespace equivalent to a newline.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>最初の=の前に改行が現れるまで、POD形式のコメントは改行と同じく空白としてカウントされます。</seg>
+        <seg>=beginと=endのように、コメントはコードの前から後まで続きます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -406,26 +398,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>All other uses of # are interpreted as single-line comments that work just as in Perl 5, starting with a # character and ending at the subsequent newline.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>他の#の使用法はPerl 5のように1行コメントとして働き、#で始まって次の改行で終わります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>They count as whitespace equivalent to newline for purposes of separation.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>それらは分割を目的とした改行と同じく空白として数えられます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Unlike in Perl 5, # may not be used as the delimiter in quoting constructs.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Perl 5と違い、#はクォートを構築する区切り文字として使用されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -442,14 +418,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>括弧は普通の引用括弧と同じにネストするでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>There must be no space between the # and the opening bracket character.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>括弧の開始と#の間に空白があることは出来ません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -638,14 +606,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(Unary uses of backslash may therefore never be followed by whitespace or they would be taken as an unspace.) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(単項のバックスラッシュの使用は空白が続かないかもしれないし、unspaceとして持って行かれるかもしれません。)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Other postfix operators may also make use of unspace:</seg>
       </tuv>
       <tuv lang="JA">
@@ -670,14 +630,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>(Unless, of course, you override the unspace rule itself...) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(もちろんunspaceのルール自身を上書きしないなら)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Although we say that the unspace hides the whitespace from the parser, it does not hide whitespace from the lexer.</seg>
       </tuv>
       <tuv lang="JA">
@@ -698,14 +650,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>加えて、unspaceが改行を含むなら行として数えられます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>A # following such a newline is always an end-of-line comment, as described above.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>そのような改行に続く#は上記のように常に行コメントです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -822,22 +766,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>For instance, if you were to add your own infix:&lt;++&gt; operator, then it must have space before it.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>例えばinfix:&lt;++&gt;という2項演算子を追加したいなら、その前に必ず空白が必要です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The normal autoincrementing postfix:&lt;++&gt; operator may never have space before it, but may be written in any of these forms:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>通常のpostfix:&lt;++&gt;演算子はその前に空白を持ちませんが、これらのどの形式でも書くことが出来ます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>A consequence of the postfix rule is that (except when delimiting a quote or terminating an unspace) a dot with whitespace in front of it is always considered a method call on $_ where a term is expected.</seg>
       </tuv>
       <tuv lang="JA">
@@ -866,14 +794,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>例えばフォートランっぽいinfix:&lt;.EQ.&gt;を定義して下さい。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>But you'll have to be sure to always put whitespace in front of it, or it would be interpreted as a postfix method call instead.) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>しかし常に前に空白を置かなければならないか、代わりに後置のメソッド呼び出しと解釈されるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -918,22 +838,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>One consequence of all this is that you may no longer write a Num as 42. with just a trailing dot.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>これらの結果の一つとして、ただの終端ドットを伴うNumとしての42.はもはや書けません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>You must instead say either 42 or 42.0.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>42か42.0としなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>In other words, a dot following a number can only be a decimal point if the following character is a digit.</seg>
       </tuv>
       <tuv lang="JA">
@@ -946,14 +850,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>それ以外の場合は後置のドットはいくつかの種類のメソッド呼び出しの開始と解釈されるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>(The .123 form with a leading dot is still allowed however when a term is expected, and is equivalent to 0.123 rather than $_.123.)</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(項が期待される時はドットが先行する.123という形式がまだ許可されます。これは$_.123ではなく0.123になります。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1310,22 +1206,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Hence, both methods allow an optional argument to specify the meaning exactly if it cannot be known from context.) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>従って、コンテキストから分からない場合は両方のメソッドは意味を正確に指定する任意の引数を受け取ります。)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>There is no .length method for either arrays or strings, because length does not specify a unit.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>.lengthは配列か文字列のどちらにもありません。なぜならlengthは単位を指定していないからです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Built-in object types start with an uppercase letter.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1338,14 +1218,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>これは不変の型を含みます。(例えばInt、Num、Complex、Rat、Str、Bit、Regex、Set、Block、List、Seq)変更可能な型(コンテナ)も同様です。Scalar、Array、Hash、Buf、Routine、Moduleなど。そしてインスタンス化できないCallable、Failure、Integralも同様です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Non-object (native) types are lowercase: int, num, complex, rat, buf, bit.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>オブジェクトでない(ネイティブ)型は小文字です: int、num、complex、rat、buf、bit。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1374,22 +1246,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Note, however, that sometimes repeated autoboxing can slow your program more than the native type can speed it up.) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>しかし、autoboxingの繰り返しがネイティブ型のスピードアップ以上にプログラムを遅くすることも時々あります。)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The junction type is considered a native type because its internal representation is fixed, and you may not usefully derive from it because the intent of junctions is to autothread any method calls on them.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>junction型はネイティブ型とみなされます。なぜならそれの内部表現は固定されており、junctionはメソッド呼び出しを自動スレッド化することを意図しているので、あなたはそれを有効に継承することは出来ないでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Some object types can behave as value types.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1402,14 +1258,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>全てのオブジェクトはハッシュと値ベースの比較のために一意に識別するための&quot;WHICH&quot;という値を出力できます。 </seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Normal objects just use their address in memory, but if a class wishes to behave as a value type, it can define a .WHICH method that makes different objects look like the same object if they happen to have the same contents.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>通常のオブジェクトは単にそれらのメモリアドレス使いますが、クラスが値型として振る舞いたいと望むなら、異なるオブジェクトが偶然に同じ内容を持っている場合に同じオブジェクトのように見せる.WHICHメソッドを定義できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1506,78 +1354,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>(ネイティブintの演算は2の歩数をネイティブにサポートしないマシンではこれをサポートする必要はありません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>You must convert to and from Int to do portable bitops on such ancient hardware.) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>あなたはIntへの変換や逆のことをそのような古いハードウェアの移植性のあるビット演算に出来るようにしなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>(Num may support arbitrary-precision floating-point arithmetic, but is not required to unless we can do so portably and efficiently.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(Numは任意の精度の浮動小数点演算をサポートするでしょう。しかし移植性が高く効率的に行うことが出来ないのであれば必要有りません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Num must support the largest native floating point format that runs at full speed.) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Numは最も大きいネイティブ浮動小数点フォーマットをフルスピードで実行できるようにしなければなりません。)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Rat supports arbitrary precision rational arithmetic.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Ratは任意の精度の有理数演算をサポートします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>However, dividing two Int objects using infix:&lt;/&gt; produces a fraction of Num type, not a ratio.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>しかしながら、2つのIntオブジェクトをinfix:&lt;/&gt;で除算するとNum型の端数を生成し、ratioではありません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>You can produce a ratio by using infix:&lt;div&gt; on two integers instead.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>代わりにinfix:&lt;div&gt;を使ってratioを生成できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Lower-case types like int and num imply the native machine representation for integers and floating-point numbers, respectively, and do not promote to arbitrary precision, though larger representations are always allowed for temporary values.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>int、numのような小文字型はマシンネイティブの整数と浮動小数点表現を暗示します。それぞれは任意の精度を促進しませんが、テンポラリな値についてはより大きな表現が常に許可されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Unless qualified with a number of bits, int and num types represent the largest native integer and floating-point types that run at full speed.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ビットの数で修飾されないintとnum型は最大速度で実行される最も大きな整数と浮動小数点を表現します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Numeric values in untyped variables use Int and Num semantics rather than int and num.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>型指定されない数値ではIntとNumがintとnumに優先されて使用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1694,30 +1470,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The subtraction of two StrPos objects gives a StrLen object, which is also not an integer, because the string between two positions also has multiple integer interpretations depending on the units.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>2つのStrPosオブジェクトの減算はStrLenオブジェクトを与えます。それは整数ではありません。なぜなら2つの位置の間の文字列は単位によって複数の整数の解釈を持つからです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>A given StrLen may know that it represents 18 bytes, 7 codepoints, 3 graphemes, and 1 letter in Malayalam, but it might only know this lazily because it actually just hangs onto the two StrPos endpoints within the string that in turn may or may not just lazily point into the string.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>与えられたStrLenは18 bytes、7 codepoints、3 graphemes、1 letter in Malayalamという表現を知っているでしょう。but it might only know this lazily because it actually just hangs onto the two StrPos endpoints within the string that in turn may or may not just lazily point into the string.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>(The lazy implementation of StrLen is much like a Range object in that respect.) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>(StrLenのいいかげんな実装はRangeオブジェクトの関連です。)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>If you use integers as arguments where position objects are expected, it will be assumed that you mean the units of the current lexically scoped Unicode abstraction level.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1738,14 +1490,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>もちろんそのような次元数は文字列が適切な抽象化レベルを提供しないなら失敗するでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>If a StrPos or StrLen is forced into a numeric context, it will assume the units of the current Unicode abstraction level.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>StrPosかStrLenが数値コンテキストで強制されると、現在のユニコード抽象化レベルの単位と見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1806,42 +1550,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Unlike Str types, Buf types prefer to deal with integer string positions, and map these directly to the underlying compact array as indices.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Str型と異なり、Buf型は整数の文字列位置で対処することを好みます。そしてそれらを直接に基礎的でコンパクトな配列にインデックスとしてマップします。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>That is, these are not necessarily byte positions--an integer position just counts over the number of underlying positions, where one position means one cell of the underlying integer type.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>それは必ずしもバイト位置ではありません ― 整数位置は単に基礎的な位置の数を数えるだけです。それはあるセルを意味するある位置の基礎的な整数型です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Builtin string operations on Buf types return integers and expect integers when dealing with positions.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Buf型の組み込みの文字列操作は整数を返し、位置を処理する時には整数を期待します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>As a limiting case, buf8 is just an old-school byte string, and the positions are byte positions.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>限られた場合で、buf8はただの古いバイト文字列で、位置はバイト位置です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Note, though, that if you remap a section of buf32 memory to be buf8, you'll have to multiply all your positions by 4.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ただし、buf32のメモリをbuf8にリマップするなら全てのポジションを4倍する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1950,14 +1662,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Most of the built-in numeric operators treat an argument of * as indicating the desire to create a function of a single unknown, so:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ほとんどの組み込み数値演算子は*の引数を単一の未知の関数を作成することを満たすと認識します。つまり以下の式は:</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>produces a function of a single argument:</seg>
       </tuv>
       <tuv lang="JA">
@@ -2014,42 +1718,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The final element of an array is subscripted as @a[*-1], which means that when the subscripting operation discovers a Code object for a subscript, it calls it and supplies an argument indicating the number of elements in (that dimension of) the array.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>配列の最後の要素の添字は@a[*-1]で表され、添字操作が Codeオブジェクトを添字に見つけると、それが呼ばれて配列の要素数を供給します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>See S09.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>S09を参照して下さい。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>A variant of * is the ** term, which is of type HyperWhatever.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>*の変化形は**で、HyperWhatever型です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>It is generally understood to be a multidimension form of * when that makes sense.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>これは一般的には多次元形式の*と理解されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>When modified by an operator that would turn * into a function of one argument, ** instead turns into a function with a slurpy argument, of type Code:(*@).</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>演算子によって*が1つの引数の関数に変換される時、 **は代わりにslurpyな引数の関数、Code:(*@)になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2070,34 +1742,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The meaning of Whatever is always controlled by its immediate context.) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Whateverの意味は常にその場のコンテキストによってコントロールされます。)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Other uses for * and ** will doubtless suggest themselves over time.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>*と**の他の用途はそのうちにそれら自身で示されるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>These can be given meaning via the MMD system, if not the compiler.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>コンパイラがそうでなければ、これらはMMDシステムによって意味を与えられることができます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>In general a Whatever should be interpreted as maximizing the degrees of freedom in a dwimmy way, not as a nihilistic &quot;don't care anymore--just shoot me&quot;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>一般的にWhateverは期待通りに動作するように自由度を最大限にするものとして解釈されるべきです。虚無的な「何も気にするな―ただ私を打て」ではなく。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3110,14 +2758,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>$x may be bound to any object, including any object that can be bound to any other sigil.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>$xはどのような他のsigilにもバインドされることができるどのようなオブジェクトも含む、どの様なオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Such a scalar variable is always treated as a singular item in any kind of list context, regardless of whether the object is essentially composite or unitary.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3134,78 +2774,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>In particular, when interpolating into list context, $x never expands its object to anything other than the object itself as a single item, even if the object is a container object containing multiple items.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>特にリストコンテキストに差し込む時に、オブジェクトが複数のアイテムを含むコンテナでさえ$xは他の何にも展開されず、単一アイテムのオブジェクト自身になります。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>@x may be bound to an object of the Array class, but it may also be bound to any object that does the Positional role, such as a List, Seq, Range, Buf, or Capture.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>@xはArrayクラスのオブジェクトにバインドされるでしょう。しかしList、Seq、Range、BufまたはCaptureのようなPositional roleを行うオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The Positional role implies the ability to support postcircumfix:&lt;[ ]&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Positional roleはpostcircumfix:&lt;[ ]&gt;をサポートする能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Likewise, %x may be bound to any object that does the Associative role, such as Pair, Mapping, Set, Bag, KeyHash, or Capture.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>同様に%xはPair、Mapping、Set、Bag、KeyHashまたはCaptureのようなAssociative roleを行うどのようなオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The Associative role implies the ability to support postcircumfix:&lt;{ }&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Associative roleはpostcircumfix:&lt;{ }&gt;をサポートする能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&amp;x may be bound to any object that does the Callable role, such as any Block or Routine.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>&amp;xはBlockやRoutineのようなCallable roleを行うどのようなオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>The Callable role implies the ability to support postcircumfix:&lt;( )&gt;.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Callable roleはpostcircumfix:&lt;( )&gt;をサポートする能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>::x may be bound to any object that does the Abstraction role, such as a package, module, class, role, grammar, or any other type object, or any immutable value object that can be used as a type.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>::xはパッケージ、モジュール、クラス、他のタイプオブジェクト、タイプとして使用できる変更可能な値型オブジェクトのような Abstraction roleを行うどのようなオブジェクトにもバインドされるでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>This Abstraction role implies the ability to do various symbol table and/or typological manipulations which may or may not be supported by any given abstraction.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Abstraction roleは様々なシンボルテーブルと/または類型的な操作（与えられた抽象化によってサポートされていてもいなくてもよい）を行う能力を意味します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Mostly though it just means that you want to give some abstraction an official name that you can then use later in the compilation without any sigil.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3218,38 +2786,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>どのような場合でも、sigilによって意味づけされた最小のコンテナroleは最新のバインディング時にチェックされ、文法エラーがすぐに検出できるなら（コンパイル時のような）早期に失敗します。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>If you wish to bind an object that doesn't yet do the appropriate role, you must either stick with the generic $ sigil, or mix in the appropriate role before binding to a more specific sigil.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>もしまだ適切なroleを行わないオブジェクトをバインドしたい場合、ジェネリックな$ sigilを押しつけるか、より特定したsigilにバインドする前に適切なroleを混合するかどちらかにしなければなりません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>An object is allowed to support both Positional and Associative.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>オブジェクトはPositionalとAssociativeの両方をサポートすることが許されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>An object that does not support Positional may not be bound directly to @x.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Positionalをサポートしないオブジェクトは直接に@xにバインドされることはできません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>However, any construct such as %x that can interpolate the contents of such an object into list context can automatically construct a list value that may then be bound to an array variable.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>しかしながら、リストコンテキストでそのようなオブジェクトの内容を挿入できる%xのような構造は配列変数にバインドできるようなリスト値を自動的に構築できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3398,22 +2934,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>To format an array value separated by commas, supply a second argument: .fmt('%03d', ', ').</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>配列をコンマで区切った値にフォーマットするには2つ目の引数を与えて下さい: .fmt('%03d', ', ')</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>To format a hash value or list of pairs, include formats for both key and value in the first string: .fmt('%s: %s', &quot;\n&quot;).</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ハッシュかpairsのリストをフォーマットするには最初の文字列にキーとハッシュ両方をフォーマットに含めて下さい: .fmt('%s: %s', &quot;\n&quot;)</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>Subscripts now consistently dereference the container produced by whatever was to their left.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3494,14 +3014,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>See S09 for more on slice context.) </seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>sliceコンテキストの詳細はS09を参照して下さい。) </seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>If you need to force inner context to item (scalar), we now have convenient single-character context specifiers such as + for numbers and ~ for strings:</seg>
       </tuv>
       <tuv lang="JA">
@@ -3574,30 +3086,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Like List objects, Capture objects are immutable in the abstract, but evaluate their arguments lazily.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>ListオブジェクトのようにCaptureオブジェクトは抽象的には不変ですが、引数の評価はいいかげんです。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Before everything inside a Capture is fully evaluated (which happens at compile time when all the arguments are constants), the eventual value may well be unknown.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Capture内の全てのものが完全に評価される前(全ての引数が定数の場合はコンパイル時に起こる)、結果として生ずる値は未知かもしれません。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Capture objects may contain multiple unresolved iterators such as feeds or slices.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Captureオブジェクトはフィードやスライスのような複数の未解決のイテレータを含むでしょう。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>How these are resolved depends on what they are eventually bound to.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3610,14 +3098,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>他がそうでない場合に、いくつかのバインディングは複数の次元に敏感です。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>You may retrieve parts from a Capture object with a prefix sigil operator:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>前置のsigil演算子でCaptureオブジェクトからパーツを取得するでしょう:</seg>
       </tuv>
     </tu>
     <tu>
@@ -3646,26 +3126,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The special syntax form $() translates into $( $.ast // Str($/) ) to operate on the current match object; similarly @() and %() can extract positional and named submatches.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>特別な文法形式$()は$( $.ast // Str($/) )に変換され、それは現在のマッチオブジェクトを操作するためのものです。似たように@()と%()はポジショナルと名前付きサブマッチを抽出できます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>You can think of them as &quot;fat&quot; references, that is, references that can capture not only the current identity of a single object, but also the relative identities of several related objects.</seg>
       </tuv>
       <tuv lang="JA">
         <seg>それらは&quot;fat&quot;リファレンスと考えることができます。それは現在のシングルオブジェクトのアイデンティティだけでなく、関連するいくつかのオブジェクトを取り込みます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>Conversely, you can think of Perl 5 references as a degenerate form of Capture when you want to refer only to a single item.</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>逆に、Perl 5のリファレンスはシングルアイテムを参照したい時のCaptureの縮小した形式と考えることができます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3698,14 +3162,6 @@
       </tuv>
       <tuv lang="JA">
         <seg>型変数にバインドされたシグネチャオブジェクト(上記の例のように)は追加の型制約を適用するために他のシグネチャと共に使用されます。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>When applied to a Capture argument, the signature allows you to take the types of the capture's arguments from MySig, but declare the (untyped) variable names yourself via an additional signature in parentheses:</seg>
-      </tuv>
-      <tuv lang="JA">
-        <seg>Capture引数に適用された時、シグネチャはMySigからcaptureの引数の型を受け取ることができます。しかし(型の指定が無い)変数名を括弧内の追加のシグネチャによってあなた自身が宣言すると:</seg>
       </tuv>
     </tu>
     <tu>
@@ -4017,7 +3473,7 @@
         <seg>A name is anything that is a legal part of a variable name (not counting the sigil).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>名前はsigilを数えない変数名の適正な部分です。</seg>
+        <seg>名前は変数名の適正な部分のことです(sigilは数えません)。</seg>
       </tuv>
     </tu>
     <tu>
