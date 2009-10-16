@@ -1,5 +1,44 @@
-perl6-doc-ja: Perl 6ドキュメント日本語化プロジェクト
+# Perl6-Doc-JA: Perl 6ドキュメント日本語化プロジェクト
 
-Perl6::Doc( http://search.cpan.org/dist/Perl6-Doc/ )に含まれるドキュメントを
-日本語に翻訳するプロジェクトです。OmegaT( http://www.omegat.org/ )でプロジェクト
-を読み込み、翻訳していきます。
+# 運営者
+
+大和利之 toshiyuki.yamato@gmail.com
+
+# リポジトリのURL
+
+git://github.com/yamato/perl6-doc-ja.git
+
+# 概要
+
+Perl6のドキュメントを日本語に翻訳するプロジェクトです。
+フリーの翻訳メモリOmegaTを用いて翻訳を行います。
+大和はOmegaT-2.0.5を使用しています。
+
+* Perl6::Doc http://search.cpan.org/dist/Perl6-Doc/
+* OmegaT http://sourceforge.net/projects/omegat/
+
+# 翻訳の手順
+
+宮川氏の「github で人のコードをいじる「前」にforkする必要はない」
+を参考にしています。
+http://subtech.g.hatena.ne.jp/miyagawa/20090114/1231910461
+
+リポジトリを複製します。
+
+    $ git clone git://github.com/yamato/perl6-doc-ja.git
+
+複製したディレクトリをOmegaTのプロジェクトとして開きます。
+翻訳ソースをHTMLで用意してあるので、ファイルを選んで翻訳していきます。
+
+ある程度翻訳したらプロジェクトを保存し、変更をコミットします。
+
+    $ git commit -a
+
+これでproject_save.tmxの変更がコミットされます。
+
+後で翻訳を再開する時は最新のリポジトリをマージしておきます。
+
+    $ git pull --rebase git://github.com/yamato/perl6-doc-ja.git
+
+変更した内容をオリジナルのリポジトリに反映したい場合はフォークして複製し、
+それに対してローカルのコピーをpushします。その後でpull requestをお願いします。
