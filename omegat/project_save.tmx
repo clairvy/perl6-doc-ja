@@ -350,6 +350,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That lets &lt;c1&gt;=for&lt;/c1&gt; keep its meaning as the equivalent of a &lt;c2&gt;=begin&lt;/c2&gt; and &lt;c3&gt;=end&lt;/c3&gt; combined.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これは&lt;c1&gt;=for&lt;/c1&gt;を&lt;c2&gt;=begin&lt;/c2&gt;と&lt;c3&gt;=end&lt;/c3&gt;が結合したものと同等の意味を持つようにさせます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See S26 for more on embedded documentation.</seg>
       </tuv>
       <tuv lang="JA">
