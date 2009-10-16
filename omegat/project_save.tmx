@@ -334,6 +334,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>(However, bare &lt;c5&gt;=begin&lt;/c5&gt; and &lt;c6&gt;=end&lt;/c6&gt; probably aren't good enough, because all comments in them will show up in the formatted output.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(しかし、裸の&lt;c5&gt;=begin&lt;/c5&gt;と&lt;c6&gt;=end&lt;/c6&gt;ではおそらく不十分です。その中の全てのコメントがフォーマットされて表示されてしまうからです。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>We have single paragraph comments with &lt;c0&gt;=for comment&lt;/c0&gt; as well.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>さらに、単独のパラグラフコメント&lt;c0&gt;=for comment&lt;/c0&gt;があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See S26 for more on embedded documentation.</seg>
       </tuv>
       <tuv lang="JA">
