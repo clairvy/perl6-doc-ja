@@ -169,7 +169,7 @@
         <seg>This document summarizes Apocalypse 2, which covers small-scale lexical items and typological issues.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>このドキュメントはApocalypse 2の要約です。Apocalypse 2は小規模の語彙項目と類型的問題を取り上げます。</seg>
+        <seg>このドキュメントはApocalypse 2の要約です。Apocalypse 2は小規模の字句項目と類型的問題を取り上げます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -409,7 +409,7 @@
         <seg>POD sections may be used reliably as multiline comments in Perl 6.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 6ではPODセクションは複数行コメントとして確実に使用できるでしょう。</seg>
+        <seg>Perl 6ではPODセクションは複数行コメントとして確実に使用されるようになるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -417,7 +417,7 @@
         <seg>Unlike in Perl 5, POD syntax now lets you use &lt;c0&gt;=begin comment&lt;/c0&gt; and &lt;c1&gt;=end comment&lt;/c1&gt; delimit a POD block correctly without the need for &lt;c2&gt;=cut&lt;/c2&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 5と違い、&lt;c0&gt;=begin comment&lt;/c0&gt;と&lt;c1&gt;=end comment&lt;/c1&gt;は&lt;c2&gt;=cut&lt;/c2&gt;無しでPODブロックを正しく区切ります。</seg>
+        <seg>Perl 5と違い、現在のPOD構文は&lt;c0&gt;=begin comment&lt;/c0&gt;と&lt;c1&gt;=end comment&lt;/c1&gt;を&lt;c2&gt;=cut&lt;/c2&gt;無しでPODブロックを正しく区切って使えるようにします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -425,7 +425,7 @@
         <seg>(In fact, &lt;c3&gt;=cut&lt;/c3&gt; is now gone.) The format name does not have to be &lt;c4&gt;comment&lt;/c4&gt; -- any unrecognized format name will do to make it a comment.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(現に、&lt;c3&gt;=cut&lt;/c3&gt;は無くなりました)フォーマット名は &lt;c4&gt;comment&lt;/c4&gt;である必要はありません。識別されないフォーマット名はコメントになるでしょう。</seg>
+        <seg>(現に、&lt;c3&gt;=cut&lt;/c3&gt;は無くなりました。)フォーマット名は &lt;c4&gt;comment&lt;/c4&gt;である必要はありません。識別されないフォーマット名はコメントになるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -462,6 +462,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since there is a newline before the first &lt;c0&gt;=&lt;/c0&gt;, the POD form of comment counts as whitespace equivalent to a newline.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>最初の&lt;c0&gt;=&lt;/c0&gt;の前に改行が現れるまで、POD形式のコメントは改行と同様に空白としてカウントします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See S26 for more on embedded documentation.</seg>
       </tuv>
       <tuv lang="JA">
@@ -481,7 +489,7 @@
         <seg>There are two forms of comment based on &lt;c1&gt;#&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c1&gt;#&lt;/c1&gt;のコメントは2つの形態があります。</seg>
+        <seg>&lt;c1&gt;#&lt;/c1&gt;を元にしたコメントは2つの形式があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -489,7 +497,15 @@
         <seg>Embedded comments require the &lt;c2&gt;#&lt;/c2&gt; to be followed by one or more opening bracketing characters.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>埋め込みコメントは括弧の開始文字に続いた&lt;c2&gt;#&lt;/c2&gt;を必要とします。</seg>
+        <seg>埋め込みコメントは1つかそれ以上の括弧の開始文字が続く&lt;c2&gt;#&lt;/c2&gt;を必要とします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All other uses of &lt;c0&gt;#&lt;/c0&gt; are interpreted as single-line comments that work just as in Perl 5, starting with a &lt;c1&gt;#&lt;/c1&gt; character and ending at the subsequent newline.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>その他の&lt;c0&gt;#&lt;/c0&gt;の使用はPerl 5のように1行コメントとして解釈され、&lt;c1&gt;#&lt;/c1&gt;で始まって次の改行で終わります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -497,7 +513,15 @@
         <seg>They count as whitespace equivalent to newline for purposes of separation.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>それらは分割を目的とした改行と同じく空白として数えられます。</seg>
+        <seg>それは分割を目的とした改行と同じく空白とみなされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike in Perl 5, &lt;c2&gt;#&lt;/c2&gt; may &lt;i3&gt;not&lt;/i3&gt; be used as the delimiter in quoting constructs.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl 5と違い、&lt;c2&gt;#&lt;/c2&gt;はクォートを構築する区切り文字としては使用されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -505,7 +529,7 @@
         <seg>Embedded comments are supported as a variant on quoting syntax, introduced by &lt;c0&gt;#&lt;/c0&gt; plus any user-selected bracket characters (as defined in &lt;a1&gt;Lexical Conventions&lt;/a1&gt; above):</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>埋め込みコメントはクォーティング文法の変形としてサポートされ、&lt;c0&gt;#&lt;/c0&gt;とユーザーが選んだ括弧文字(&lt;a1&gt;Lexical Conventions&lt;/a1&gt;で定義されているもの)で導入されます:</seg>
+        <seg>埋め込みコメントはクォーティング構文の変化形としてサポートされ、&lt;c0&gt;#&lt;/c0&gt;とユーザーが選んだ括弧文字(&lt;a1&gt;Lexical Conventions&lt;/a1&gt;で定義されているもの)で導入されます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -513,7 +537,23 @@
         <seg>Brackets may be nested, following the same policy as ordinary quote brackets.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>括弧は普通の引用括弧と同じにネストするでしょう。</seg>
+        <seg>括弧は普通の引用括弧と同じポリシーに沿ってネストするでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There must be no space between the &lt;c0&gt;#&lt;/c0&gt; and the opening bracket character.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>括弧の開始文字と&lt;c0&gt;#&lt;/c0&gt;の間に空白を置くことは出来ません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(There may be the &lt;i1&gt;visual appearance&lt;/i1&gt; of space for some double-wide characters, however, such as the corner quotes above.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(上記のかぎ括弧のように見栄えのあるダブルワイド文字がいくつかあります。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -521,7 +561,7 @@
         <seg>An embedded comment is not allowed as the first thing on the line.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>行頭で埋め込みコメントは許可されません。</seg>
+        <seg>行頭に埋め込みコメントを置くことはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -537,7 +577,7 @@
         <seg>You can put a space in front of it to make it an embedded comment:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>埋め込みコメントにするために、前に空白を置くことが出来ます。</seg>
+        <seg>埋め込みコメントにするために、前に空白を置くことが出来ます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -553,7 +593,7 @@
         <seg>Therefore, if you are commenting out a block of code using the line-comment form, we recommend that you use &lt;c1&gt;##&lt;/c1&gt;, or &lt;c2&gt;#&lt;/c2&gt; followed by some whitespace, preferably a tab to keep any tab formatting consistent:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、もしコードブロックを行コメントを使ってコメントアウトするなら、&lt;c1&gt;##&lt;/c1&gt;または空白(できればタブ)が続く&lt;c2&gt;#&lt;/c2&gt;を使用することをお勧めします。</seg>
+        <seg>従って、もしコードブロックを行コメントを使ってコメントアウトするなら、空白(タブによるフォーマッティングを一貫するならタブが好ましい)が続く&lt;c1&gt;##&lt;/c1&gt;か&lt;c2&gt;#&lt;/c2&gt;を使うことをお勧めします:</seg>
       </tuv>
     </tu>
     <tu>
@@ -561,7 +601,7 @@
         <seg>However, it's often better to use pod comments because they are implicitly line-oriented.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、PODコメントは暗黙的に行指向なのでそちらの方が良い場合もあります。</seg>
+        <seg>しかしながら、PODコメントは暗黙の行指向なのでそちらの方が良い場合もあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -577,7 +617,7 @@
         <seg>Counting of nested brackets applies only to pairs of brackets of the same length as the opening brackets:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>括弧のネストは開き括弧と同じ長さでなければ適用されません。</seg>
+        <seg>括弧のネストは開き括弧と同じ数でなければ適用されません。</seg>
       </tuv>
     </tu>
     <tu>
