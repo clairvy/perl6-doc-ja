@@ -606,6 +606,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>And if you have an intelligent syntax highlighter that will mark pod comments in a different color, there's less visual need for a &lt;c0&gt;#&lt;/c0&gt; on every line.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それに、もしあなたがPODコメントを色分けする賢いシンタックスハイライターを持っているなら、それぞれの&lt;c0&gt;#&lt;/c0&gt;の行に必要なビジュアルが少なくなってしまいます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For all quoting constructs that use user-selected brackets, you can open with multiple identical bracket characters, which must be closed by the same number of closing brackets.</seg>
       </tuv>
       <tuv lang="JA">
