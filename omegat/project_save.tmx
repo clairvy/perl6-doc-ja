@@ -166,6 +166,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document summarizes Apocalypse 2, which covers small-scale lexical items and typological issues.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このドキュメントはApocalypse 2の要約です。Apocalypse 2は小規模の語彙項目と類型的問題を取り上げます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(These Synopses also contain updates to reflect the evolving design of Perl 6 over time, unlike the Apocalypses, which are frozen in time as &quot;historical documents&quot;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(Apocalypsesと違い、これらのSynopsesは時間と共に進化するPerl 6のデザインの更新を反映します。 Apocalypsesは歴史的資料としてある時点で凍結されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These updates are not marked--if a Synopsis disagrees with its Apocalypse, assume the Synopsis is correct.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これらの更新は記録されません―SynopsisがApocalypseと異なるなら、Synopsisが正しいと見なして下さい。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To the extent allowed by sublanguages' parsers, Perl is parsed using a one-pass, predictive parser.</seg>
       </tuv>
       <tuv lang="JA">
@@ -177,7 +201,7 @@
         <seg>That is, lookahead of more than one &quot;longest token&quot; is discouraged.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>つまり、複数の&quot;最長トークン&quot;の先読みは推奨しません。</seg>
+        <seg>つまり、複数の最長トークンの先読みは推奨されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -225,7 +249,7 @@
         <seg>A grapheme is what the novice user would think of as a character in their normal everyday life, including any diacritics.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>書記素とは初心者ユーザーが日常生活の中で考えると思われるどんな発音記号も含みます。</seg>
+        <seg>書記素とは初心者ユーザーが日常生活の中で考えると思われるあらゆる発音記号を含みます。</seg>
       </tuv>
     </tu>
     <tu>
