@@ -334,6 +334,78 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For any given Ps character, the next Pe codepoint (in numerical order) is assumed to be its matching character even if that is not what you might guess using left-right symmetry.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>任意のPs文字に対して次のPeコードポイント(番号順)は、たとえあなたが左右対称だと思っていなくてもマッチする文字と見なされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Therefore &lt;c0&gt;U+298D&lt;/c0&gt; maps to &lt;c1&gt;U+298E&lt;/c1&gt;, not &lt;c2&gt;U+2990&lt;/c2&gt;, and &lt;c3&gt;U+298F&lt;/c3&gt; maps to &lt;c4&gt;U+2990&lt;/c4&gt;, not &lt;c5&gt;U+298E&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>従って&lt;c0&gt;U+298D&lt;/c0&gt;は&lt;c2&gt;U+2990&lt;/c2&gt;ではなく&lt;c1&gt;U+298E&lt;/c1&gt;にマップされ、&lt;c3&gt;U+298F&lt;/c3&gt;は&lt;c5&gt;U+298E&lt;/c5&gt;ではなく&lt;c4&gt;U+2990&lt;/c4&gt;にマップされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Neither &lt;c6&gt;U+298E&lt;/c6&gt; nor &lt;c7&gt;U+2990&lt;/c7&gt; are valid bracket openers, despite having reverse mappings in the BidiMirroring table.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c6&gt;U+298E&lt;/c6&gt;と&lt;c7&gt;U+2990&lt;/c7&gt;はどちらも括弧の開始ではありません。にもかかわらずBidiMirroringテーブルに逆のマッピングを持っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;U+301D&lt;/c0&gt; codepoint has two closing alternatives, &lt;c1&gt;U+301E&lt;/c1&gt; and &lt;c2&gt;U+301F&lt;/c2&gt;; Perl 6 only recognizes the one with lower code point number, &lt;c3&gt;U+301E&lt;/c3&gt;, as the closing brace.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;U+301D&lt;/c0&gt;コードポイントは2つの代替の終了文字を持っています。&lt;c1&gt;U+301E&lt;/c1&gt;と&lt;c2&gt;U+301F&lt;/c2&gt;です。Perl 6は低いコードポイント数の&lt;c3&gt;U+301E&lt;/c3&gt;だけを閉じブレースとして認識します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This policy also applies to new one-to-many mappings introduced in the future.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このポリシーは未来に登場する新しい1対多のマッピングにも適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, many-to-one mappings are fine; multiple opening characters may map to the same closing character.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>しかしながら、多対1は構いません。複数の開始文字は同じ終了文字にマップするでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, U+2018, U+201A, and U+201B may all be used as the opener for the U+2019 closer.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>例えばU+2018、U+201A、U+201Bは全てU+2019クローザーに対するオープナーとして使われるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Constructs that count openers and closers assume that only the given opener is special.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>オープナーとクローザーを考慮する構造は、与えられたオープナーだけが特別と見なします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That is, if you open with one of the alternatives, all other alternatives are treated as non-bracketing characters within that construct.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>つまり代替文字の1つで開く場合、他の代替文字はその構造では非括弧文字として扱われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>POD sections may be used reliably as multiline comments in Perl 6.</seg>
       </tuv>
       <tuv lang="JA">
