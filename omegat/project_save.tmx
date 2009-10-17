@@ -257,7 +257,7 @@
         <seg>Perl can count Unicode line and paragraph separators as line markers, but that behavior had better be configurable so that Perl's idea of line numbers matches what your editor thinks about Unicode lines.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perlはユニコードの行とパラグラフのセパレータを行マーカーとして数えることが出来ます。しかし、その振る舞いはあなたのエディタが考えるユニコードの行とPerlの行番号のアイデアとマッチするように設定出来るべきです。</seg>
+        <seg>Perlはユニコードの行とパラグラフのセパレータを行マーカーとして数えることが出来ます。しかし、その振る舞いはあなたのエディタが考えるユニコードの行とPerlの行番号の考え方がマッチするように設定出来るべきです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -265,7 +265,7 @@
         <seg>Unicode horizontal whitespace is counted as whitespace, but it's better not to use thin spaces where they will make adjoining tokens look like a single token.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ユニコードの水平空白は空白として数えられます。しかし、単一のトークンに見えるような隣接したトークンを生成するような場所では細い空白を使わないべきです。</seg>
+        <seg>ユニコードの水平空白は空白として数えられます。しかし、単独のトークンに見えるような隣接したトークンを生成するような場所ではem幅の空白は使わないべきです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -297,7 +297,7 @@
         <seg>Bracketing characters are defined as any Unicode characters with either bidirectional mirrorings or Ps/Pe/Pi/Pf properties.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>括弧文字は双方向ミラーリングかPs/Pe/Pi/Pfプロパティのユニコード文字として定義されます。</seg>
+        <seg>括弧文字は双方向対称かPs/Pe/Pi/Pfプロパティのどちらかのユニコード文字として定義されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -305,7 +305,7 @@
         <seg>In practice, though, you're safest using matching characters with Ps/Pe/Pi/Pf properties, though ASCII angle brackets are a notable exception, since they're bidirectional but not in the Ps/Pe/Pi/Pf sets.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>実用上はPs/Pe/Pi/Pfプロパティの文字を使うのが安全ですが、ASCIIの角括弧はPs/Pe/Pi/Pfセットではないのに双方向なので注目すべき例外です。</seg>
+        <seg>実用上はPs/Pe/Pi/Pfプロパティの文字を使うのが最も安全ですが、ASCIIの不等号括弧はPs/Pe/Pi/Pfセットではないのに双方向なので注目すべき例外です。</seg>
       </tuv>
     </tu>
     <tu>

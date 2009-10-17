@@ -2,7 +2,7 @@
 
 # 運営者
 
-大和利之 toshiyuki.yamato@gmail.com
+    大和利之 toshiyuki.yamato@gmail.com
 
 # リポジトリのURL
 
@@ -48,7 +48,7 @@ Perl6のドキュメントを日本語に翻訳するプロジェクトです。
 
 # おすすめ設定
 
-Dictionary Tooltipにアルクの英辞郎 on the WEBを追加する設定です。
+FireFoxのDictionary Tooltipにアルクの英辞郎 on the WEBを追加する設定です。
 
 1. FireFoxのアドオンDictionary Tooltipを導入します。
 2. Dictionary Tooltipの設定でAdd New Websiteでサイトを追加します。
