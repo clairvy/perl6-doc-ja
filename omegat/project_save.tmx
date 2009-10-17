@@ -169,7 +169,7 @@
         <seg>To the extent allowed by sublanguages' parsers, Perl is parsed using a one-pass, predictive parser.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>サブ言語のパーサーによる拡張を許容するため、Perlはワンパスの予測的パーサーでパースされます。</seg>
+        <seg>サブ言語のパーサーによる拡張のために、Perlはワンパスの予測的パーサーによって解析されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -177,7 +177,7 @@
         <seg>That is, lookahead of more than one &quot;longest token&quot; is discouraged.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>すなわち、1つより多くの「最も長いトークン」の先読みは推奨されません。</seg>
+        <seg>つまり、複数の&quot;最長トークン&quot;の先読みは推奨しません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -185,7 +185,7 @@
         <seg>The currently known exceptions to this are where the parser must:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>現在知られている例外は、パーサーが以下のことをしなければならない場所:</seg>
+        <seg>これについて現在知られている例外は、パーサーが以下のようにしなければならない場合です:</seg>
       </tuv>
     </tu>
     <tu>
@@ -193,7 +193,7 @@
         <seg>Locate the end of interpolated expressions that begin with a sigil and might or might not end with brackets.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>印で始まり、ブロックで終わるか終わらない補完された式の終わりに設置しなければならない</seg>
+        <seg>sigilで始まり、ブロックで終わる、または終わらないかもしれない展開式の終了位置を決定する</seg>
       </tuv>
     </tu>
     <tu>
@@ -201,7 +201,7 @@
         <seg>Recognize that a reduce operator is not really beginning a &lt;c0&gt;[...]&lt;/c0&gt; composer.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>減少演算子が&lt;c0&gt;[...]&lt;/c0&gt;の作成者の始まりとは限らないと認識しなければならない</seg>
+        <seg>減少演算子が&lt;c0&gt;[...]&lt;/c0&gt;の生成を開始するとは限らないと認識する</seg>
       </tuv>
     </tu>
     <tu>
@@ -209,7 +209,7 @@
         <seg>In the abstract, Perl is written in Unicode, and has consistent Unicode semantics regardless of the underlying text representations.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perlはユニコードで記述され、論理的には基礎的なテキスト表現に関わらず一貫性のあるユニコードの意味を持っています。</seg>
+        <seg>理論上はPerlはユニコードで記述され、基本的なテキスト表現に関係なく一貫したユニコードのセマンティクス(意味)を持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -217,7 +217,7 @@
         <seg>By default Perl presents Unicode in &quot;NFG&quot; formation, where each grapheme counts as one character.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>それぞれの書記素が1文字として数えられる場所では、デフォルトでPerlはユニコードをNFG形式で表現します。</seg>
+        <seg>それぞれの書記素が1文字として数えられる場所では、PerlはデフォルトでユニコードをNFG形式で表現します。</seg>
       </tuv>
     </tu>
     <tu>
