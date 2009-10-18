@@ -169,7 +169,7 @@
         <seg>This document summarizes Apocalypse 2, which covers small-scale lexical items and typological issues.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>このドキュメントはApocalypse 2の要約です。Apocalypse 2は小規模の字句項目と類型的問題を取り上げます。</seg>
+        <seg>このドキュメントはApocalypse 2の要約で、小規模の字句項目と類型的問題を取り上げます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -886,6 +886,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>it is an end-of-line comment, not an embedded comment.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>埋め込みコメントではなく行コメントです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Write:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>次のように書くと:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>to mean the other thing.</seg>
       </tuv>
       <tuv lang="JA">
@@ -897,7 +913,7 @@
         <seg>In general, whitespace is optional in Perl 6 except where it is needed to separate constructs that would be misconstrued as a single token or other syntactic unit.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>一般に、単一のトークンか他の構文単位と誤解される構造を分離する必要がある場合を除いて、Perl 6では空白は任意です。</seg>
+        <seg>一般に、単独のトークンか他の構文上の単位と間違って解釈される構成を分離する必要がある場所を除いて、Perl 6での空白は任意です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -905,7 +921,15 @@
         <seg>(In other words, Perl 6 follows the standard &lt;i0&gt;longest-token&lt;/i0&gt; principle, or in the cases of large constructs, a &lt;i1&gt;prefer shifting to reducing&lt;/i1&gt; principle.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(言い換えれば、Perl 6は標準の&lt;i0&gt;最も長いトークン&lt;/i0&gt;の原則、または大きな構文の場合、&lt;i1&gt;prefer shifting to reducing&lt;/i1&gt;の原則に従います。</seg>
+        <seg>(言い換えれば、Perl 6は標準の&lt;i0&gt;最長トークン&lt;/i0&gt;の原則、または大きな構文の場合は&lt;i1&gt;prefer shifting to reducing&lt;/i1&gt;の原則に従います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See &lt;a2&gt;Grammatical Categories&lt;/a2&gt; below for more on how a Perl program is analyzed into tokens.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perlプログラムがどのようにトークンに解析されるか、詳細については&lt;a2&gt;Grammatical Categories&lt;/a2&gt;を参照して下さい。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -913,7 +937,7 @@
         <seg>This is an unchanging deep rule, but the surface ramifications of it change as various operators and macros are added to or removed from the language, which we expect to happen because Perl 6 is designed to be a mutable language.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これは不変の深いルールです。しかしPerl 6は変化する言語として設計されているので、表面上の影響は様々な演算子に変化し、マクロが言語に加えられるか削除されることを期待しています。</seg>
+        <seg>これは不変の深いルールです。しかしPerl 6は可変の言語となるように設計されているので、様々な演算子や言語にマクロを追加したり削除することで表面上の悪影響を変えるということが起こるのを我々は期待しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -921,7 +945,7 @@
         <seg>In particular, there is a natural conflict between postfix operators and infix operators, either of which may occur after a term.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>特に項の後の後置演算子と2項演算子の間で競合があります。</seg>
+        <seg>特に、項の後で後置演算子と2項演算子の間の自然な競合がどちらかで起こります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -937,7 +961,7 @@
         <seg>Postfix operators may never have intervening space, though they may have an intervening dot.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>後置演算子は間に入る空白を持ちませんが、間に入るドットを持つかもしれません。</seg>
+        <seg>後置演算子は間に入る空白を持ちませんが、間に入るドットを持つことがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -945,7 +969,23 @@
         <seg>If further separation is desired, an unspace or embedded comment may be used as described above, as long as no whitespace occurs outside the unspace or embedded comment.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>さらなる分離が望まれ、空白でないものがunspaceか埋め込みコメントの外側に発生するなら、前述のunspaceか埋め込みコメントが使われるでしょう。</seg>
+        <seg>その上で分離が望まれるなら、空白がunspaceか埋め込みコメントの外側に発生しない限り前述のunspaceか埋め込みコメントが使われるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, if you were to add your own &lt;c0&gt;infix:&lt;++&gt;&lt;/c0&gt; operator, then it must have space before it.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>例えばあなたの&lt;c0&gt;infix:&lt;++&gt;&lt;/c0&gt;という2項演算子を追加するとしたら、その前に必ず空白が必要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The normal autoincrementing &lt;c1&gt;postfix:&lt;++&gt;&lt;/c1&gt; operator may never have space before it, but may be written in any of these forms:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>標準の自動インクリメント&lt;c1&gt;postfix:&lt;++&gt;&lt;/c1&gt;演算子はその前に空白を持ちませんが、これらの形式のどれかで書かれます:</seg>
       </tuv>
     </tu>
     <tu>
