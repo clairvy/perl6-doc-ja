@@ -633,7 +633,7 @@
         <seg>Note however that bare circumfix or postcircumfix &lt;c0&gt;&lt;&lt;...&gt;&gt;&lt;/c0&gt; is not a user-selected bracket, but the ASCII variant of the &lt;c1&gt;«...»&lt;/c1&gt; interpolating word list.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>裸のcircumfixまたはpostcircumfix &lt;c0&gt;&lt;&lt;...&gt;&gt;&lt;/c0&gt;はユーザーが使用可能な括弧ではありません。しかしASCIIの変形の&lt;c1&gt;«...»&lt;/c1&gt;補完単語リストです。</seg>
+        <seg>しかし注意として、裸の接周辞または後置接周辞&lt;c0&gt;&lt;&lt;...&gt;&gt;&lt;/c0&gt;はユーザー選択の括弧ではなく、&lt;c1&gt;«...»&lt;/c1&gt;のワードリストを展開したASCII形式の別記法です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -641,7 +641,7 @@
         <seg>Only &lt;c2&gt;#&lt;/c2&gt; and the &lt;c3&gt;q&lt;/c3&gt;-style quoters (including &lt;c4&gt;m&lt;/c4&gt;, &lt;c5&gt;s&lt;/c5&gt;, &lt;c6&gt;tr&lt;/c6&gt;, and &lt;c7&gt;rx&lt;/c7&gt;) enable subsequent user-selected brackets.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c2&gt;#&lt;/c2&gt;と&lt;c3&gt;q&lt;/c3&gt;-style(&lt;c4&gt;m&lt;/c4&gt;、&lt;c5&gt;s&lt;/c5&gt;、 &lt;c6&gt;tr&lt;/c6&gt;、&lt;c7&gt;rx&lt;/c7&gt;)だけがユーザーが選んだ括弧を可能にします。</seg>
+        <seg>&lt;c2&gt;#&lt;/c2&gt;と&lt;c3&gt;q&lt;/c3&gt;スタイルのクォート(&lt;c4&gt;m&lt;/c4&gt;、&lt;c5&gt;s&lt;/c5&gt;、 &lt;c6&gt;tr&lt;/c6&gt;、&lt;c7&gt;rx&lt;/c7&gt;を含む)だけが後に続くユーザー選択の括弧を使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -649,7 +649,7 @@
         <seg>Some languages such as C allow you to escape newline characters to combine lines.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Cのようないくつかの言語は、行を結合するために改行をエスケープすることを許可しています。</seg>
+        <seg>C言語のようないくつかの言語は、行を結合するために改行をエスケープすることを認めています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -657,7 +657,7 @@
         <seg>Other languages (such as regexes) allow you to backslash a space character for various reasons.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>正規表現のような他の言語はバックスラッシュをを様々な理由で使用します。</seg>
+        <seg>他の言語(正規表現など)は空白文字のバックスラッシュを様々な理由で認めています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -665,7 +665,7 @@
         <seg>Perl 6 generalizes this notion to any kind of whitespace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 6はこれをあらゆる種類の空白という概念に統一します。</seg>
+        <seg>Perl 6はこの概念をあらゆる種類の空白に一般化します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -673,7 +673,7 @@
         <seg>Any contiguous whitespace (including comments) may be hidden from the parser by prefixing it with &lt;c0&gt;\&lt;/c0&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>全ての連続する空白(コメント含む)は&lt;c0&gt;\&lt;/c0&gt;を前に置くことによってパーサーから隠されます。</seg>
+        <seg>あらゆる連続する空白(コメント含む)は&lt;c0&gt;\&lt;/c0&gt;を前置することによってパーサーから隠蔽されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -681,7 +681,7 @@
         <seg>This is known as the &quot;unspace&quot;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これは&quot;unspace&quot;として知られています。</seg>
+        <seg>これはunspaceとして知られています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -689,7 +689,7 @@
         <seg>An unspace can suppress any of several whitespace dependencies in Perl.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>unspaceはPerlの様々な空白を抑制することが出来ます。</seg>
+        <seg>unspaceはPerlの様々な空白のいずれかの依存関係を隠することが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -697,7 +697,7 @@
         <seg>For example, since Perl requires an absence of whitespace between a noun and a postfix operator, using unspace lets you line up postfix operators:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例えばPerlは名詞と後置演算子の間に空白を無いことを要求しますが、unspaceを使うことで後置演算子をつなげることが出来ます。</seg>
+        <seg>例えばPerlは名詞と後置演算子の間に空白が無いことを要求するので、unspaceを使うことで後置演算子を繋げることが出来ます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -705,7 +705,7 @@
         <seg>As a special case to support the use above, a backslash where a postfix is expected is considered a degenerate form of unspace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>特別なケースで、後置演算子の所のバックスラッシュはunspaceの縮退した形式と見なします。</seg>
+        <seg>上記の使い方をサポートするための特別な場合として、後置演算子が期待される場所でのバックスラッシュはunspaceの変質した形式と見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -713,7 +713,7 @@
         <seg>Note that whitespace is not allowed before that, hence</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これの前に空白は置けません。</seg>
+        <seg>注意として、それの前に空白は置けません。そのため</seg>
       </tuv>
     </tu>
     <tu>
@@ -721,7 +721,7 @@
         <seg>is a syntax error (two terms in a row).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>は構文エラーです。</seg>
+        <seg>は構文エラーです(行に2つの項)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -737,7 +737,7 @@
         <seg>will be parsed as a list operator with a &lt;c0&gt;Capture&lt;/c0&gt; argument:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>は&lt;c0&gt;Capture&lt;/c0&gt;と一緒のリスト演算子とパースされます</seg>
+        <seg>は&lt;c0&gt;Capture&lt;/c0&gt;引数を伴うリスト演算子と解析されます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -745,7 +745,15 @@
         <seg>However, other forms of unspace may usefully be preceded by whitespace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、他の形式のunspaceは空白に先行して役に立つでしょう。</seg>
+        <seg>しかし、他の形式のunspaceは空白の前にきて役に立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Unary uses of backslash may therefore never be followed by whitespace or they would be taken as an unspace.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(それ故に単項のバックスラッシュの使われ方は空白が続かないこと、または空白をunspaceと受け取ることです。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -753,7 +761,7 @@
         <seg>Other postfix operators may also make use of unspace:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>他の後置演算子もunspaceを活用できるでしょう。</seg>
+        <seg>他の後置演算子もunspaceを活用できます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -761,7 +769,7 @@
         <seg>Another normal use of a you-don't-see-this-space is typically to put a dotted postfix on the next line:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>もう一つの典型的な使い方は、ドット後置演算子を次の行に置くことです。</seg>
+        <seg>もう一つ見えない空白の使い方は、典型的にはドット後置演算子を次の行に置くことです:</seg>
       </tuv>
     </tu>
     <tu>
@@ -769,7 +777,15 @@
         <seg>But unspace is mainly about language extensibility: it lets you continue the line in any situation where a newline might confuse the parser, regardless of your currently installed parser.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしunspaceは主に言語の拡張性に関するものです。あなたが現在インストールしているパーサーに関わらず、改行がパーサーを混乱させるようなあらゆる場面で行を継続することが出来ます。</seg>
+        <seg>しかしunspaceは主に言語の拡張性に関するものです。あなたが現在インストールしているパーサーに関わらず、改行がパーサーを混乱させるかもしれないあらゆる場面で行を継続させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Unless, of course, you override the unspace rule itself...)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(もちろん、あなたがunspaceのルール自体を上書きしなければですが・・・)</seg>
       </tuv>
     </tu>
     <tu>
@@ -785,7 +801,7 @@
         <seg>As a result, unspace is not allowed within a token.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>その結果として、unspaceはトークンとして許可されません。</seg>
+        <seg>その結果として、unspaceはトークンとして認められません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -793,7 +809,15 @@
         <seg>Additionally, line numbers are still counted if the unspace contains one or more newlines.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>加えて、unspaceが改行を含むなら行として数えられます。</seg>
+        <seg>加えて、unspaceが1つ以上の改行を含むなら依然として行番号がカウントされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;c0&gt;#&lt;/c0&gt; following such a newline is always an end-of-line comment, as described above.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>そのような改行に続く&lt;c0&gt;#&lt;/c0&gt;は上に述べたように常に行コメントです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -801,7 +825,7 @@
         <seg>Since Pod chunks count as whitespace to the language, they are also swallowed up by unspace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>PODチャンクは空白として数えられるので、unspaceで飲み込むことが出来ます。</seg>
+        <seg>Podチャンク(かたまり)は言語にとって空白として数えられるので、それもunspaceによって取り込むことが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -809,7 +833,7 @@
         <seg>Heredoc boundaries are suppressed, however, so you can split excessively long heredoc intro lines like this:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ヒアドキュメントの境界は抑制されます。けれども、あなたは過度に長いヒアドキュメントの出だしの行をこのように分割できます。</seg>
+        <seg>ヒアドキュメントの境界は隠蔽されます。けれども、あなたは過度に長いヒアドキュメントの出だしの行をこのように分割できます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -817,7 +841,7 @@
         <seg>To the heredoc parser that just looks like:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ヒアドキュメントのパーサーは次のようにしか見ません。</seg>
+        <seg>ヒアドキュメントのパーサーは単にこのように見ます:</seg>
       </tuv>
     </tu>
     <tu>

@@ -47,3 +47,42 @@ visual appearance	外観
 corner quotes	かぎ括弧	
 preferably	好む	
 implicitly	暗黙に	
+circumfix	接周辞	
+postcircumfix	後置接周辞	
+note	注意、備考	
+subsequent	それに続く	
+generalize	一般化する	
+generalizes	一般化する	
+suppress	隠す	
+dependencies	依存関係	
+several	いくつもの、様々な	
+any of several	様々な～のいずれか	
+absence	欠如	
+since	～なので、～だから	
+hence	そのため、ゆえに	
+term	項	
+terms	項	
+argument	(関数の)引数	
+arguments	(関数の)引数	
+usefully	有益に	
+precede	前に置く、先行する	
+preceded	前に置く、先行する	
+unary	単項	
+taken as	～と受け取る	
+uses	使われ方	
+make use of	～を活用する	
+postfix	後置、接尾辞	
+operator	演算子	
+operators	演算子	
+typically	典型的	
+unspace	見えない空白	Perl 6のパーサーから隠蔽される空白
+extensibility	拡張性	
+override	上書きする、無効にする	
+allowed	認められる	
+one or more	1つ以上	
+end-of-line comment	行コメント	# comment
+swallow up	飲み込む、吸収する、使い尽くす	
+swallowed up	飲み込む、吸収する、使い尽くす	
+heredoc	ヒアドキュメント	
+suppressed	隠蔽される	
+boundaries	境界	
