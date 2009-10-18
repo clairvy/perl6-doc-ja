@@ -846,10 +846,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Note that this is one of those cases in which it is fine to have whitespace before the unspace, since we're only trying to suppress the newline transition, not all whitespace as in the case of postfix parsing.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>注意として、これはunspaceの前に空白を置いても構わないケースの1つです。なので接尾辞の解析については我々は全ての空白ではなく改行の変わり目を隠そうと試みているだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Note also that the example above is not meant to spec how the test suite works.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(さらに注意として、上記の例はテストスイートの動作仕様を意図していません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An unspace may contain a comment, but a comment may not contain an unspace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>unspaceはコメントを含むかもしれませんが、コメントはunspaceを含まないでしょう。</seg>
+        <seg>unspaceはコメントを含むかもしれませんが、コメントはunspaceを含みません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -857,7 +873,7 @@
         <seg>In particular, end-of-line comments do not treat backslash as significant.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>特に、行コメントはバックスラッシュを意味のあるものと見なしません。</seg>
+        <seg>特に、行コメントはバックスラッシュを意味のあるものとして扱いません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -865,7 +881,7 @@
         <seg>If you say:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>もしあなたが次のようにするなら</seg>
+        <seg>もしあなたが次のようにするなら:</seg>
       </tuv>
     </tu>
     <tu>

@@ -47,8 +47,8 @@ visual appearance	外観
 corner quotes	かぎ括弧	
 preferably	好む	
 implicitly	暗黙に	
-circumfix	接周辞	
-postcircumfix	後置接周辞	
+circumfix	接周辞	<< >>
+postcircumfix	後置接周辞	<< >>
 note	注意、備考	
 subsequent	それに続く	
 generalize	一般化する	
@@ -86,3 +86,7 @@ swallowed up	飲み込む、吸収する、使い尽くす
 heredoc	ヒアドキュメント	
 suppressed	隠蔽される	
 boundaries	境界	
+Note that	注意して下さい、注意として	
+transition	変わり目、変化、移行	
+in the case of	～の場合は、～ついては	
+meant to	～であることを意図されている	
