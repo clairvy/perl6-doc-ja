@@ -785,7 +785,7 @@
         <seg>(Unless, of course, you override the unspace rule itself...)</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(もちろん、あなたがunspaceのルール自体を上書きしなければですが・・・)</seg>
+        <seg>(もちろん、あなたがunspaceのルール自体を上書きすれば別ですが・・・)</seg>
       </tuv>
     </tu>
     <tu>
@@ -993,7 +993,7 @@
         <seg>A consequence of the postfix rule is that (except when delimiting a quote or terminating an unspace) a dot with whitespace in front of it is always considered a method call on &lt;c0&gt;$_&lt;/c0&gt; where a term is expected.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(クォートで区切るかunspaceを終了することは除いて)項が期待される場所で前に空白を伴うドットは&lt;c0&gt;$_&lt;/c0&gt;のメソッド呼び出しと解釈されます。 それが後置のルールです。</seg>
+        <seg>(クォートを区切るかunspaceを終了することは除いて)項が期待される場所で前に空白があるドットは常に&lt;c0&gt;$_&lt;/c0&gt;のメソッド呼び出しとみなされます。 それが接尾辞のルールの結果です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1001,7 +1001,7 @@
         <seg>If a term is not expected at this point, it is a syntax error.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>その点で項が期待されていないなら構文エラーです。</seg>
+        <seg>その箇所で項が期待されていないなら、それは構文エラーです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1009,7 +1009,7 @@
         <seg>(Unless, of course, there is an infix operator of that name beginning with dot.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(もちろんドットで始まる2項演算子は有りません。)</seg>
+        <seg>(もちろんドットで始まる名前の2項演算子があるなら別ですが。)</seg>
       </tuv>
     </tu>
     <tu>
