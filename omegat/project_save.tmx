@@ -14,6 +14,14 @@
   <body>
     <tu>
       <tuv lang="EN-US">
+        <seg>and</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>と</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document originally summarized Apocalypse 1, which covers the initial design concept.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1017,7 +1025,15 @@
         <seg>You could, for instance, define a Fortranly &lt;c1&gt;infix:&lt;.EQ.&gt;&lt;/c1&gt; if the fit took you.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例えばフォートランっぽい&lt;c1&gt;infix:&lt;.EQ.&gt;&lt;/c1&gt;を定義して下さい。</seg>
+        <seg>例えば、その気になればFortran風の&lt;c1&gt;infix:&lt;.EQ.&gt;&lt;/c1&gt;を定義することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But you'll have to be sure to always put whitespace in front of it, or it would be interpreted as a postfix method call instead.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>しかしあなたはそれの前に常に空白を置くか、代わりに後置メソッド呼び出しと解釈されるようにして気をつけなければなりません。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1033,7 +1049,7 @@
         <seg>will always be interpreted as</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>は常に以下のように解釈されるでしょう。</seg>
+        <seg>は常に次のように解釈されるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1049,7 +1065,7 @@
         <seg>Use some variant of</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>いくつかの変化形は</seg>
+        <seg>以下のいくつかの変化形を使って下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1062,10 +1078,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One consequence of all this is that you may no longer write a Num as &lt;c0&gt;42.&lt;/c0&gt; with just a trailing dot.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これら全ての内の1つの結果として、ただの終端ドットを伴うNumを &lt;c0&gt;42.&lt;/c0&gt;として書くことはもはやできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You must instead say either &lt;c1&gt;42&lt;/c1&gt; or &lt;c2&gt;42.0&lt;/c2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>代わりにあなたは&lt;c1&gt;42&lt;/c1&gt;か&lt;c2&gt;42.0&lt;/c2&gt;のどちらかにしなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other words, a dot following a number can only be a decimal point if the following character is a digit.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>言い換えれば、続く文字が数字なら、数に続くドットは小数点にしかなりません。</seg>
+        <seg>言い換えれば、もし直後の文字が数字なら、数の直後のドットは小数点にしかなり得ません。</seg>
       </tuv>
     </tu>
     <tu>
