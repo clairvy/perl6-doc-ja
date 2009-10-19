@@ -1105,7 +1105,15 @@
         <seg>Otherwise the postfix dot will be taken to be the start of some kind of method call syntax.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>それ以外の場合は後置のドットはいくつかの種類のメソッド呼び出しの開始と解釈されるでしょう。</seg>
+        <seg>そうでなければ、後置のドットはいくつかの種類のメソッド呼び出し構文の開始と取られるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(The &lt;c3&gt;.123&lt;/c3&gt; form with a leading dot is still allowed however when a term is expected, and is equivalent to &lt;c4&gt;0.123&lt;/c4&gt; rather than &lt;c5&gt;$_.123&lt;/c5&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(項が期待される場合でも、直前のドットを伴う&lt;c3&gt;.123&lt;/c3&gt;形式がまだ認められています。そして&lt;c5&gt;$_.123&lt;/c5&gt;ではなく&lt;c4&gt;0.123&lt;/c4&gt;と同じです。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1113,7 +1121,7 @@
         <seg>In support of OO encapsulation, there is a new fundamental datatype: &lt;s0&gt;P6opaque&lt;/s0&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>オブジェクト指向のカプセル化で、&lt;s0&gt;P6opaque&lt;/s0&gt;という新しい基本データ型があります。</seg>
+        <seg>オブジェクト指向カプセル化のサポートの中で、新しい基本データ型があります: &lt;s0&gt;P6opaque&lt;/s0&gt;です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1121,7 +1129,7 @@
         <seg>External access to opaque objects is always through method calls, even for attributes.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>opaqueオブジェクトへの外部からのアクセスは常にメソッド呼び出しで行われます。属性でさえそうです。</seg>
+        <seg>opaqueオブジェクトへの外部からのアクセスは常にメソッド呼び出しを通して行われます。属性でさえそうです。</seg>
       </tuv>
     </tu>
     <tu>
