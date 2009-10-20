@@ -1113,7 +1113,7 @@
         <seg>(The &lt;c3&gt;.123&lt;/c3&gt; form with a leading dot is still allowed however when a term is expected, and is equivalent to &lt;c4&gt;0.123&lt;/c4&gt; rather than &lt;c5&gt;$_.123&lt;/c5&gt;.)</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(項が期待される場合でも、直前のドットを伴う&lt;c3&gt;.123&lt;/c3&gt;形式がまだ認められています。そして&lt;c5&gt;$_.123&lt;/c5&gt;ではなく&lt;c4&gt;0.123&lt;/c4&gt;と同じです。)</seg>
+        <seg>(項が期待される場合でも、直前のドットを伴う&lt;c3&gt;.123&lt;/c3&gt;形式がまだ認められています。そしてそれは&lt;c5&gt;$_.123&lt;/c5&gt;ではなく&lt;c4&gt;0.123&lt;/c4&gt;と同じです。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1137,7 +1137,7 @@
         <seg>Perl 6 has an optional type system that helps you write safer code that performs better.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 6はより良く動作する安全なコードを書く助けとなる任意的な型システムを持ちます。</seg>
+        <seg>Perl 6はより安全でより良く動作するコードを書くことを助ける選択自由な型システムを持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1145,7 +1145,7 @@
         <seg>The compiler is free to infer what type information it can from the types you supply, but will not complain about missing type information unless you ask it to.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>あなたが提供した型からの情報の推測はコンパイラーが自由に行います。しかし型の情報が欠落していても文句は言いません。</seg>
+        <seg>コンパイラがあなたの提供可能な型情報を推測するのは自由です。しかしあなたが尋ねない限り、欠落した型情報について文句を言いません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1153,7 +1153,7 @@
         <seg>Types are officially compared using name equivalence rather than structural equivalence.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>型は正式には構造的な等価性よりも名前の等価性で比較されます。</seg>
+        <seg>型は構造的な等価性よりも名前の等価性で正式に比較されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1161,7 +1161,7 @@
         <seg>However, we're rather liberal in what we consider a name.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、我々は名前を考えるのは自由であることを好みます。</seg>
+        <seg>しかし、我々は名前を考えることに寛大であることを好みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1169,7 +1169,7 @@
         <seg>For example, the name includes the version and authority associated with the module defining the type (even if the type itself is &quot;anonymous&quot;).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例えば、(型自体が無名であったとしても)名前は型を定義するモジュールに関連するバージョンと権限を含むことが出来ます。</seg>
+        <seg>例えば、名前は型を定義するモジュールと関連付けられたバージョンと権限を含みます(たとえ型自体が無名でも)。</seg>
       </tuv>
     </tu>
     <tu>
