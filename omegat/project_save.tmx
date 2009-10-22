@@ -1169,7 +1169,7 @@
         <seg>For example, the name includes the version and authority associated with the module defining the type (even if the type itself is &quot;anonymous&quot;).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例えば、名前は型を定義するモジュールと関連付けられたバージョンと権限を含みます(たとえ型自体が無名でも)。</seg>
+        <seg>例えば、名前は型を定義するモジュールに関連付けられたバージョンと権限を含みます(たとえ型自体が無名でも)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1177,7 +1177,7 @@
         <seg>Beyond that, when you instantiate a parametric type, the arguments are considered part of the &quot;long name&quot; of the resulting type, so one &lt;c0&gt;Array of Int&lt;/c0&gt; is equivalent to another &lt;c1&gt;Array of Int&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>その上で、パラメータ付きの型をインスタンス化する場合、引数は結果の型の&quot;長い名前&quot;の一部と考えられるので、ある&lt;c0&gt;Array of Int&lt;/c0&gt;は他の&lt;c1&gt;Array of Int&lt;/c1&gt;と同じです。</seg>
+        <seg>その上でパラメータを伴う型をインスタンス化する場合、引数は結果となる型の長い名前の一部と考えられるので、ある&lt;c0&gt;Array of Int&lt;/c0&gt;は他の&lt;c1&gt;Array of Int&lt;/c1&gt;と同等です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1185,7 +1185,7 @@
         <seg>(Another way to look at it is that the type instantiation &quot;factory&quot; is memoized.) Typename aliases are considered equivalent to the original type.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(それを見るもう一つの方法は、インスタンス化する&quot;factory&quot;がメモ化されることです。)型名の別名は元の型と同等と考えられます。</seg>
+        <seg>(それを調べるもう一つの方法は、型をインスタンス化するファクトリーがメモ化されることです。)型名の別名は元の型と同等とみなされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1193,7 +1193,7 @@
         <seg>In particular, the &lt;c2&gt;Array of Int&lt;/c2&gt; syntax is just sugar for &lt;c3&gt;Array:of(Int)&lt;/c3&gt;, which is the canonical form of an instantiated generic type.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>特に&lt;c2&gt;Array of Int&lt;/c2&gt;という構文は単にジェネリックタイプをインスタンス化する&lt;c3&gt;Array:of(Int)&lt;/c3&gt;の標準的なシュガーです。</seg>
+        <seg>特に&lt;c2&gt;Array of Int&lt;/c2&gt;という構文はインスタンス化されたジェネリックタイプの標準形である&lt;c3&gt;Array:of(Int)&lt;/c3&gt;の単なるシュガーです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1201,7 +1201,7 @@
         <seg>This name equivalence of parametric types extends only to parameters that can be considered immutable (or that at least can have an immutable snapshot taken of them).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>このパラメータ付きの型の名前の等価性は不変(または少なくとも不変のパラメータのスナップショットを撮ることが出来る)と考えられるパラメータだけを拡張します。</seg>
+        <seg>このパラメータを伴う型の名前の等価性は不変(または少なくとも不不変のスナップショットを撮ることが出来る)とみなせるパラメータだけを拡張します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1209,7 +1209,7 @@
         <seg>Two distinct classes are never considered equivalent even if they have the same attributes because classes are not considered immutable.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>クラスは不変と考えられないので、2つの明らかに異なるクラスが同じ属性を持っているとしても同じとは見なされません。</seg>
+        <seg>たとえ同じ属性を持っていても2つの別個のクラスは決して同等と見なされません。なぜならクラスは不変とみなされないからです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1225,7 +1225,7 @@
         <seg>Properties are like object attributes, except that they're managed by the individual object rather than by the object's class.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>オブジェクトのクラスではなく個々のオブジェクトに管理されているのを除いて、プロパティはオブジェクトの属性に似ています。</seg>
+        <seg>オブジェクトのクラスではなく個々のオブジェクトに管理されている場合を除いて、プロパティはオブジェクトの属性に似ています。</seg>
       </tuv>
     </tu>
     <tu>
