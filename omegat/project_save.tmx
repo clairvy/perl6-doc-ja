@@ -1193,7 +1193,7 @@
         <seg>In particular, the &lt;c2&gt;Array of Int&lt;/c2&gt; syntax is just sugar for &lt;c3&gt;Array:of(Int)&lt;/c3&gt;, which is the canonical form of an instantiated generic type.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>特に&lt;c2&gt;Array of Int&lt;/c2&gt;という構文はインスタンス化されたジェネリックタイプの標準形である&lt;c3&gt;Array:of(Int)&lt;/c3&gt;の単なるシュガーです。</seg>
+        <seg>特に&lt;c2&gt;Array of Int&lt;/c2&gt;という構文はインスタンス化されたジェネリックタイプの正規形である&lt;c3&gt;Array:of(Int)&lt;/c3&gt;の単なるシュガーです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1201,7 +1201,7 @@
         <seg>This name equivalence of parametric types extends only to parameters that can be considered immutable (or that at least can have an immutable snapshot taken of them).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>このパラメータを伴う型の名前の等価性は不変(または少なくとも不不変のスナップショットを撮ることが出来る)とみなせるパラメータだけを拡張します。</seg>
+        <seg>このパラメータを伴う型の名前の等価性は不変(または少なくとも不変のスナップショットを撮ることが出来る)とみなせるパラメータだけを拡張します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1209,7 +1209,7 @@
         <seg>Two distinct classes are never considered equivalent even if they have the same attributes because classes are not considered immutable.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>たとえ同じ属性を持っていても2つの別個のクラスは決して同等と見なされません。なぜならクラスは不変とみなされないからです。</seg>
+        <seg>別個の2つのクラスはたとえ同じ属性を持っていても決して同等とは見なされません。なぜならクラスは不変とみなされないからです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1233,7 +1233,7 @@
         <seg>According to S12, properties are actually implemented by a kind of mixin mechanism, and such mixins are accomplished by the generation of an individual anonymous class for the object (unless an identical anonymous class already exists and can safely be shared).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>S12によれば、プロパティは実際にはミックスインのメカニズムで実装され、そのようなミックスインはオブジェクトに対する個々の無名クラスの生成によって完成します(同一の無名クラスが既に存在し、安全に共有できるのでなければ)。</seg>
+        <seg>S12に従って、プロパティは実際にはミックスインメカニズムのようなもので実装され、そのようなミックスインはオブジェクトに対する個々の無名クラスの生成によって完成します(同じ無名クラスがまだ存在せず、安全に共有できるのであれば)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1241,7 +1241,7 @@
         <seg>Properties applied to objects constructed at compile-time, such as variables and classes, are also called &lt;s0&gt;traits&lt;/s0&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>プロパティはコンパイル時に構成される変数やクラスのようなオブジェクトに適用され、&lt;s0&gt;traits&lt;/s0&gt;とも呼ばれます。</seg>
+        <seg>プロパティはコンパイル時に構成される変数やクラスなどに適用され、&lt;s0&gt;トレイト&lt;/s0&gt;とも呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1249,7 +1249,7 @@
         <seg>Traits cannot be changed at run-time.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Traitsは実行時に変更することは出来ません。</seg>
+        <seg>トレイトを実行時に変更することは出来ません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1257,7 +1257,7 @@
         <seg>Changes to run-time properties are done via mixin instead, so that the compiler can optimize based on declared traits.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>実行時のプロパティの変更は代わりにミックスインによって行われます。これによってコンパイラーは宣言されたtraitsを元に最適化することが出来ます。</seg>
+        <seg>実行時のプロパティの変更は代わりにミックスインによって行われます。これによってコンパイラーは宣言されたトレイトを元に最適化することが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1265,7 +1265,7 @@
         <seg>Perl 6 is an OO engine, but you're not generally required to think in OO when that's inconvenient.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 6はオブジェクト指向エンジンですが、それが不便な時は大抵は必要有りません。</seg>
+        <seg>Perl 6はオブジェクト指向エンジンですが、都合が悪いならオブジェクト指向で考える必要はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1273,7 +1273,7 @@
         <seg>However, some built-in concepts such as filehandles will be more object-oriented in a user-visible way than in Perl 5.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、ファイルハンドルのようないくつかのビルトインの概念はPerl 5以上にオブジェクト指向的になるでしょう。</seg>
+        <seg>しかし、ファイルハンドルのようないくつかのビルトインの概念はPerl 5以上にユーザーに見える形でオブジェクト指向的になるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1281,7 +1281,7 @@
         <seg>A variable's type is a constraint indicating what sorts of values the variable may contain.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>変数の型は変数が含む可能性がある値の性質を示す制約です。</seg>
+        <seg>変数の型とは、変数がどのような値を含む可能性があるかを示す制約です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1289,7 +1289,7 @@
         <seg>More precisely, it's a promise that the object or objects contained in the variable are capable of responding to the methods of the indicated &quot;role&quot;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>より正確には、オブジェクトまたは変数に含まれるオブジェクトが&quot;role&quot;が示すメソッドに応答できることの保証です。</seg>
+        <seg>より正確には、オブジェクトまたは変数に格納されたオブジェクトがroleで示されたメソッドに応答できることの保証です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1305,7 +1305,7 @@
         <seg>A variable may itself be bound to a container type that specifies how the container works, without specifying what kinds of things it contains.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>変数自体はどの種類のものが含まれているか指定すること無しに、コンテナがどの様に動作するか指定するコンテナ型でなければなりません。</seg>
+        <seg>変数自体はどの種類のものを含むか指定せず、どのように動作するかを指定するコンテナ型にバインドされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1313,7 +1313,7 @@
         <seg>Constraints and container types can be used together:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>制約とコンテナの型は一緒に使用することが出来ます:</seg>
+        <seg>制約とコンテナ型は一緒に使用することができます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1321,7 +1321,7 @@
         <seg>Note that &lt;c0&gt;$x&lt;/c0&gt; is also initialized to the &lt;c1&gt;Int&lt;/c1&gt; type object.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;$x&lt;/c0&gt;はまた、&lt;c1&gt;Int&lt;/c1&gt;型オブジェクトで初期化されることに注意して下さい。</seg>
+        <seg>&lt;c0&gt;$x&lt;/c0&gt;が&lt;c1&gt;Int&lt;/c1&gt;型オブジェクトで初期化されることにも注意して下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1337,7 +1337,7 @@
         <seg>&lt;c0&gt;my Dog $spot&lt;/c0&gt; by itself does not automatically call a &lt;c1&gt;Dog&lt;/c1&gt; constructor.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;my Dog $spot&lt;/c0&gt;それ自体は&lt;c1&gt;Dog&lt;/c1&gt;のコンストラクターを自動で呼びません。</seg>
+        <seg>&lt;c0&gt;my Dog $spot&lt;/c0&gt;自体は&lt;c1&gt;Dog&lt;/c1&gt;のコンストラクターを自動で呼びません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1345,7 +1345,7 @@
         <seg>It merely assigns an undefined &lt;c2&gt;Dog&lt;/c2&gt; prototype object to &lt;c3&gt;$spot&lt;/c3&gt;:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>それは単に未定義の&lt;c2&gt;Dog&lt;/c2&gt;のプロトタイプオブジェクトを&lt;c3&gt;$spot&lt;/c3&gt;に割り当てます:</seg>
+        <seg>それは単に未定義の&lt;c2&gt;Dog&lt;/c2&gt;プロトタイプオブジェクトを&lt;c3&gt;$spot&lt;/c3&gt;に割り当てます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1353,7 +1353,7 @@
         <seg>Any type name used as a value is an undefined instance of that type's prototype object, or &lt;i0&gt;type object&lt;/i0&gt; for short.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>値として使われる任意の型名はその型のプロトタイプオブジェクト、または短くはタイプオブジェクトの未定義のインスタンスです。</seg>
+        <seg>値として使われる任意の型名はその型の未定義のプロトタイプオブジェクト、短くはタイプオブジェクトのインスタンスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1361,7 +1361,7 @@
         <seg>See S12 for more on that.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>詳細についてはS12を参照して下さい。</seg>
+        <seg>それの詳細についてはS12を参照して下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1369,7 +1369,7 @@
         <seg>Any type name in rvalue context is parsed as a single type value and expects no arguments following it.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>右辺のコンテキストでの型名は単一の型の値としてパースされ、引数がないことを期待します。</seg>
+        <seg>右辺コンテキストでの型名は単独の型の値としてパースされ、それに続く引数がないことを期待します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1377,7 +1377,7 @@
         <seg>However, a type object responds to the function call interface, so you may use the name of a type with parentheses as if it were a function, and any argument supplied to the call is coerced to the type indicated by the type object.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、タイプオブジェクトは関数呼び出しインターフェースに応答するので、あなたは型の名前を括弧と一緒に関数であるかのように使用するでしょう。そして呼び出しに供給されるどんな引数もタイプオブジェクトの示す型によって強制されます。</seg>
+        <seg>しかしタイプオブジェクトは関数呼び出しインターフェースに応答するので、あなたは型の名前を括弧と一緒に関数であるかのように使用するでしょう。そして呼び出しに供給されるどんな引数もタイプオブジェクトの示す型に強制されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1385,7 +1385,7 @@
         <seg>If there is no argument in the parentheses, the type object returns itself:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>もし引数が括弧にないなら、タイプオブジェクト自体が返されます:</seg>
+        <seg>もしも括弧に引数が無いなら、タイプオブジェクト自身を返します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1401,7 +1401,7 @@
         <seg>You can pass in arguments to the constructor as well:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>コンストラクタに引数を渡すことも出来ます:</seg>
+        <seg>同様にコンストラクタに引数を渡すことも出来ます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1417,7 +1417,7 @@
         <seg>you are declaring that the elements of &lt;c0&gt;@array&lt;/c0&gt; are native integers, but that the array itself is implemented by the &lt;c1&gt;MyArray&lt;/c1&gt; class.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;@array&lt;/c0&gt;の要素がネイティブの整数と宣言しますが、配列自体は&lt;c1&gt;MyArray&lt;/c1&gt;クラスで実装されます。</seg>
+        <seg>&lt;c0&gt;@array&lt;/c0&gt;の要素をネイティブ整数と宣言しますが、配列自身は&lt;c1&gt;MyArray&lt;/c1&gt;クラスで実装されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1425,7 +1425,7 @@
         <seg>Untyped arrays and hashes are still perfectly acceptable, but have the same performance issues they have in Perl 5.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>型指定されない配列とハッシュはまだ完全に何でも受け入れますが、Perl 5と同じパフォーマンスの問題があります。</seg>
+        <seg>型指定されていない配列とハッシュはいまだに何でも受け入れますが、Perl 5と同じパフォーマンスの問題を持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1441,7 +1441,7 @@
         <seg>You can also ask for the total string length of an array's elements, in bytes, codepoints or graphemes, using these methods &lt;c1&gt;.bytes&lt;/c1&gt;, &lt;c2&gt;.codes&lt;/c2&gt; or &lt;c3&gt;.graphs&lt;/c3&gt; respectively on the array.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>また、&lt;c1&gt;.bytes&lt;/c1&gt;、&lt;c2&gt;.codes&lt;/c2&gt;、&lt;c3&gt;.graphs&lt;/c3&gt;メソッドを使用してバイト、コードポイント、書記素で配列の要素の文字列の長さの合計を求めることが出来ます。</seg>
+        <seg>また、&lt;c1&gt;.bytes&lt;/c1&gt;、&lt;c2&gt;.codes&lt;/c2&gt;、&lt;c3&gt;.graphs&lt;/c3&gt;メソッドを使用してバイト、コードポイント、書記素でそれぞれの配列要素の文字列の長さの合計を求めることが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1449,7 +1449,7 @@
         <seg>The same methods apply to strings as well.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>文字列にも同じメソッドを適用することが出来ます。</seg>
+        <seg>同様に文字列にも同じメソッドを適用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1470,6 +1470,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hence, both methods allow an optional argument to specify the meaning exactly if it cannot be known from context.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>そのため、両方のメソッドはコンテキストから知ることができない場合に正確な意味を指定するための任意の引数を受け入れます。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is no &lt;c0&gt;.length&lt;/c0&gt; method for either arrays or strings, because &lt;c1&gt;length&lt;/c1&gt; does not specify a unit.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;.length&lt;/c0&gt;メソッドは配列と文字列のどちらにもありません。なぜなら&lt;c1&gt;length&lt;/c1&gt;は単位を指定しないからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Built-in object types start with an uppercase letter.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1481,7 +1497,15 @@
         <seg>This includes immutable types (e.g. &lt;c0&gt;Int&lt;/c0&gt;, &lt;c1&gt;Num&lt;/c1&gt;, &lt;c2&gt;Complex&lt;/c2&gt;, &lt;c3&gt;Rat&lt;/c3&gt;, &lt;c4&gt;Str&lt;/c4&gt;, &lt;c5&gt;Bit&lt;/c5&gt;, &lt;c6&gt;Regex&lt;/c6&gt;, &lt;c7&gt;Set&lt;/c7&gt;, &lt;c8&gt;Block&lt;/c8&gt;, &lt;c9&gt;List&lt;/c9&gt;, &lt;c10&gt;Seq&lt;/c10&gt;), as well as mutable (container) types, such as &lt;c11&gt;Scalar&lt;/c11&gt;, &lt;c12&gt;Array&lt;/c12&gt;, &lt;c13&gt;Hash&lt;/c13&gt;, &lt;c14&gt;Buf&lt;/c14&gt;, &lt;c15&gt;Routine&lt;/c15&gt;, &lt;c16&gt;Module&lt;/c16&gt;, and non-instantiable Roles such as &lt;c17&gt;Callable&lt;/c17&gt;, &lt;c18&gt;Failure&lt;/c18&gt;, and &lt;c19&gt;Integral&lt;/c19&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これは不変の型を含みます。(例えば&lt;c0&gt;Int&lt;/c0&gt;、&lt;c1&gt;Num&lt;/c1&gt;、&lt;c2&gt;Complex&lt;/c2&gt;、&lt;c3&gt;Rat&lt;/c3&gt;、&lt;c4&gt;Str&lt;/c4&gt;、&lt;c5&gt;Bit&lt;/c5&gt;、&lt;c6&gt;Regex&lt;/c6&gt;、&lt;c7&gt;Set&lt;/c7&gt;、&lt;c8&gt;Block&lt;/c8&gt;、&lt;c9&gt;List&lt;/c9&gt;、&lt;c10&gt;Seq&lt;/c10&gt;)変更可能な型(コンテナ)も同様です。&lt;c11&gt;Scalar&lt;/c11&gt;、&lt;c12&gt;Array&lt;/c12&gt;、&lt;c13&gt;Hash&lt;/c13&gt;、&lt;c14&gt;Buf&lt;/c14&gt;、&lt;c15&gt;Routine&lt;/c15&gt;、&lt;c16&gt;Module&lt;/c16&gt;など。そしてインスタンス化できない&lt;c17&gt;Callable&lt;/c17&gt;、&lt;c18&gt;Failure&lt;/c18&gt;、&lt;c19&gt;Integral&lt;/c19&gt;も同様です。</seg>
+        <seg>これは変更不可の型を含みます(&lt;c0&gt;Int&lt;/c0&gt;、&lt;c1&gt;Num&lt;/c1&gt;、&lt;c2&gt;Complex&lt;/c2&gt;、&lt;c3&gt;Rat&lt;/c3&gt;、&lt;c4&gt;Str&lt;/c4&gt;、&lt;c5&gt;Bit&lt;/c5&gt;、&lt;c6&gt;Regex&lt;/c6&gt;、&lt;c7&gt;Set&lt;/c7&gt;、&lt;c8&gt;Block&lt;/c8&gt;、&lt;c9&gt;List&lt;/c9&gt;、&lt;c10&gt;Seq&lt;/c10&gt;など)。変更可能な(コンテナ)型も同様です。&lt;c11&gt;Scalar&lt;/c11&gt;、&lt;c12&gt;Array&lt;/c12&gt;、&lt;c13&gt;Hash&lt;/c13&gt;、&lt;c14&gt;Buf&lt;/c14&gt;、&lt;c15&gt;Routine&lt;/c15&gt;、&lt;c16&gt;Module&lt;/c16&gt;など。そしてインスタンス化できない&lt;c17&gt;Callable&lt;/c17&gt;、&lt;c18&gt;Failure&lt;/c18&gt;、&lt;c19&gt;Integral&lt;/c19&gt;なども同様です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Non-object (native) types are lowercase: &lt;c0&gt;int&lt;/c0&gt;, &lt;c1&gt;num&lt;/c1&gt;, &lt;c2&gt;complex&lt;/c2&gt;, &lt;c3&gt;rat&lt;/c3&gt;, &lt;c4&gt;buf&lt;/c4&gt;, &lt;c5&gt;bit&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>オブジェクトでない(ネイティブ)型は小文字です: &lt;c0&gt;int&lt;/c0&gt;、&lt;c1&gt;num&lt;/c1&gt;、&lt;c2&gt;complex&lt;/c2&gt;、&lt;c3&gt;rat&lt;/c3&gt;、&lt;c4&gt;buf&lt;/c4&gt;、&lt;c5&gt;bit&lt;/c5&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1489,7 +1513,7 @@
         <seg>Native types are primarily intended for declaring compact array storage.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ネイティブ型は主にコンパクトな配列を宣言するためのものです。</seg>
+        <seg>ネイティブ型は主にコンパクトな配列ストレージを宣言するためのものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1497,7 +1521,7 @@
         <seg>However, Perl will try to make those look like their corresponding uppercase types if you treat them that way.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、Perlは対応する大文字の型のように扱えるようにしようとするでしょう。</seg>
+        <seg>しかし、Perlはそれらを対応する大文字の型のように扱えるようにしようとします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1505,7 +1529,23 @@
         <seg>(In other words, it does autoboxing.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(言い換えれば、autoboxingを行います。</seg>
+        <seg>(言い換えれば、自動ボックス化を行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note, however, that sometimes repeated autoboxing can slow your program more than the native type can speed it up.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>しかし、自動ボックス化の繰り返しがネイティブ型のスピードアップ以上にプログラムを遅くすることもあるので注意して下さい。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;junction&lt;/c0&gt; type is considered a native type because its internal representation is fixed, and you may not usefully derive from it because the intent of junctions is to autothread any method calls on them.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>内部表現が固定されているので、&lt;c0&gt;junction&lt;/c0&gt;型はネイティブ型と見なされます。そしてjunctionの意図はあらゆるメソッド呼び出しを自動スレッド化することなので、それから有益に派生させることはできないでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1521,7 +1561,15 @@
         <seg>Every object can produce a &quot;WHICH&quot; value that uniquely identifies the object for hashing and other value-based comparisons.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>全てのオブジェクトはハッシュと値ベースの比較のために一意に識別するための&quot;WHICH&quot;という値を出力できます。 </seg>
+        <seg>全てのオブジェクトはハッシュと値ベースの比較のために一意に識別するためのWHICH値を出力できます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Normal objects just use their address in memory, but if a class wishes to behave as a value type, it can define a &lt;c0&gt;.WHICH&lt;/c0&gt; method that makes different objects look like the same object if they happen to have the same contents.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>通常のオブジェクトはそれらのメモリアドレス使うだけですが、クラスが値型として振る舞いたい場合に、異なるオブジェクトが同じ内容を持つ場合が発生するなら同じオブジェクトのように見せる&lt;c0&gt;.WHICH&lt;/c0&gt;メソッドを定義できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1529,7 +1577,7 @@
         <seg>Variables with non-native types can always contain &lt;i0&gt;undefined&lt;/i0&gt; values, such as &lt;c1&gt;Object&lt;/c1&gt;, &lt;c2&gt;Whatever&lt;/c2&gt; and &lt;c3&gt;Failure&lt;/c3&gt; objects.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>非ネイティブ型の値は常に&lt;i0&gt;undefined&lt;/i0&gt;値を含むことが出来ます。&lt;c1&gt;Object&lt;/c1&gt;、&lt;c2&gt;Whatever&lt;/c2&gt;、&lt;c3&gt;Failure&lt;/c3&gt;のオブジェクトなど。</seg>
+        <seg>非ネイティブ型を伴う変数は常に&lt;c1&gt;Object&lt;/c1&gt;、&lt;c2&gt;Whatever&lt;/c2&gt;、&lt;c3&gt;Failure&lt;/c3&gt;オブジェクトなどの&lt;i0&gt;undefined&lt;/i0&gt;値を含むことが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1537,7 +1585,7 @@
         <seg>See S04 for more about failures (i.e. unthrown exceptions):</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>failures(例えばunthrown exceptions)についてはS04を参照して下さい:</seg>
+        <seg>failures(例えばunthrown exceptionsなど)の詳細についてはS04を参照して下さい:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1545,7 +1593,7 @@
         <seg>Variables with native types do not support undefinedness: it is an error to assign an undefined value to them:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ネイティブ型は未定義をサポートしません: 未定義値をそれらに割り当てるとエラーになります:</seg>
+        <seg>ネイティブ型を伴う変数は未定義をサポートしません: 未定義値をそれらに割り当てるとエラーになります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1553,7 +1601,7 @@
         <seg>Conjecture: num might support the autoconversion of undef to NaN, since the floating-point form can represent this concept.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>推測: 浮動小数点形式がこの概念を表現できるなら、numはundefをNaNにする自動変換をサポートするでしょう。</seg>
+        <seg>推測: numはundefからNaNへの自動変換をサポートするかもしれないので、浮動小数点形式はこの概念を表現できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1561,7 +1609,7 @@
         <seg>Might be better to make that conversion optional though, so that the rocket designer can decide whether to self-destruct immediately or shortly thereafter.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>その変換を任意に出来るなら良いかもしれません。ロケットの設計者は事故破壊を即座に行うか後で行うか決めることが出来るように。</seg>
+        <seg>ロケットの設計者が自己破壊を即座に行うかその後間もなく行うか決めることが出来るように、その変換を任意に出来るなら良いかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
