@@ -1801,7 +1801,7 @@
         <seg>(Really good programmers may occasionally do even better.) Mostly this just involves using enough bits that the stupidities of the algorithm don't matter much.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(本当によいプログラマーは時折もっと良く行います。)大抵、これは重要でないアルゴリズムの愚かさに十分なビットの使用を引き起こします。</seg>
+        <seg>(本当によいプログラマーは時折もっと良く改善します。)大抵、これは重要でないアルゴリズムの愚行に十分なビットの使用を引き起こすだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1825,7 +1825,7 @@
         <seg>However, since a &lt;c2&gt;Str&lt;/c2&gt; object may fill multiple roles, we say that a &lt;c3&gt;Str&lt;/c3&gt; keeps track of its minimum and maximum Unicode abstraction levels, and plays along nicely with the current lexical scope's idea of the ideal character, whether that is bytes, codepoints, graphemes, or characters in some language.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかし&lt;c2&gt;Str&lt;/c2&gt;オブジェクトは複数のロールを果たすので、&lt;c3&gt;Str&lt;/c3&gt;はユニコードの抽象レベルで最小と最大のトラックを保持し、現在のレキシカルスコープの考える理想的な文字に沿ってうまく演じます。バイト、コードポイント、 書記素またはいくつかの言語の文字であるかどうか。</seg>
+        <seg>しかし&lt;c2&gt;Str&lt;/c2&gt;オブジェクトは複数のロールを果たすので、&lt;c3&gt;Str&lt;/c3&gt;はユニコードの抽象レベルで最小と最大のトラックを保持します。そしてバイト、コードポイント、 書記素またはいくつかの言語の文字であるかどうか、現在のレキシカルスコープの理想的な文字のアイデアに沿ってうまく演じます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1833,7 +1833,7 @@
         <seg>For all builtin operations, all &lt;c4&gt;Str&lt;/c4&gt; positions are reported as position objects, not integers.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>全ての組み込み操作について、全ての&lt;c4&gt;Str&lt;/c4&gt;の位置はポジションオブジェクトとして報告され、整数ではありません。</seg>
+        <seg>全てのビルトイン操作について、全ての&lt;c4&gt;Str&lt;/c4&gt;ポジションは整数ではなくポジションオブジェクトとして報告されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1841,7 +1841,7 @@
         <seg>These &lt;c5&gt;StrPos&lt;/c5&gt; objects point into a particular string at a particular location independent of abstraction level, either by tracking the string and position directly, or by generating an abstraction-level independent representation of the offset from the beginning of the string that will give the same results if applied to the same string in any context.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c5&gt;StrPos&lt;/c5&gt;オブジェクトは特定の文字列の特定の場所を抽象化レベルに依存せずポイントします。文字列と位置を直接に追跡するか、あらゆるコンテキストで同じ文字列に適用される同じ結果を与える文字列の始まりのオフセットを抽象化に依存しない表現で出力するかどちらかです。</seg>
+        <seg>これら&lt;c5&gt;StrPos&lt;/c5&gt;オブジェクトは特定の文字列の特定の場所を抽象レベルに依存せずポイントします。文字列と位置を直接に追跡するか、あらゆるコンテキストで同じ文字列に適用された場合に同じ結果を与える文字列の開始オフセットを抽象レベルに依存しない表現で出力するかどちらかです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1849,7 +1849,7 @@
         <seg>This is assuming the string isn't modified in the meanwhile; a &lt;c6&gt;StrPos&lt;/c6&gt; is not a &quot;marker&quot; and is not required to follow changes to a mutable string.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これはその間に文字列が変更されないと仮定します;&lt;c6&gt;StrPos&lt;/c6&gt;は&quot;マーカー&quot;ではなく、変更される文字列を追跡する必要はありません。</seg>
+        <seg>これは一方で文字列が変更されないと仮定しています; &lt;c6&gt;StrPos&lt;/c6&gt;はマーカーではなく、可変の文字列の変更を追跡する必要はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1857,7 +1857,31 @@
         <seg>For instance, if you ask for the positions of matches done by a substitution, the answers are reported in terms of the original string (which may now be inaccessible!), not as positions within the modified string.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例えば、置換された文字列の位置を求めるとしたら、その答えは元の文字列のものです(今はアクセスできないでしょう！)。 変更された文字列のものではありません。</seg>
+        <seg>例えば、置換された文字列のマッチする位置を求めるとしたら、その答えは変更された文字列のポジションではなく元の文字列のものとして報告されます(今はアクセスできないかもしれません！)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The subtraction of two &lt;c0&gt;StrPos&lt;/c0&gt; objects gives a &lt;c1&gt;StrLen&lt;/c1&gt; object, which is also not an integer, because the string between two positions also has multiple integer interpretations depending on the units.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>2つの&lt;c0&gt;StrPos&lt;/c0&gt;オブジェクトの減算は&lt;c1&gt;StrLen&lt;/c1&gt;オブジェクトを与えます。それも整数ではありません。なぜなら2つのポジション間の文字列も単位に依存する複数の整数解釈を持つからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A given &lt;c2&gt;StrLen&lt;/c2&gt; may know that it represents 18 bytes, 7 codepoints, 3 graphemes, and 1 letter in Malayalam, but it might only know this lazily because it actually just hangs onto the two &lt;c3&gt;StrPos&lt;/c3&gt; endpoints within the string that in turn may or may not just lazily point into the string.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>与えられた&lt;c2&gt;StrLen&lt;/c2&gt;は18バイト、7コードポイント、3書記素、そしてマラヤーラムの1文字を表現すると知っているでしょう。しかしそれはいい加減にしか知っていないかもしれません。なぜならそれは文字列を単にいい加減にポイントするかしていない文字列内の2つの&lt;c3&gt;StrPos&lt;/c3&gt;の終点を捕まえているだけだからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(The lazy implementation of &lt;c4&gt;StrLen&lt;/c4&gt; is much like a &lt;c5&gt;Range&lt;/c5&gt; object in that respect.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(その点に関して&lt;c4&gt;StrLen&lt;/c4&gt;のいいかげんな実装は&lt;c5&gt;Range&lt;/c5&gt;オブジェクトにそっくりです。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1865,7 +1889,7 @@
         <seg>If you use integers as arguments where position objects are expected, it will be assumed that you mean the units of the current lexically scoped Unicode abstraction level.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ポジションオブジェクトが期待されるところで整数を使用すると、現在のレキシカルスコープのユニコード抽象化レベルの単位と見なされます。</seg>
+        <seg>ポジションオブジェクトが期待されるところで整数を引数として使用すると、現在のレキシカルスコープのユニコード抽象レベルの単位を意味すると見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1873,7 +1897,7 @@
         <seg>(Which defaults to graphemes.) Otherwise you'll need to coerce to the proper units:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(デフォルトはgraphemesです。)それ以外は適切な単位を強要する必要があります:</seg>
+        <seg>(デフォルトは書記素です。)それ以外は適切な単位を強制する必要があります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1881,7 +1905,15 @@
         <seg>Of course, such a dimensional number will fail if used on a string that doesn't provide the appropriate abstraction level.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>もちろんそのような次元数は文字列が適切な抽象化レベルを提供しないなら失敗するでしょう。</seg>
+        <seg>もちろんそのような次元数は文字列が適切な抽象レベルを提供しないなら失敗するでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a &lt;c0&gt;StrPos&lt;/c0&gt; or &lt;c1&gt;StrLen&lt;/c1&gt; is forced into a numeric context, it will assume the units of the current Unicode abstraction level.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;StrPos&lt;/c0&gt;か&lt;c1&gt;StrLen&lt;/c1&gt;が数値コンテキストを強制されると、現在のユニコード抽象レベルの単位と見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1889,7 +1921,7 @@
         <seg>It is erroneous to pass such a non-dimensional number to a routine that would interpret it with the wrong units.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>そのような次元的でない数を間違った単位で解釈するルーチンに渡すのは間違っています。</seg>
+        <seg>そのような次元的でない数を間違った単位で解釈するルーチンに渡すのは誤っています。</seg>
       </tuv>
     </tu>
     <tu>
