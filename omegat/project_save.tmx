@@ -1926,6 +1926,94 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Implementation note: since Perl 6 mandates that the default Unicode processing level must view graphemes as the fundamental unit rather than codepoints, this has some implications regarding efficient implementation.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>実装上の注意: Perl 6はデフォルトのユニコード処理レベルをコードポイントよりも書記素を基本単位として見なければならないと命じるので、これは効率的な実装に注意を払ういくつかの意味合いを持っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is suggested that all graphemes be translated on input to a unique grapheme numbers and represented as integers within some kind of uniform array for fast substr access.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>substrアクセスを高速化するため、いくつかの種類の均一な配列内で全ての書記素のインプットを固有の書記素数に変換し、整数として表現することが推奨されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For those graphemes that have a precomposed form, use of that codepoint is suggested.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これらの構成済みの形式を持つ書記素のために、そのコードポイントを使うことが推奨されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Note that this means Latin-1 can still be represented internally with 8-bit integers.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(これは、Latin-1がいまだに内部的に8ビット整数で表現されることができることに注意して下さい。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For graphemes that have no precomposed form, a temporary private id should be assigned that uniquely identifies the grapheme.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>構成済みの形式を持たない書記素のために、テンポラリのプライベートIDは書記素を固有に識別するように割り当てられるべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If such ids are assigned consistently thoughout the process, comparison of two graphemes is no more difficult than the comparison of two integers, and comparison of base characters no more difficult than a direct lookup into the id-to-NFD table.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このようなIDが処理を通して一貫して割り当てられるなら、2つの書記素の比較はもはや2つの整数の比較より難しくありません。そして基本文字の比較はもはやid-to-NFDテーブル内の直接検索より難しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Obviously, any temporary grapheme ids must be translated back to some universal form (such as NFD) on output, and normal precomposed graphemes may turn into either NFC or NFD forms depending on the desired output.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>もちろん、あらゆるテンポラリ書記素IDはいくつかの普遍的な形式(NFDのような)に再変換されて出力されなければなりません。そして普通の構成済みの書記素は望まれる出力に従ってNFCかNFDのどちらかの形式に変化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maintaining a particular grapheme/id mapping over the life of the process may have some GC implications for long-running processes, but most processes will likely see a limited number of non-precomposed graphemes.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>処理の期間にわたる特定の書記素/IDマッピングを扱うことは長期実行中のプロセスのためのいくつかのGC実装を持つかもしれません。しかし、おそらくほとんどのプロセスは限られた数の構成済みでない書記素を参照するでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the program has a scope that wants a codepoint view rather than a grapheme view, the string visible to that lexical scope must also be translated to universal form, just as with output translation.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>もしプログラムが書記素表示よりもコードポイント表示を望むスコープを持つなら、そのレキシカルスコープに見える文字列もまた出力変換と同時に普遍的な形式に変換されなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alternately, the temporary grapheme ids may be hidden behind an abstraction layer.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>代わりに、テンポラリ書記素IDは抽象化レイヤーから隠されるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In any case, codepoint scope should never see any temporary grapheme ids.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>どんな場合でも、コードポイントスコープはどのようなテンポラリ書記素IDも参照しないべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A &lt;c0&gt;Buf&lt;/c0&gt; is a stringish view of an array of integers, and has no Unicode or character properties without explicit conversion to some kind of &lt;c1&gt;Str&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="JA">
