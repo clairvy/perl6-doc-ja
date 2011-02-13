@@ -3,7 +3,7 @@
 <tmx version="1.1">
   <header
     creationtool="OmegaT"
-    creationtoolversion="2.0.5"
+    creationtoolversion="2.0.5_4"
     segtype="sentence"
     o-tmf="OmegaT TMX"
     adminlang="EN-US"
@@ -12,6 +12,14 @@
   >
   </header>
   <body>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>and</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>と</seg>
+      </tuv>
+    </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>This document originally summarized Apocalypse 1, which covers the initial design concept.</seg>
@@ -166,10 +174,34 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document summarizes Apocalypse 2, which covers small-scale lexical items and typological issues.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このドキュメントはApocalypse 2の要約で、小規模の字句項目と類型的問題を取り上げます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(These Synopses also contain updates to reflect the evolving design of Perl 6 over time, unlike the Apocalypses, which are frozen in time as &quot;historical documents&quot;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(Apocalypsesと違い、これらのSynopsesは時間と共に進化するPerl 6のデザインの更新を反映します。 Apocalypsesは歴史的資料としてある時点で凍結されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These updates are not marked--if a Synopsis disagrees with its Apocalypse, assume the Synopsis is correct.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これらの更新は記録されません―SynopsisがApocalypseと異なるなら、Synopsisが正しいと見なして下さい。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To the extent allowed by sublanguages' parsers, Perl is parsed using a one-pass, predictive parser.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>サブ言語のパーサーによる拡張を許容するため、Perlはワンパスの予測的パーサーでパースされます。</seg>
+        <seg>サブ言語のパーサーによる拡張のために、Perlはワンパスの予測的パーサーによって解析されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -177,7 +209,7 @@
         <seg>That is, lookahead of more than one &quot;longest token&quot; is discouraged.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>すなわち、1つより多くの「最も長いトークン」の先読みは推奨されません。</seg>
+        <seg>つまり、複数の最長トークンの先読みは推奨されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -185,7 +217,7 @@
         <seg>The currently known exceptions to this are where the parser must:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>現在知られている例外は、パーサーが以下のことをしなければならない場所:</seg>
+        <seg>これについて現在知られている例外は、パーサーが以下のようにしなければならない場合です:</seg>
       </tuv>
     </tu>
     <tu>
@@ -193,7 +225,7 @@
         <seg>Locate the end of interpolated expressions that begin with a sigil and might or might not end with brackets.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>印で始まり、ブロックで終わるか終わらない補完された式の終わりに設置しなければならない</seg>
+        <seg>sigilで始まり、ブロックで終わる、または終わらないかもしれない展開式の終了位置を決定する</seg>
       </tuv>
     </tu>
     <tu>
@@ -201,7 +233,7 @@
         <seg>Recognize that a reduce operator is not really beginning a &lt;c0&gt;[...]&lt;/c0&gt; composer.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>減少演算子が&lt;c0&gt;[...]&lt;/c0&gt;の作成者の始まりとは限らないと認識しなければならない</seg>
+        <seg>減少演算子が&lt;c0&gt;[...]&lt;/c0&gt;の生成を開始するとは限らないと認識する</seg>
       </tuv>
     </tu>
     <tu>
@@ -209,7 +241,7 @@
         <seg>In the abstract, Perl is written in Unicode, and has consistent Unicode semantics regardless of the underlying text representations.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perlはユニコードで記述され、論理的には基礎的なテキスト表現に関わらず一貫性のあるユニコードの意味を持っています。</seg>
+        <seg>理論上はPerlはユニコードで記述され、基本的なテキスト表現に関係なく一貫したユニコードのセマンティクス(意味)を持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -217,7 +249,7 @@
         <seg>By default Perl presents Unicode in &quot;NFG&quot; formation, where each grapheme counts as one character.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>それぞれの書記素が1文字として数えられる場所では、デフォルトでPerlはユニコードをNFG形式で表現します。</seg>
+        <seg>それぞれの書記素が1文字として数えられる場所では、PerlはデフォルトでユニコードをNFG形式で表現します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -225,7 +257,7 @@
         <seg>A grapheme is what the novice user would think of as a character in their normal everyday life, including any diacritics.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>書記素とは初心者ユーザーが日常生活の中で考えると思われるどんな発音記号も含みます。</seg>
+        <seg>書記素とは初心者ユーザーが日常生活の中で考えると思われるあらゆる発音記号を含みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -233,7 +265,7 @@
         <seg>Perl can count Unicode line and paragraph separators as line markers, but that behavior had better be configurable so that Perl's idea of line numbers matches what your editor thinks about Unicode lines.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perlはユニコードの行とパラグラフのセパレータを行マーカーとして数えることが出来ます。しかし、その振る舞いはあなたのエディタが考えるユニコードの行とPerlの行番号のアイデアとマッチするように設定出来るべきです。</seg>
+        <seg>Perlはユニコードの行とパラグラフのセパレータを行マーカーとして数えることが出来ます。しかし、その振る舞いはあなたのエディタが考えるユニコードの行とPerlの行番号の考え方がマッチするように設定出来るべきです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -241,7 +273,7 @@
         <seg>Unicode horizontal whitespace is counted as whitespace, but it's better not to use thin spaces where they will make adjoining tokens look like a single token.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ユニコードの水平空白は空白として数えられます。しかし、単一のトークンに見えるような隣接したトークンを生成するような場所では細い空白を使わないべきです。</seg>
+        <seg>ユニコードの水平空白は空白として数えられます。しかし、単独のトークンに見えるような隣接したトークンを生成するような場所ではem幅の空白は使わないべきです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -273,7 +305,7 @@
         <seg>Bracketing characters are defined as any Unicode characters with either bidirectional mirrorings or Ps/Pe/Pi/Pf properties.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>括弧文字は双方向ミラーリングかPs/Pe/Pi/Pfプロパティのユニコード文字として定義されます。</seg>
+        <seg>括弧文字は双方向対称かPs/Pe/Pi/Pfプロパティのどちらかのユニコード文字として定義されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -281,7 +313,7 @@
         <seg>In practice, though, you're safest using matching characters with Ps/Pe/Pi/Pf properties, though ASCII angle brackets are a notable exception, since they're bidirectional but not in the Ps/Pe/Pi/Pf sets.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>実用上はPs/Pe/Pi/Pfプロパティの文字を使うのが安全ですが、ASCIIの角括弧はPs/Pe/Pi/Pfセットではないのに双方向なので注目すべき例外です。</seg>
+        <seg>実用上はPs/Pe/Pi/Pfプロパティの文字を使うのが最も安全ですが、ASCIIの不等号括弧はPs/Pe/Pi/Pfセットではないのに双方向なので注目すべき例外です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -310,10 +342,82 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For any given Ps character, the next Pe codepoint (in numerical order) is assumed to be its matching character even if that is not what you might guess using left-right symmetry.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>任意のPs文字に対して次のPeコードポイント(番号順)は、たとえあなたが左右対称だと思っていなくてもマッチする文字と見なされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Therefore &lt;c0&gt;U+298D&lt;/c0&gt; maps to &lt;c1&gt;U+298E&lt;/c1&gt;, not &lt;c2&gt;U+2990&lt;/c2&gt;, and &lt;c3&gt;U+298F&lt;/c3&gt; maps to &lt;c4&gt;U+2990&lt;/c4&gt;, not &lt;c5&gt;U+298E&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>従って&lt;c0&gt;U+298D&lt;/c0&gt;は&lt;c2&gt;U+2990&lt;/c2&gt;ではなく&lt;c1&gt;U+298E&lt;/c1&gt;にマップされ、&lt;c3&gt;U+298F&lt;/c3&gt;は&lt;c5&gt;U+298E&lt;/c5&gt;ではなく&lt;c4&gt;U+2990&lt;/c4&gt;にマップされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Neither &lt;c6&gt;U+298E&lt;/c6&gt; nor &lt;c7&gt;U+2990&lt;/c7&gt; are valid bracket openers, despite having reverse mappings in the BidiMirroring table.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c6&gt;U+298E&lt;/c6&gt;と&lt;c7&gt;U+2990&lt;/c7&gt;はどちらも括弧の開始ではありません。にもかかわらずBidiMirroringテーブルに逆のマッピングを持っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;U+301D&lt;/c0&gt; codepoint has two closing alternatives, &lt;c1&gt;U+301E&lt;/c1&gt; and &lt;c2&gt;U+301F&lt;/c2&gt;; Perl 6 only recognizes the one with lower code point number, &lt;c3&gt;U+301E&lt;/c3&gt;, as the closing brace.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;U+301D&lt;/c0&gt;コードポイントは2つの代替の終了文字を持っています。&lt;c1&gt;U+301E&lt;/c1&gt;と&lt;c2&gt;U+301F&lt;/c2&gt;です。Perl 6は低いコードポイント数の&lt;c3&gt;U+301E&lt;/c3&gt;だけを閉じブレースとして認識します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This policy also applies to new one-to-many mappings introduced in the future.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このポリシーは未来に登場する新しい1対多のマッピングにも適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, many-to-one mappings are fine; multiple opening characters may map to the same closing character.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>しかしながら、多対1は構いません。複数の開始文字は同じ終了文字にマップするでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, U+2018, U+201A, and U+201B may all be used as the opener for the U+2019 closer.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>例えばU+2018、U+201A、U+201Bは全てU+2019クローザーに対するオープナーとして使われるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Constructs that count openers and closers assume that only the given opener is special.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>オープナーとクローザーを考慮する構造は、与えられたオープナーだけが特別と見なします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That is, if you open with one of the alternatives, all other alternatives are treated as non-bracketing characters within that construct.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>つまり代替文字の1つで開く場合、他の代替文字はその構造では非括弧文字として扱われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>POD sections may be used reliably as multiline comments in Perl 6.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 6ではPODセクションは複数行コメントとして確実に使用できるでしょう。</seg>
+        <seg>Perl 6ではPODセクションは複数行コメントとして確実に使用されるようになるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -321,7 +425,7 @@
         <seg>Unlike in Perl 5, POD syntax now lets you use &lt;c0&gt;=begin comment&lt;/c0&gt; and &lt;c1&gt;=end comment&lt;/c1&gt; delimit a POD block correctly without the need for &lt;c2&gt;=cut&lt;/c2&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 5と違い、&lt;c0&gt;=begin comment&lt;/c0&gt;と&lt;c1&gt;=end comment&lt;/c1&gt;は&lt;c2&gt;=cut&lt;/c2&gt;無しでPODブロックを正しく区切ります。</seg>
+        <seg>Perl 5と違い、現在のPOD構文は&lt;c0&gt;=begin comment&lt;/c0&gt;と&lt;c1&gt;=end comment&lt;/c1&gt;を&lt;c2&gt;=cut&lt;/c2&gt;無しでPODブロックを正しく区切って使えるようにします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -329,7 +433,7 @@
         <seg>(In fact, &lt;c3&gt;=cut&lt;/c3&gt; is now gone.) The format name does not have to be &lt;c4&gt;comment&lt;/c4&gt; -- any unrecognized format name will do to make it a comment.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(現に、&lt;c3&gt;=cut&lt;/c3&gt;は無くなりました)フォーマット名は &lt;c4&gt;comment&lt;/c4&gt;である必要はありません。識別されないフォーマット名はコメントになるでしょう。</seg>
+        <seg>(現に、&lt;c3&gt;=cut&lt;/c3&gt;は無くなりました。)フォーマット名は &lt;c4&gt;comment&lt;/c4&gt;である必要はありません。識別されないフォーマット名はコメントになるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -366,6 +470,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since there is a newline before the first &lt;c0&gt;=&lt;/c0&gt;, the POD form of comment counts as whitespace equivalent to a newline.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>最初の&lt;c0&gt;=&lt;/c0&gt;の前に改行が現れるまで、POD形式のコメントは改行と同様に空白としてカウントします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>See S26 for more on embedded documentation.</seg>
       </tuv>
       <tuv lang="JA">
@@ -385,7 +497,7 @@
         <seg>There are two forms of comment based on &lt;c1&gt;#&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c1&gt;#&lt;/c1&gt;のコメントは2つの形態があります。</seg>
+        <seg>&lt;c1&gt;#&lt;/c1&gt;を元にしたコメントは2つの形式があります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -393,7 +505,15 @@
         <seg>Embedded comments require the &lt;c2&gt;#&lt;/c2&gt; to be followed by one or more opening bracketing characters.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>埋め込みコメントは括弧の開始文字に続いた&lt;c2&gt;#&lt;/c2&gt;を必要とします。</seg>
+        <seg>埋め込みコメントは1つかそれ以上の括弧の開始文字が続く&lt;c2&gt;#&lt;/c2&gt;を必要とします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All other uses of &lt;c0&gt;#&lt;/c0&gt; are interpreted as single-line comments that work just as in Perl 5, starting with a &lt;c1&gt;#&lt;/c1&gt; character and ending at the subsequent newline.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>その他の&lt;c0&gt;#&lt;/c0&gt;の使用はPerl 5のように1行コメントとして解釈され、&lt;c1&gt;#&lt;/c1&gt;で始まって次の改行で終わります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -401,7 +521,15 @@
         <seg>They count as whitespace equivalent to newline for purposes of separation.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>それらは分割を目的とした改行と同じく空白として数えられます。</seg>
+        <seg>それは分割を目的とした改行と同じく空白とみなされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike in Perl 5, &lt;c2&gt;#&lt;/c2&gt; may &lt;i3&gt;not&lt;/i3&gt; be used as the delimiter in quoting constructs.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl 5と違い、&lt;c2&gt;#&lt;/c2&gt;はクォートを構築する区切り文字としては使用されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -409,7 +537,7 @@
         <seg>Embedded comments are supported as a variant on quoting syntax, introduced by &lt;c0&gt;#&lt;/c0&gt; plus any user-selected bracket characters (as defined in &lt;a1&gt;Lexical Conventions&lt;/a1&gt; above):</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>埋め込みコメントはクォーティング文法の変形としてサポートされ、&lt;c0&gt;#&lt;/c0&gt;とユーザーが選んだ括弧文字(&lt;a1&gt;Lexical Conventions&lt;/a1&gt;で定義されているもの)で導入されます:</seg>
+        <seg>埋め込みコメントはクォーティング構文の変化形としてサポートされ、&lt;c0&gt;#&lt;/c0&gt;とユーザーが選んだ括弧文字(&lt;a1&gt;Lexical Conventions&lt;/a1&gt;で定義されているもの)で導入されます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -417,7 +545,23 @@
         <seg>Brackets may be nested, following the same policy as ordinary quote brackets.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>括弧は普通の引用括弧と同じにネストするでしょう。</seg>
+        <seg>括弧は普通の引用括弧と同じポリシーに沿ってネストするでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There must be no space between the &lt;c0&gt;#&lt;/c0&gt; and the opening bracket character.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>括弧の開始文字と&lt;c0&gt;#&lt;/c0&gt;の間に空白を置くことは出来ません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(There may be the &lt;i1&gt;visual appearance&lt;/i1&gt; of space for some double-wide characters, however, such as the corner quotes above.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(上記のかぎ括弧のように見栄えのあるダブルワイド文字がいくつかあります。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -425,7 +569,7 @@
         <seg>An embedded comment is not allowed as the first thing on the line.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>行頭で埋め込みコメントは許可されません。</seg>
+        <seg>行頭に埋め込みコメントを置くことはできません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -441,7 +585,7 @@
         <seg>You can put a space in front of it to make it an embedded comment:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>埋め込みコメントにするために、前に空白を置くことが出来ます。</seg>
+        <seg>埋め込みコメントにするために、前に空白を置くことが出来ます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -457,7 +601,7 @@
         <seg>Therefore, if you are commenting out a block of code using the line-comment form, we recommend that you use &lt;c1&gt;##&lt;/c1&gt;, or &lt;c2&gt;#&lt;/c2&gt; followed by some whitespace, preferably a tab to keep any tab formatting consistent:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、もしコードブロックを行コメントを使ってコメントアウトするなら、&lt;c1&gt;##&lt;/c1&gt;または空白(できればタブ)が続く&lt;c2&gt;#&lt;/c2&gt;を使用することをお勧めします。</seg>
+        <seg>従って、もしコードブロックを行コメントを使ってコメントアウトするなら、空白(タブによるフォーマッティングを一貫するならタブが好ましい)が続く&lt;c1&gt;##&lt;/c1&gt;か&lt;c2&gt;#&lt;/c2&gt;を使うことをお勧めします:</seg>
       </tuv>
     </tu>
     <tu>
@@ -465,7 +609,15 @@
         <seg>However, it's often better to use pod comments because they are implicitly line-oriented.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、PODコメントは暗黙的に行指向なのでそちらの方が良い場合もあります。</seg>
+        <seg>しかしながら、PODコメントは暗黙の行指向なのでそちらの方が良い場合もあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>And if you have an intelligent syntax highlighter that will mark pod comments in a different color, there's less visual need for a &lt;c0&gt;#&lt;/c0&gt; on every line.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それに、もしあなたがPODコメントを色分けする賢いシンタックスハイライターを持っているなら、それぞれの&lt;c0&gt;#&lt;/c0&gt;の行に必要なビジュアルが少なくなってしまいます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -481,7 +633,7 @@
         <seg>Counting of nested brackets applies only to pairs of brackets of the same length as the opening brackets:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>括弧のネストは開き括弧と同じ長さでなければ適用されません。</seg>
+        <seg>括弧のネストは開き括弧と同じ数でなければ適用されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -489,7 +641,7 @@
         <seg>Note however that bare circumfix or postcircumfix &lt;c0&gt;&lt;&lt;...&gt;&gt;&lt;/c0&gt; is not a user-selected bracket, but the ASCII variant of the &lt;c1&gt;«...»&lt;/c1&gt; interpolating word list.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>裸のcircumfixまたはpostcircumfix &lt;c0&gt;&lt;&lt;...&gt;&gt;&lt;/c0&gt;はユーザーが使用可能な括弧ではありません。しかしASCIIの変形の&lt;c1&gt;«...»&lt;/c1&gt;補完単語リストです。</seg>
+        <seg>しかし注意として、裸の接周辞または後置接周辞&lt;c0&gt;&lt;&lt;...&gt;&gt;&lt;/c0&gt;はユーザー選択の括弧ではなく、&lt;c1&gt;«...»&lt;/c1&gt;のワードリストを展開したASCII形式の別記法です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -497,7 +649,7 @@
         <seg>Only &lt;c2&gt;#&lt;/c2&gt; and the &lt;c3&gt;q&lt;/c3&gt;-style quoters (including &lt;c4&gt;m&lt;/c4&gt;, &lt;c5&gt;s&lt;/c5&gt;, &lt;c6&gt;tr&lt;/c6&gt;, and &lt;c7&gt;rx&lt;/c7&gt;) enable subsequent user-selected brackets.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c2&gt;#&lt;/c2&gt;と&lt;c3&gt;q&lt;/c3&gt;-style(&lt;c4&gt;m&lt;/c4&gt;、&lt;c5&gt;s&lt;/c5&gt;、 &lt;c6&gt;tr&lt;/c6&gt;、&lt;c7&gt;rx&lt;/c7&gt;)だけがユーザーが選んだ括弧を可能にします。</seg>
+        <seg>&lt;c2&gt;#&lt;/c2&gt;と&lt;c3&gt;q&lt;/c3&gt;スタイルのクォート(&lt;c4&gt;m&lt;/c4&gt;、&lt;c5&gt;s&lt;/c5&gt;、 &lt;c6&gt;tr&lt;/c6&gt;、&lt;c7&gt;rx&lt;/c7&gt;を含む)だけが後に続くユーザー選択の括弧を使用できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -505,7 +657,7 @@
         <seg>Some languages such as C allow you to escape newline characters to combine lines.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Cのようないくつかの言語は、行を結合するために改行をエスケープすることを許可しています。</seg>
+        <seg>C言語のようないくつかの言語は、行を結合するために改行をエスケープすることを認めています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -513,7 +665,7 @@
         <seg>Other languages (such as regexes) allow you to backslash a space character for various reasons.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>正規表現のような他の言語はバックスラッシュをを様々な理由で使用します。</seg>
+        <seg>他の言語(正規表現など)は空白文字のバックスラッシュを様々な理由で認めています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -521,7 +673,7 @@
         <seg>Perl 6 generalizes this notion to any kind of whitespace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 6はこれをあらゆる種類の空白という概念に統一します。</seg>
+        <seg>Perl 6はこの概念をあらゆる種類の空白に一般化します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -529,7 +681,7 @@
         <seg>Any contiguous whitespace (including comments) may be hidden from the parser by prefixing it with &lt;c0&gt;\&lt;/c0&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>全ての連続する空白(コメント含む)は&lt;c0&gt;\&lt;/c0&gt;を前に置くことによってパーサーから隠されます。</seg>
+        <seg>あらゆる連続する空白(コメント含む)は&lt;c0&gt;\&lt;/c0&gt;を前置することによってパーサーから隠蔽されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -537,7 +689,7 @@
         <seg>This is known as the &quot;unspace&quot;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これは&quot;unspace&quot;として知られています。</seg>
+        <seg>これはunspaceとして知られています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -545,7 +697,7 @@
         <seg>An unspace can suppress any of several whitespace dependencies in Perl.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>unspaceはPerlの様々な空白を抑制することが出来ます。</seg>
+        <seg>unspaceはPerlの様々な空白のいずれかの依存関係を隠することが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -553,7 +705,7 @@
         <seg>For example, since Perl requires an absence of whitespace between a noun and a postfix operator, using unspace lets you line up postfix operators:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例えばPerlは名詞と後置演算子の間に空白を無いことを要求しますが、unspaceを使うことで後置演算子をつなげることが出来ます。</seg>
+        <seg>例えばPerlは名詞と後置演算子の間に空白が無いことを要求するので、unspaceを使うことで後置演算子を繋げることが出来ます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -561,7 +713,7 @@
         <seg>As a special case to support the use above, a backslash where a postfix is expected is considered a degenerate form of unspace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>特別なケースで、後置演算子の所のバックスラッシュはunspaceの縮退した形式と見なします。</seg>
+        <seg>上記の使い方をサポートするための特別な場合として、後置演算子が期待される場所でのバックスラッシュはunspaceの変質した形式と見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -569,7 +721,7 @@
         <seg>Note that whitespace is not allowed before that, hence</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これの前に空白は置けません。</seg>
+        <seg>注意として、それの前に空白は置けません。そのため</seg>
       </tuv>
     </tu>
     <tu>
@@ -577,7 +729,7 @@
         <seg>is a syntax error (two terms in a row).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>は構文エラーです。</seg>
+        <seg>は構文エラーです(行に2つの項)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -593,7 +745,7 @@
         <seg>will be parsed as a list operator with a &lt;c0&gt;Capture&lt;/c0&gt; argument:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>は&lt;c0&gt;Capture&lt;/c0&gt;と一緒のリスト演算子とパースされます</seg>
+        <seg>は&lt;c0&gt;Capture&lt;/c0&gt;引数を伴うリスト演算子と解析されます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -601,7 +753,15 @@
         <seg>However, other forms of unspace may usefully be preceded by whitespace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、他の形式のunspaceは空白に先行して役に立つでしょう。</seg>
+        <seg>しかし、他の形式のunspaceは空白の前にきて役に立ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Unary uses of backslash may therefore never be followed by whitespace or they would be taken as an unspace.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(それ故に単項のバックスラッシュの使われ方は空白が続かないこと、または空白をunspaceと受け取ることです。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -609,7 +769,7 @@
         <seg>Other postfix operators may also make use of unspace:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>他の後置演算子もunspaceを活用できるでしょう。</seg>
+        <seg>他の後置演算子もunspaceを活用できます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -617,7 +777,7 @@
         <seg>Another normal use of a you-don't-see-this-space is typically to put a dotted postfix on the next line:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>もう一つの典型的な使い方は、ドット後置演算子を次の行に置くことです。</seg>
+        <seg>もう一つ見えない空白の使い方は、典型的にはドット後置演算子を次の行に置くことです:</seg>
       </tuv>
     </tu>
     <tu>
@@ -625,7 +785,15 @@
         <seg>But unspace is mainly about language extensibility: it lets you continue the line in any situation where a newline might confuse the parser, regardless of your currently installed parser.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしunspaceは主に言語の拡張性に関するものです。あなたが現在インストールしているパーサーに関わらず、改行がパーサーを混乱させるようなあらゆる場面で行を継続することが出来ます。</seg>
+        <seg>しかしunspaceは主に言語の拡張性に関するものです。あなたが現在インストールしているパーサーに関わらず、改行がパーサーを混乱させるかもしれないあらゆる場面で行を継続させます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Unless, of course, you override the unspace rule itself...)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(もちろん、あなたがunspaceのルール自体を上書きすれば別ですが・・・)</seg>
       </tuv>
     </tu>
     <tu>
@@ -641,7 +809,7 @@
         <seg>As a result, unspace is not allowed within a token.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>その結果として、unspaceはトークンとして許可されません。</seg>
+        <seg>その結果として、unspaceはトークンとして認められません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -649,7 +817,15 @@
         <seg>Additionally, line numbers are still counted if the unspace contains one or more newlines.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>加えて、unspaceが改行を含むなら行として数えられます。</seg>
+        <seg>加えて、unspaceが1つ以上の改行を含むなら依然として行番号がカウントされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;c0&gt;#&lt;/c0&gt; following such a newline is always an end-of-line comment, as described above.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>そのような改行に続く&lt;c0&gt;#&lt;/c0&gt;は上に述べたように常に行コメントです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -657,7 +833,7 @@
         <seg>Since Pod chunks count as whitespace to the language, they are also swallowed up by unspace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>PODチャンクは空白として数えられるので、unspaceで飲み込むことが出来ます。</seg>
+        <seg>Podチャンク(かたまり)は言語にとって空白として数えられるので、それもunspaceによって取り込むことが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -665,7 +841,7 @@
         <seg>Heredoc boundaries are suppressed, however, so you can split excessively long heredoc intro lines like this:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ヒアドキュメントの境界は抑制されます。けれども、あなたは過度に長いヒアドキュメントの出だしの行をこのように分割できます。</seg>
+        <seg>ヒアドキュメントの境界は隠蔽されます。けれども、あなたは過度に長いヒアドキュメントの出だしの行をこのように分割できます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -673,7 +849,23 @@
         <seg>To the heredoc parser that just looks like:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ヒアドキュメントのパーサーは次のようにしか見ません。</seg>
+        <seg>ヒアドキュメントのパーサーは単にこのように見ます:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note that this is one of those cases in which it is fine to have whitespace before the unspace, since we're only trying to suppress the newline transition, not all whitespace as in the case of postfix parsing.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>注意として、これはunspaceの前に空白を置いても構わないケースの1つです。なので接尾辞の解析については我々は全ての空白ではなく改行の変わり目を隠そうと試みているだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Note also that the example above is not meant to spec how the test suite works.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(さらに注意として、上記の例はテストスイートの動作仕様を意図していません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -681,7 +873,7 @@
         <seg>An unspace may contain a comment, but a comment may not contain an unspace.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>unspaceはコメントを含むかもしれませんが、コメントはunspaceを含まないでしょう。</seg>
+        <seg>unspaceはコメントを含むかもしれませんが、コメントはunspaceを含みません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -689,7 +881,7 @@
         <seg>In particular, end-of-line comments do not treat backslash as significant.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>特に、行コメントはバックスラッシュを意味のあるものと見なしません。</seg>
+        <seg>特に、行コメントはバックスラッシュを意味のあるものとして扱いません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -697,7 +889,23 @@
         <seg>If you say:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>もしあなたが次のようにするなら</seg>
+        <seg>もしあなたが次のようにするなら:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>it is an end-of-line comment, not an embedded comment.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>埋め込みコメントではなく行コメントです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Write:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>次のように書くと:</seg>
       </tuv>
     </tu>
     <tu>
@@ -713,7 +921,7 @@
         <seg>In general, whitespace is optional in Perl 6 except where it is needed to separate constructs that would be misconstrued as a single token or other syntactic unit.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>一般に、単一のトークンか他の構文単位と誤解される構造を分離する必要がある場合を除いて、Perl 6では空白は任意です。</seg>
+        <seg>一般に、単独のトークンか他の構文上の単位と間違って解釈される構成を分離する必要がある場所を除いて、Perl 6での空白は任意です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -721,7 +929,15 @@
         <seg>(In other words, Perl 6 follows the standard &lt;i0&gt;longest-token&lt;/i0&gt; principle, or in the cases of large constructs, a &lt;i1&gt;prefer shifting to reducing&lt;/i1&gt; principle.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(言い換えれば、Perl 6は標準の&lt;i0&gt;最も長いトークン&lt;/i0&gt;の原則、または大きな構文の場合、&lt;i1&gt;prefer shifting to reducing&lt;/i1&gt;の原則に従います。</seg>
+        <seg>(言い換えれば、Perl 6は標準の&lt;i0&gt;最長トークン&lt;/i0&gt;の原則、または大きな構文の場合は&lt;i1&gt;prefer shifting to reducing&lt;/i1&gt;の原則に従います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See &lt;a2&gt;Grammatical Categories&lt;/a2&gt; below for more on how a Perl program is analyzed into tokens.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perlプログラムがどのようにトークンに解析されるか、詳細については&lt;a2&gt;Grammatical Categories&lt;/a2&gt;を参照して下さい。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -729,7 +945,7 @@
         <seg>This is an unchanging deep rule, but the surface ramifications of it change as various operators and macros are added to or removed from the language, which we expect to happen because Perl 6 is designed to be a mutable language.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これは不変の深いルールです。しかしPerl 6は変化する言語として設計されているので、表面上の影響は様々な演算子に変化し、マクロが言語に加えられるか削除されることを期待しています。</seg>
+        <seg>これは不変の深いルールです。しかしPerl 6は可変の言語となるように設計されているので、様々な演算子や言語にマクロを追加したり削除することで表面上の悪影響を変えるということが起こるのを我々は期待しています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -737,7 +953,7 @@
         <seg>In particular, there is a natural conflict between postfix operators and infix operators, either of which may occur after a term.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>特に項の後の後置演算子と2項演算子の間で競合があります。</seg>
+        <seg>特に、項の後で後置演算子と2項演算子の間の自然な競合がどちらかで起こります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -753,7 +969,7 @@
         <seg>Postfix operators may never have intervening space, though they may have an intervening dot.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>後置演算子は間に入る空白を持ちませんが、間に入るドットを持つかもしれません。</seg>
+        <seg>後置演算子は間に入る空白を持ちませんが、間に入るドットを持つことがあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -761,7 +977,23 @@
         <seg>If further separation is desired, an unspace or embedded comment may be used as described above, as long as no whitespace occurs outside the unspace or embedded comment.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>さらなる分離が望まれ、空白でないものがunspaceか埋め込みコメントの外側に発生するなら、前述のunspaceか埋め込みコメントが使われるでしょう。</seg>
+        <seg>その上で分離が望まれるなら、空白がunspaceか埋め込みコメントの外側に発生しない限り前述のunspaceか埋め込みコメントが使われるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For instance, if you were to add your own &lt;c0&gt;infix:&lt;++&gt;&lt;/c0&gt; operator, then it must have space before it.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>例えばあなたの&lt;c0&gt;infix:&lt;++&gt;&lt;/c0&gt;という2項演算子を追加するとしたら、その前に必ず空白が必要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The normal autoincrementing &lt;c1&gt;postfix:&lt;++&gt;&lt;/c1&gt; operator may never have space before it, but may be written in any of these forms:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>標準の自動インクリメント&lt;c1&gt;postfix:&lt;++&gt;&lt;/c1&gt;演算子はその前に空白を持ちませんが、これらの形式のどれかで書かれます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -769,7 +1001,7 @@
         <seg>A consequence of the postfix rule is that (except when delimiting a quote or terminating an unspace) a dot with whitespace in front of it is always considered a method call on &lt;c0&gt;$_&lt;/c0&gt; where a term is expected.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(クォートで区切るかunspaceを終了することは除いて)項が期待される場所で前に空白を伴うドットは&lt;c0&gt;$_&lt;/c0&gt;のメソッド呼び出しと解釈されます。 それが後置のルールです。</seg>
+        <seg>(クォートを区切るかunspaceを終了することは除いて)項が期待される場所で前に空白があるドットは常に&lt;c0&gt;$_&lt;/c0&gt;のメソッド呼び出しとみなされます。 それが接尾辞のルールの結果です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -777,7 +1009,7 @@
         <seg>If a term is not expected at this point, it is a syntax error.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>その点で項が期待されていないなら構文エラーです。</seg>
+        <seg>その箇所で項が期待されていないなら、それは構文エラーです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -785,7 +1017,7 @@
         <seg>(Unless, of course, there is an infix operator of that name beginning with dot.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(もちろんドットで始まる2項演算子は有りません。)</seg>
+        <seg>(もちろんドットで始まる名前の2項演算子があるなら別ですが。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -793,7 +1025,15 @@
         <seg>You could, for instance, define a Fortranly &lt;c1&gt;infix:&lt;.EQ.&gt;&lt;/c1&gt; if the fit took you.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例えばフォートランっぽい&lt;c1&gt;infix:&lt;.EQ.&gt;&lt;/c1&gt;を定義して下さい。</seg>
+        <seg>例えば、その気になればFortran風の&lt;c1&gt;infix:&lt;.EQ.&gt;&lt;/c1&gt;を定義することもできます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>But you'll have to be sure to always put whitespace in front of it, or it would be interpreted as a postfix method call instead.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>しかしあなたはそれの前に常に空白を置くか、代わりに後置メソッド呼び出しと解釈されるようにして気をつけなければなりません。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -809,7 +1049,7 @@
         <seg>will always be interpreted as</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>は常に以下のように解釈されるでしょう。</seg>
+        <seg>は常に次のように解釈されるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -825,7 +1065,7 @@
         <seg>Use some variant of</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>いくつかの変化形は</seg>
+        <seg>以下のいくつかの変化形を使って下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -838,10 +1078,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>One consequence of all this is that you may no longer write a Num as &lt;c0&gt;42.&lt;/c0&gt; with just a trailing dot.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これら全ての内の1つの結果として、ただの終端ドットを伴うNumを &lt;c0&gt;42.&lt;/c0&gt;として書くことはもはやできません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You must instead say either &lt;c1&gt;42&lt;/c1&gt; or &lt;c2&gt;42.0&lt;/c2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>代わりにあなたは&lt;c1&gt;42&lt;/c1&gt;か&lt;c2&gt;42.0&lt;/c2&gt;のどちらかにしなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In other words, a dot following a number can only be a decimal point if the following character is a digit.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>言い換えれば、続く文字が数字なら、数に続くドットは小数点にしかなりません。</seg>
+        <seg>言い換えれば、もし直後の文字が数字なら、数の直後のドットは小数点にしかなり得ません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -849,7 +1105,15 @@
         <seg>Otherwise the postfix dot will be taken to be the start of some kind of method call syntax.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>それ以外の場合は後置のドットはいくつかの種類のメソッド呼び出しの開始と解釈されるでしょう。</seg>
+        <seg>そうでなければ、後置のドットはいくつかの種類のメソッド呼び出し構文の開始と取られるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(The &lt;c3&gt;.123&lt;/c3&gt; form with a leading dot is still allowed however when a term is expected, and is equivalent to &lt;c4&gt;0.123&lt;/c4&gt; rather than &lt;c5&gt;$_.123&lt;/c5&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(項が期待される場合でも、直前のドットを伴う&lt;c3&gt;.123&lt;/c3&gt;形式がまだ認められています。そしてそれは&lt;c5&gt;$_.123&lt;/c5&gt;ではなく&lt;c4&gt;0.123&lt;/c4&gt;と同じです。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -857,7 +1121,7 @@
         <seg>In support of OO encapsulation, there is a new fundamental datatype: &lt;s0&gt;P6opaque&lt;/s0&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>オブジェクト指向のカプセル化で、&lt;s0&gt;P6opaque&lt;/s0&gt;という新しい基本データ型があります。</seg>
+        <seg>オブジェクト指向カプセル化のサポートの中で、新しい基本データ型があります: &lt;s0&gt;P6opaque&lt;/s0&gt;です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -865,7 +1129,7 @@
         <seg>External access to opaque objects is always through method calls, even for attributes.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>opaqueオブジェクトへの外部からのアクセスは常にメソッド呼び出しで行われます。属性でさえそうです。</seg>
+        <seg>opaqueオブジェクトへの外部からのアクセスは常にメソッド呼び出しを通して行われます。属性でさえそうです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -873,7 +1137,7 @@
         <seg>Perl 6 has an optional type system that helps you write safer code that performs better.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 6はより良く動作する安全なコードを書く助けとなる任意的な型システムを持ちます。</seg>
+        <seg>Perl 6はより安全でより良く動作するコードを書くことを助ける選択自由な型システムを持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -881,7 +1145,7 @@
         <seg>The compiler is free to infer what type information it can from the types you supply, but will not complain about missing type information unless you ask it to.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>あなたが提供した型からの情報の推測はコンパイラーが自由に行います。しかし型の情報が欠落していても文句は言いません。</seg>
+        <seg>コンパイラがあなたの提供可能な型情報を推測するのは自由です。しかしあなたが尋ねない限り、欠落した型情報について文句を言いません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -889,7 +1153,7 @@
         <seg>Types are officially compared using name equivalence rather than structural equivalence.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>型は正式には構造的な等価性よりも名前の等価性で比較されます。</seg>
+        <seg>型は構造的な等価性よりも名前の等価性で正式に比較されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -897,7 +1161,7 @@
         <seg>However, we're rather liberal in what we consider a name.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、我々は名前を考えるのは自由であることを好みます。</seg>
+        <seg>しかし、我々は名前を考えることに寛大であることを好みます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -905,7 +1169,7 @@
         <seg>For example, the name includes the version and authority associated with the module defining the type (even if the type itself is &quot;anonymous&quot;).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例えば、(型自体が無名であったとしても)名前は型を定義するモジュールに関連するバージョンと権限を含むことが出来ます。</seg>
+        <seg>例えば、名前は型を定義するモジュールに関連付けられたバージョンと権限を含みます(たとえ型自体が無名でも)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -913,7 +1177,7 @@
         <seg>Beyond that, when you instantiate a parametric type, the arguments are considered part of the &quot;long name&quot; of the resulting type, so one &lt;c0&gt;Array of Int&lt;/c0&gt; is equivalent to another &lt;c1&gt;Array of Int&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>その上で、パラメータ付きの型をインスタンス化する場合、引数は結果の型の&quot;長い名前&quot;の一部と考えられるので、ある&lt;c0&gt;Array of Int&lt;/c0&gt;は他の&lt;c1&gt;Array of Int&lt;/c1&gt;と同じです。</seg>
+        <seg>その上でパラメータを伴う型をインスタンス化する場合、引数は結果となる型の長い名前の一部と考えられるので、ある&lt;c0&gt;Array of Int&lt;/c0&gt;は他の&lt;c1&gt;Array of Int&lt;/c1&gt;と同等です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -921,7 +1185,7 @@
         <seg>(Another way to look at it is that the type instantiation &quot;factory&quot; is memoized.) Typename aliases are considered equivalent to the original type.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(それを見るもう一つの方法は、インスタンス化する&quot;factory&quot;がメモ化されることです。)型名の別名は元の型と同等と考えられます。</seg>
+        <seg>(それを調べるもう一つの方法は、型をインスタンス化するファクトリーがメモ化されることです。)型名の別名は元の型と同等とみなされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -929,7 +1193,7 @@
         <seg>In particular, the &lt;c2&gt;Array of Int&lt;/c2&gt; syntax is just sugar for &lt;c3&gt;Array:of(Int)&lt;/c3&gt;, which is the canonical form of an instantiated generic type.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>特に&lt;c2&gt;Array of Int&lt;/c2&gt;という構文は単にジェネリックタイプをインスタンス化する&lt;c3&gt;Array:of(Int)&lt;/c3&gt;の標準的なシュガーです。</seg>
+        <seg>特に&lt;c2&gt;Array of Int&lt;/c2&gt;という構文はインスタンス化されたジェネリックタイプの正規形である&lt;c3&gt;Array:of(Int)&lt;/c3&gt;の単なるシュガーです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -937,7 +1201,7 @@
         <seg>This name equivalence of parametric types extends only to parameters that can be considered immutable (or that at least can have an immutable snapshot taken of them).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>このパラメータ付きの型の名前の等価性は不変(または少なくとも不変のパラメータのスナップショットを撮ることが出来る)と考えられるパラメータだけを拡張します。</seg>
+        <seg>このパラメータを伴う型の名前の等価性は不変(または少なくとも不変のスナップショットを撮ることが出来る)とみなせるパラメータだけを拡張します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -945,7 +1209,7 @@
         <seg>Two distinct classes are never considered equivalent even if they have the same attributes because classes are not considered immutable.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>クラスは不変と考えられないので、2つの明らかに異なるクラスが同じ属性を持っているとしても同じとは見なされません。</seg>
+        <seg>別個の2つのクラスはたとえ同じ属性を持っていても決して同等とは見なされません。なぜならクラスは不変とみなされないからです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -961,7 +1225,7 @@
         <seg>Properties are like object attributes, except that they're managed by the individual object rather than by the object's class.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>オブジェクトのクラスではなく個々のオブジェクトに管理されているのを除いて、プロパティはオブジェクトの属性に似ています。</seg>
+        <seg>オブジェクトのクラスではなく個々のオブジェクトに管理されている場合を除いて、プロパティはオブジェクトの属性に似ています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -969,7 +1233,7 @@
         <seg>According to S12, properties are actually implemented by a kind of mixin mechanism, and such mixins are accomplished by the generation of an individual anonymous class for the object (unless an identical anonymous class already exists and can safely be shared).</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>S12によれば、プロパティは実際にはミックスインのメカニズムで実装され、そのようなミックスインはオブジェクトに対する個々の無名クラスの生成によって完成します(同一の無名クラスが既に存在し、安全に共有できるのでなければ)。</seg>
+        <seg>S12に従って、プロパティは実際にはミックスインメカニズムのようなもので実装され、そのようなミックスインはオブジェクトに対する個々の無名クラスの生成によって完成します(同じ無名クラスがまだ存在せず、安全に共有できるのであれば)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -977,7 +1241,7 @@
         <seg>Properties applied to objects constructed at compile-time, such as variables and classes, are also called &lt;s0&gt;traits&lt;/s0&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>プロパティはコンパイル時に構成される変数やクラスのようなオブジェクトに適用され、&lt;s0&gt;traits&lt;/s0&gt;とも呼ばれます。</seg>
+        <seg>プロパティはコンパイル時に構成される変数やクラスなどに適用され、&lt;s0&gt;トレイト&lt;/s0&gt;とも呼ばれます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -985,7 +1249,7 @@
         <seg>Traits cannot be changed at run-time.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Traitsは実行時に変更することは出来ません。</seg>
+        <seg>トレイトを実行時に変更することは出来ません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -993,7 +1257,7 @@
         <seg>Changes to run-time properties are done via mixin instead, so that the compiler can optimize based on declared traits.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>実行時のプロパティの変更は代わりにミックスインによって行われます。これによってコンパイラーは宣言されたtraitsを元に最適化することが出来ます。</seg>
+        <seg>実行時のプロパティの変更は代わりにミックスインによって行われます。これによってコンパイラーは宣言されたトレイトを元に最適化することが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1001,7 +1265,7 @@
         <seg>Perl 6 is an OO engine, but you're not generally required to think in OO when that's inconvenient.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 6はオブジェクト指向エンジンですが、それが不便な時は大抵は必要有りません。</seg>
+        <seg>Perl 6はオブジェクト指向エンジンですが、都合が悪いならオブジェクト指向で考える必要はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1009,7 +1273,7 @@
         <seg>However, some built-in concepts such as filehandles will be more object-oriented in a user-visible way than in Perl 5.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、ファイルハンドルのようないくつかのビルトインの概念はPerl 5以上にオブジェクト指向的になるでしょう。</seg>
+        <seg>しかし、ファイルハンドルのようないくつかのビルトインの概念はPerl 5以上にユーザーに見える形でオブジェクト指向的になるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1017,7 +1281,7 @@
         <seg>A variable's type is a constraint indicating what sorts of values the variable may contain.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>変数の型は変数が含む可能性がある値の性質を示す制約です。</seg>
+        <seg>変数の型とは、変数がどのような値を含む可能性があるかを示す制約です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1025,7 +1289,7 @@
         <seg>More precisely, it's a promise that the object or objects contained in the variable are capable of responding to the methods of the indicated &quot;role&quot;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>より正確には、オブジェクトまたは変数に含まれるオブジェクトが&quot;role&quot;が示すメソッドに応答できることの保証です。</seg>
+        <seg>より正確には、オブジェクトまたは変数に格納されたオブジェクトがroleで示されたメソッドに応答できることの保証です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1041,7 +1305,7 @@
         <seg>A variable may itself be bound to a container type that specifies how the container works, without specifying what kinds of things it contains.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>変数自体はどの種類のものが含まれているか指定すること無しに、コンテナがどの様に動作するか指定するコンテナ型でなければなりません。</seg>
+        <seg>変数自体はどの種類のものを含むか指定せず、どのように動作するかを指定するコンテナ型にバインドされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1049,7 +1313,7 @@
         <seg>Constraints and container types can be used together:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>制約とコンテナの型は一緒に使用することが出来ます:</seg>
+        <seg>制約とコンテナ型は一緒に使用することができます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1057,7 +1321,7 @@
         <seg>Note that &lt;c0&gt;$x&lt;/c0&gt; is also initialized to the &lt;c1&gt;Int&lt;/c1&gt; type object.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;$x&lt;/c0&gt;はまた、&lt;c1&gt;Int&lt;/c1&gt;型オブジェクトで初期化されることに注意して下さい。</seg>
+        <seg>&lt;c0&gt;$x&lt;/c0&gt;が&lt;c1&gt;Int&lt;/c1&gt;型オブジェクトで初期化されることにも注意して下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1073,7 +1337,7 @@
         <seg>&lt;c0&gt;my Dog $spot&lt;/c0&gt; by itself does not automatically call a &lt;c1&gt;Dog&lt;/c1&gt; constructor.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;my Dog $spot&lt;/c0&gt;それ自体は&lt;c1&gt;Dog&lt;/c1&gt;のコンストラクターを自動で呼びません。</seg>
+        <seg>&lt;c0&gt;my Dog $spot&lt;/c0&gt;自体は&lt;c1&gt;Dog&lt;/c1&gt;のコンストラクターを自動で呼びません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1081,7 +1345,7 @@
         <seg>It merely assigns an undefined &lt;c2&gt;Dog&lt;/c2&gt; prototype object to &lt;c3&gt;$spot&lt;/c3&gt;:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>それは単に未定義の&lt;c2&gt;Dog&lt;/c2&gt;のプロトタイプオブジェクトを&lt;c3&gt;$spot&lt;/c3&gt;に割り当てます:</seg>
+        <seg>それは単に未定義の&lt;c2&gt;Dog&lt;/c2&gt;プロトタイプオブジェクトを&lt;c3&gt;$spot&lt;/c3&gt;に割り当てます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1089,7 +1353,7 @@
         <seg>Any type name used as a value is an undefined instance of that type's prototype object, or &lt;i0&gt;type object&lt;/i0&gt; for short.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>値として使われる任意の型名はその型のプロトタイプオブジェクト、または短くはタイプオブジェクトの未定義のインスタンスです。</seg>
+        <seg>値として使われる任意の型名はその型の未定義のプロトタイプオブジェクト、短くはタイプオブジェクトのインスタンスです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1097,7 +1361,7 @@
         <seg>See S12 for more on that.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>詳細についてはS12を参照して下さい。</seg>
+        <seg>それの詳細についてはS12を参照して下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1105,7 +1369,7 @@
         <seg>Any type name in rvalue context is parsed as a single type value and expects no arguments following it.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>右辺のコンテキストでの型名は単一の型の値としてパースされ、引数がないことを期待します。</seg>
+        <seg>右辺コンテキストでの型名は単独の型の値としてパースされ、それに続く引数がないことを期待します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1113,7 +1377,7 @@
         <seg>However, a type object responds to the function call interface, so you may use the name of a type with parentheses as if it were a function, and any argument supplied to the call is coerced to the type indicated by the type object.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、タイプオブジェクトは関数呼び出しインターフェースに応答するので、あなたは型の名前を括弧と一緒に関数であるかのように使用するでしょう。そして呼び出しに供給されるどんな引数もタイプオブジェクトの示す型によって強制されます。</seg>
+        <seg>しかしタイプオブジェクトは関数呼び出しインターフェースに応答するので、あなたは型の名前を括弧と一緒に関数であるかのように使用するでしょう。そして呼び出しに供給されるどんな引数もタイプオブジェクトの示す型に強制されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1121,7 +1385,7 @@
         <seg>If there is no argument in the parentheses, the type object returns itself:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>もし引数が括弧にないなら、タイプオブジェクト自体が返されます:</seg>
+        <seg>もしも括弧に引数が無いなら、タイプオブジェクト自身を返します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1137,7 +1401,7 @@
         <seg>You can pass in arguments to the constructor as well:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>コンストラクタに引数を渡すことも出来ます:</seg>
+        <seg>同様にコンストラクタに引数を渡すことも出来ます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1153,7 +1417,7 @@
         <seg>you are declaring that the elements of &lt;c0&gt;@array&lt;/c0&gt; are native integers, but that the array itself is implemented by the &lt;c1&gt;MyArray&lt;/c1&gt; class.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;@array&lt;/c0&gt;の要素がネイティブの整数と宣言しますが、配列自体は&lt;c1&gt;MyArray&lt;/c1&gt;クラスで実装されます。</seg>
+        <seg>&lt;c0&gt;@array&lt;/c0&gt;の要素をネイティブ整数と宣言しますが、配列自身は&lt;c1&gt;MyArray&lt;/c1&gt;クラスで実装されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1161,7 +1425,7 @@
         <seg>Untyped arrays and hashes are still perfectly acceptable, but have the same performance issues they have in Perl 5.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>型指定されない配列とハッシュはまだ完全に何でも受け入れますが、Perl 5と同じパフォーマンスの問題があります。</seg>
+        <seg>型指定されていない配列とハッシュはいまだに何でも受け入れますが、Perl 5と同じパフォーマンスの問題を持っています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1177,7 +1441,7 @@
         <seg>You can also ask for the total string length of an array's elements, in bytes, codepoints or graphemes, using these methods &lt;c1&gt;.bytes&lt;/c1&gt;, &lt;c2&gt;.codes&lt;/c2&gt; or &lt;c3&gt;.graphs&lt;/c3&gt; respectively on the array.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>また、&lt;c1&gt;.bytes&lt;/c1&gt;、&lt;c2&gt;.codes&lt;/c2&gt;、&lt;c3&gt;.graphs&lt;/c3&gt;メソッドを使用してバイト、コードポイント、書記素で配列の要素の文字列の長さの合計を求めることが出来ます。</seg>
+        <seg>また、&lt;c1&gt;.bytes&lt;/c1&gt;、&lt;c2&gt;.codes&lt;/c2&gt;、&lt;c3&gt;.graphs&lt;/c3&gt;メソッドを使用してバイト、コードポイント、書記素でそれぞれの配列要素の文字列の長さの合計を求めることが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1185,7 +1449,7 @@
         <seg>The same methods apply to strings as well.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>文字列にも同じメソッドを適用することが出来ます。</seg>
+        <seg>同様に文字列にも同じメソッドを適用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1206,6 +1470,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Hence, both methods allow an optional argument to specify the meaning exactly if it cannot be known from context.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>そのため、両方のメソッドはコンテキストから知ることができない場合に正確な意味を指定するための任意の引数を受け入れます。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>There is no &lt;c0&gt;.length&lt;/c0&gt; method for either arrays or strings, because &lt;c1&gt;length&lt;/c1&gt; does not specify a unit.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;.length&lt;/c0&gt;メソッドは配列と文字列のどちらにもありません。なぜなら&lt;c1&gt;length&lt;/c1&gt;は単位を指定しないからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Built-in object types start with an uppercase letter.</seg>
       </tuv>
       <tuv lang="JA">
@@ -1217,7 +1497,15 @@
         <seg>This includes immutable types (e.g. &lt;c0&gt;Int&lt;/c0&gt;, &lt;c1&gt;Num&lt;/c1&gt;, &lt;c2&gt;Complex&lt;/c2&gt;, &lt;c3&gt;Rat&lt;/c3&gt;, &lt;c4&gt;Str&lt;/c4&gt;, &lt;c5&gt;Bit&lt;/c5&gt;, &lt;c6&gt;Regex&lt;/c6&gt;, &lt;c7&gt;Set&lt;/c7&gt;, &lt;c8&gt;Block&lt;/c8&gt;, &lt;c9&gt;List&lt;/c9&gt;, &lt;c10&gt;Seq&lt;/c10&gt;), as well as mutable (container) types, such as &lt;c11&gt;Scalar&lt;/c11&gt;, &lt;c12&gt;Array&lt;/c12&gt;, &lt;c13&gt;Hash&lt;/c13&gt;, &lt;c14&gt;Buf&lt;/c14&gt;, &lt;c15&gt;Routine&lt;/c15&gt;, &lt;c16&gt;Module&lt;/c16&gt;, and non-instantiable Roles such as &lt;c17&gt;Callable&lt;/c17&gt;, &lt;c18&gt;Failure&lt;/c18&gt;, and &lt;c19&gt;Integral&lt;/c19&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これは不変の型を含みます。(例えば&lt;c0&gt;Int&lt;/c0&gt;、&lt;c1&gt;Num&lt;/c1&gt;、&lt;c2&gt;Complex&lt;/c2&gt;、&lt;c3&gt;Rat&lt;/c3&gt;、&lt;c4&gt;Str&lt;/c4&gt;、&lt;c5&gt;Bit&lt;/c5&gt;、&lt;c6&gt;Regex&lt;/c6&gt;、&lt;c7&gt;Set&lt;/c7&gt;、&lt;c8&gt;Block&lt;/c8&gt;、&lt;c9&gt;List&lt;/c9&gt;、&lt;c10&gt;Seq&lt;/c10&gt;)変更可能な型(コンテナ)も同様です。&lt;c11&gt;Scalar&lt;/c11&gt;、&lt;c12&gt;Array&lt;/c12&gt;、&lt;c13&gt;Hash&lt;/c13&gt;、&lt;c14&gt;Buf&lt;/c14&gt;、&lt;c15&gt;Routine&lt;/c15&gt;、&lt;c16&gt;Module&lt;/c16&gt;など。そしてインスタンス化できない&lt;c17&gt;Callable&lt;/c17&gt;、&lt;c18&gt;Failure&lt;/c18&gt;、&lt;c19&gt;Integral&lt;/c19&gt;も同様です。</seg>
+        <seg>これは変更不可の型を含みます(&lt;c0&gt;Int&lt;/c0&gt;、&lt;c1&gt;Num&lt;/c1&gt;、&lt;c2&gt;Complex&lt;/c2&gt;、&lt;c3&gt;Rat&lt;/c3&gt;、&lt;c4&gt;Str&lt;/c4&gt;、&lt;c5&gt;Bit&lt;/c5&gt;、&lt;c6&gt;Regex&lt;/c6&gt;、&lt;c7&gt;Set&lt;/c7&gt;、&lt;c8&gt;Block&lt;/c8&gt;、&lt;c9&gt;List&lt;/c9&gt;、&lt;c10&gt;Seq&lt;/c10&gt;など)。変更可能な(コンテナ)型も同様です。&lt;c11&gt;Scalar&lt;/c11&gt;、&lt;c12&gt;Array&lt;/c12&gt;、&lt;c13&gt;Hash&lt;/c13&gt;、&lt;c14&gt;Buf&lt;/c14&gt;、&lt;c15&gt;Routine&lt;/c15&gt;、&lt;c16&gt;Module&lt;/c16&gt;など。そしてインスタンス化できない&lt;c17&gt;Callable&lt;/c17&gt;、&lt;c18&gt;Failure&lt;/c18&gt;、&lt;c19&gt;Integral&lt;/c19&gt;なども同様です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Non-object (native) types are lowercase: &lt;c0&gt;int&lt;/c0&gt;, &lt;c1&gt;num&lt;/c1&gt;, &lt;c2&gt;complex&lt;/c2&gt;, &lt;c3&gt;rat&lt;/c3&gt;, &lt;c4&gt;buf&lt;/c4&gt;, &lt;c5&gt;bit&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>オブジェクトでない(ネイティブ)型は小文字です: &lt;c0&gt;int&lt;/c0&gt;、&lt;c1&gt;num&lt;/c1&gt;、&lt;c2&gt;complex&lt;/c2&gt;、&lt;c3&gt;rat&lt;/c3&gt;、&lt;c4&gt;buf&lt;/c4&gt;、&lt;c5&gt;bit&lt;/c5&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1225,7 +1513,7 @@
         <seg>Native types are primarily intended for declaring compact array storage.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ネイティブ型は主にコンパクトな配列を宣言するためのものです。</seg>
+        <seg>ネイティブ型は主にコンパクトな配列ストレージを宣言するためのものです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1233,7 +1521,7 @@
         <seg>However, Perl will try to make those look like their corresponding uppercase types if you treat them that way.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら、Perlは対応する大文字の型のように扱えるようにしようとするでしょう。</seg>
+        <seg>しかし、Perlはそれらを対応する大文字の型のように扱えるようにしようとします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1241,7 +1529,23 @@
         <seg>(In other words, it does autoboxing.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(言い換えれば、autoboxingを行います。</seg>
+        <seg>(言い換えれば、自動ボックス化を行います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note, however, that sometimes repeated autoboxing can slow your program more than the native type can speed it up.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>しかし、自動ボックス化の繰り返しがネイティブ型のスピードアップ以上にプログラムを遅くすることもあるので注意して下さい。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;junction&lt;/c0&gt; type is considered a native type because its internal representation is fixed, and you may not usefully derive from it because the intent of junctions is to autothread any method calls on them.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>内部表現が固定されているので、&lt;c0&gt;junction&lt;/c0&gt;型はネイティブ型と見なされます。そしてjunctionの意図はあらゆるメソッド呼び出しを自動スレッド化することなので、それから有益に派生させることはできないでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1257,7 +1561,15 @@
         <seg>Every object can produce a &quot;WHICH&quot; value that uniquely identifies the object for hashing and other value-based comparisons.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>全てのオブジェクトはハッシュと値ベースの比較のために一意に識別するための&quot;WHICH&quot;という値を出力できます。 </seg>
+        <seg>全てのオブジェクトはハッシュと値ベースの比較のために一意に識別するためのWHICH値を出力できます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Normal objects just use their address in memory, but if a class wishes to behave as a value type, it can define a &lt;c0&gt;.WHICH&lt;/c0&gt; method that makes different objects look like the same object if they happen to have the same contents.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>通常のオブジェクトはそれらのメモリアドレス使うだけですが、クラスが値型として振る舞いたい場合に、異なるオブジェクトが同じ内容を持つ場合が発生するなら同じオブジェクトのように見せる&lt;c0&gt;.WHICH&lt;/c0&gt;メソッドを定義できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1265,7 +1577,7 @@
         <seg>Variables with non-native types can always contain &lt;i0&gt;undefined&lt;/i0&gt; values, such as &lt;c1&gt;Object&lt;/c1&gt;, &lt;c2&gt;Whatever&lt;/c2&gt; and &lt;c3&gt;Failure&lt;/c3&gt; objects.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>非ネイティブ型の値は常に&lt;i0&gt;undefined&lt;/i0&gt;値を含むことが出来ます。&lt;c1&gt;Object&lt;/c1&gt;、&lt;c2&gt;Whatever&lt;/c2&gt;、&lt;c3&gt;Failure&lt;/c3&gt;のオブジェクトなど。</seg>
+        <seg>非ネイティブ型を伴う変数は常に&lt;c1&gt;Object&lt;/c1&gt;、&lt;c2&gt;Whatever&lt;/c2&gt;、&lt;c3&gt;Failure&lt;/c3&gt;オブジェクトなどの&lt;i0&gt;undefined&lt;/i0&gt;値を含むことが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1273,7 +1585,7 @@
         <seg>See S04 for more about failures (i.e. unthrown exceptions):</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>failures(例えばunthrown exceptions)についてはS04を参照して下さい:</seg>
+        <seg>failures(例えばunthrown exceptionsなど)の詳細についてはS04を参照して下さい:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1281,7 +1593,7 @@
         <seg>Variables with native types do not support undefinedness: it is an error to assign an undefined value to them:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ネイティブ型は未定義をサポートしません: 未定義値をそれらに割り当てるとエラーになります:</seg>
+        <seg>ネイティブ型を伴う変数は未定義をサポートしません: 未定義値をそれらに割り当てるとエラーになります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1289,7 +1601,7 @@
         <seg>Conjecture: num might support the autoconversion of undef to NaN, since the floating-point form can represent this concept.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>推測: 浮動小数点形式がこの概念を表現できるなら、numはundefをNaNにする自動変換をサポートするでしょう。</seg>
+        <seg>推測: numはundefからNaNへの自動変換をサポートするかもしれないので、浮動小数点形式はこの概念を表現できます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1297,7 +1609,7 @@
         <seg>Might be better to make that conversion optional though, so that the rocket designer can decide whether to self-destruct immediately or shortly thereafter.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>その変換を任意に出来るなら良いかもしれません。ロケットの設計者は事故破壊を即座に行うか後で行うか決めることが出来るように。</seg>
+        <seg>ロケットの設計者が自己破壊を即座に行うかその後間もなく行うか決めることが出来るように、その変換を任意に出来るなら良いかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1305,7 +1617,7 @@
         <seg>Variables of non-native types start out containing an undefined value unless explicitly initialized to a defined value.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>非ネイティブ型は明示的に定義された値で初期化されるのでなければ未定義値になります。</seg>
+        <seg>非ネイティブ型は明示的に定義された値で初期化されなければ未定義値になります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1313,7 +1625,7 @@
         <seg>Every object supports a &lt;c0&gt;HOW&lt;/c0&gt; function/method that returns the metaclass instance managing it, regardless of whether the object is defined:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>全てのオブジェクトは、オブジェクトが定義されているかどうかに関わらずそれを管理するメタクラスのインスタンスを返す&lt;c0&gt;HOW&lt;/c0&gt;関数/メソッドをサポートします。 </seg>
+        <seg>全てのオブジェクトは、オブジェクトが定義されているかどうかに関わらずそれを管理するメタクラスのインスタンスを返す&lt;c0&gt;HOW&lt;/c0&gt;関数/メソッドをサポートします: </seg>
       </tuv>
     </tu>
     <tu>
@@ -1321,7 +1633,7 @@
         <seg>(For a prototype system (a non-class-based object system), all objects are merely managed by the same meta object.)</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(プロトタイプシステム(クラスベースでないオブジェクトシステム)のために全てのオブジェクトは同じメタオブジェクトによって管理されます。)</seg>
+        <seg>(プロトタイプシステム(クラスベースでないオブジェクトシステム)のために、全てのオブジェクトは単に同じメタオブジェクトによって管理されます。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1329,7 +1641,7 @@
         <seg>Perl 6 intrinsically supports big integers and rationals through its system of type declarations.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 6は本質的にシステムの型宣言を通してbig integersとrationalsをサポートします。</seg>
+        <seg>Perl 6は型宣言のシステムを通してbig integersとbig rationalsを本質的にサポートします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1337,7 +1649,7 @@
         <seg>&lt;c0&gt;Int&lt;/c0&gt; automatically supports promotion to arbitrary precision, as well as holding &lt;c1&gt;Inf&lt;/c1&gt; and &lt;c2&gt;NaN&lt;/c2&gt; values.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;Int&lt;/c0&gt;は&lt;c1&gt;Inf&lt;/c1&gt;と&lt;c2&gt;NaN&lt;/c2&gt;を保持するのと同じに任意の精度を自動的にサポートします。</seg>
+        <seg>&lt;c0&gt;Int&lt;/c0&gt;は&lt;c1&gt;Inf&lt;/c1&gt;値と&lt;c2&gt;NaN&lt;/c2&gt;値を保持するのと同様に任意の精度への昇格を自動的にサポートします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1345,7 +1657,7 @@
         <seg>Note that &lt;c3&gt;Int&lt;/c3&gt; assumes 2's complement arithmetic, so &lt;c4&gt;+^1 == -2&lt;/c4&gt; is guaranteed.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c3&gt;Int&lt;/c3&gt;は2の補数演算を推測することに注意して下さい。&lt;c4&gt;+^1 == -2&lt;/c4&gt;は保証されています。</seg>
+        <seg>&lt;c3&gt;Int&lt;/c3&gt;は2の補数演算を想定することに注意して下さい。なので&lt;c4&gt;+^1 == -2&lt;/c4&gt;が保証されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1353,7 +1665,79 @@
         <seg>(Native &lt;c5&gt;int&lt;/c5&gt; operations need not support this on machines that are not natively 2's complement.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(ネイティブ&lt;c5&gt;int&lt;/c5&gt;の演算は2の歩数をネイティブにサポートしないマシンではこれをサポートする必要はありません。</seg>
+        <seg>(ネイティブの&lt;c5&gt;int&lt;/c5&gt;演算は2の補数をネイティブにサポートしていないマシンではサポートする必要はありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You must convert to and from &lt;c6&gt;Int&lt;/c6&gt; to do portable bitops on such ancient hardware.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>あなたは&lt;c6&gt;Int&lt;/c6&gt;への変換や逆のことをそのような古いハードウェアで移植性のあるビット演算に出来るようにしなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(&lt;c0&gt;Num&lt;/c0&gt; may support arbitrary-precision floating-point arithmetic, but is not required to unless we can do so portably and efficiently.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(&lt;c0&gt;Num&lt;/c0&gt;は任意の精度の浮動小数点演算をサポートします。しかし移植性があり効率的に行うことが出来ないのであれば必要有りません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c1&gt;Num&lt;/c1&gt; must support the largest native floating point format that runs at full speed.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c1&gt;Num&lt;/c1&gt;は最も大きいネイティブ浮動小数点フォーマットをフルスピードで実行できるようにサポートしなければなりません。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;Rat&lt;/c0&gt; supports arbitrary precision rational arithmetic.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;Rat&lt;/c0&gt;は任意の精度の有理数演算をサポートします。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, dividing two &lt;c1&gt;Int&lt;/c1&gt; objects using &lt;c2&gt;infix:&lt;/&gt;&lt;/c2&gt; produces a fraction of &lt;c3&gt;Num&lt;/c3&gt; type, not a ratio.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>しかし、2つの&lt;c1&gt;Int&lt;/c1&gt;オブジェクトを&lt;c2&gt;infix:&lt;/&gt;&lt;/c2&gt;で除算するとレシオではなく&lt;c3&gt;Num&lt;/c3&gt;型の端数を生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>You can produce a ratio by using &lt;c4&gt;infix:&lt;div&gt;&lt;/c4&gt; on two integers instead.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>代わりに&lt;c4&gt;infix:&lt;div&gt;&lt;/c4&gt;を使ってレシオを生成できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Lower-case types like &lt;c0&gt;int&lt;/c0&gt; and &lt;c1&gt;num&lt;/c1&gt; imply the native machine representation for integers and floating-point numbers, respectively, and do not promote to arbitrary precision, though larger representations are always allowed for temporary values.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;int&lt;/c0&gt;、&lt;c1&gt;num&lt;/c1&gt;のような小文字型はマシンネイティブの整数と浮動小数点表現を意味します。それぞれは任意の精度へ昇格しませんが、テンポラリ値についてはより大きい表現が常に許可されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unless qualified with a number of bits, &lt;c2&gt;int&lt;/c2&gt; and &lt;c3&gt;num&lt;/c3&gt; types represent the largest native integer and floating-point types that run at full speed.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ビット数で制限されなければ、&lt;c2&gt;int&lt;/c2&gt;と&lt;c3&gt;num&lt;/c3&gt;型はフルスピードで実行される最も大きな整数と浮動小数点を表現します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Numeric values in untyped variables use &lt;c0&gt;Int&lt;/c0&gt; and &lt;c1&gt;Num&lt;/c1&gt; semantics rather than &lt;c2&gt;int&lt;/c2&gt; and &lt;c3&gt;num&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>型のない変数での数値は&lt;c0&gt;Int&lt;/c0&gt;と&lt;c1&gt;Num&lt;/c1&gt;を&lt;c2&gt;int&lt;/c2&gt;と&lt;c3&gt;num&lt;/c3&gt;より優先して使用します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1369,7 +1753,7 @@
         <seg>Within a lexical scope, pragmas may specify the nature of temporary values, and how floating point is to behave under various circumstances.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>レキシカルスコープではプログラムは一時的な値の性質、そして様々な環境で浮動小数点がどの様に振る舞うか指定するでしょう。</seg>
+        <seg>レキシカルスコープ内でプラグマはテンポラリ値の性質、そして様々な環境下で浮動小数点がどの様に振る舞うか指定します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1377,7 +1761,7 @@
         <seg>All IEEE modes must be lexically available via pragma except in cases where that would entail heroic efforts to bypass a braindead platform.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>機能しないプラットフォームをバイパスするために壮大な努力を必要とする場合を除いて、全てのIEEEモードがプラグマによってレキシカルに有効でなければなりません。</seg>
+        <seg>うまく機能しないプラットフォームを回避するために壮大な努力を必要とする場合を除いて、全てのIEEEモードがプラグマによってレキシカルに使用可能でなければなりません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1385,7 +1769,7 @@
         <seg>The default floating-point modes do not throw exceptions but rather propagate Inf and NaN.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>デフォルトの浮動小数点モードは例外をスローしませんが、InfとNaNを伝播します。</seg>
+        <seg>デフォルトの浮動小数点モードは例外をスローするのではなくInfとNaNを伝播します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1393,7 +1777,7 @@
         <seg>The boxed object types may carry more detailed information on where overflow or underflow occurred.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ボックス化されたオブジェクト型はオーバーフローかアンダーフローが起こったところでより詳細な情報を伝達するでしょう。</seg>
+        <seg>ボックス化されたオブジェクト型はオーバーフローかアンダーフローが発生したところでより詳細な情報を伝達します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1401,7 +1785,15 @@
         <seg>Numerics in Perl are not designed to give the identical answer everywhere.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perlでは数値は同一の答えを与えるように設計されていません。</seg>
+        <seg>Perlでの計算法はどこでも同じ答えを与えるように設計されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They are designed to give the typical programmer the tools to achieve a good enough answer most of the time.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それらは一般的なプログラマーにほとんどの場合十分な答えを果たすツールを与えるように設計されています。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1409,7 +1801,7 @@
         <seg>(Really good programmers may occasionally do even better.) Mostly this just involves using enough bits that the stupidities of the algorithm don't matter much.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(本当によいプログラマーは時にはより良くします。) Mostly this just involves using enough bits that the stupidities of the algorithm don't matter much.</seg>
+        <seg>(本当によいプログラマーは時折もっと良く改善します。)大抵、これは重要でないアルゴリズムの愚行に十分なビットの使用を引き起こすだけです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1425,7 +1817,7 @@
         <seg>There is no corresponding native &lt;c1&gt;str&lt;/c1&gt; type.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>対応するネイティブな&lt;c1&gt;str&lt;/c1&gt;型はありません。</seg>
+        <seg>対応するネイティブ&lt;c1&gt;str&lt;/c1&gt;型はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1433,7 +1825,7 @@
         <seg>However, since a &lt;c2&gt;Str&lt;/c2&gt; object may fill multiple roles, we say that a &lt;c3&gt;Str&lt;/c3&gt; keeps track of its minimum and maximum Unicode abstraction levels, and plays along nicely with the current lexical scope's idea of the ideal character, whether that is bytes, codepoints, graphemes, or characters in some language.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしながら&lt;c2&gt;Str&lt;/c2&gt;オブジェクトは複数のroleを果たすので、&lt;c3&gt;Str&lt;/c3&gt;はユニコードの抽象的レベルで最小と最大のトラックを保持し、現在のレキシカルスコープの考える理想的な文字を演じます。バイト、コードポイント、 graphemesまたはある言語の文字など。</seg>
+        <seg>しかし&lt;c2&gt;Str&lt;/c2&gt;オブジェクトは複数のロールを果たすので、&lt;c3&gt;Str&lt;/c3&gt;はユニコードの抽象レベルで最小と最大のトラックを保持します。そしてバイト、コードポイント、 書記素またはいくつかの言語の文字であるかどうか、現在のレキシカルスコープの理想的な文字のアイデアに沿ってうまく演じます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1441,7 +1833,7 @@
         <seg>For all builtin operations, all &lt;c4&gt;Str&lt;/c4&gt; positions are reported as position objects, not integers.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>全ての組み込み操作について、全ての&lt;c4&gt;Str&lt;/c4&gt;の位置はポジションオブジェクトとして報告され、整数ではありません。</seg>
+        <seg>全てのビルトイン操作について、全ての&lt;c4&gt;Str&lt;/c4&gt;ポジションは整数ではなくポジションオブジェクトとして報告されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1449,7 +1841,7 @@
         <seg>These &lt;c5&gt;StrPos&lt;/c5&gt; objects point into a particular string at a particular location independent of abstraction level, either by tracking the string and position directly, or by generating an abstraction-level independent representation of the offset from the beginning of the string that will give the same results if applied to the same string in any context.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c5&gt;StrPos&lt;/c5&gt;オブジェクトは特定の文字列の特定の場所を抽象化レベルに依存せずポイントします。文字列と位置を直接に追跡するか、あらゆるコンテキストで同じ文字列に適用される同じ結果を与える文字列の始まりのオフセットを抽象化に依存しない表現で出力するかどちらかです。</seg>
+        <seg>これら&lt;c5&gt;StrPos&lt;/c5&gt;オブジェクトは特定の文字列の特定の場所を抽象レベルに依存せずポイントします。文字列と位置を直接に追跡するか、あらゆるコンテキストで同じ文字列に適用された場合に同じ結果を与える文字列の開始オフセットを抽象レベルに依存しない表現で出力するかどちらかです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1457,7 +1849,7 @@
         <seg>This is assuming the string isn't modified in the meanwhile; a &lt;c6&gt;StrPos&lt;/c6&gt; is not a &quot;marker&quot; and is not required to follow changes to a mutable string.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これはその間に文字列が変更されないと仮定します;&lt;c6&gt;StrPos&lt;/c6&gt;は&quot;マーカー&quot;ではなく、変更される文字列を追跡する必要はありません。</seg>
+        <seg>これは一方で文字列が変更されないと仮定しています; &lt;c6&gt;StrPos&lt;/c6&gt;はマーカーではなく、可変の文字列の変更を追跡する必要はありません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1465,7 +1857,31 @@
         <seg>For instance, if you ask for the positions of matches done by a substitution, the answers are reported in terms of the original string (which may now be inaccessible!), not as positions within the modified string.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例えば、置換された文字列の位置を求めるとしたら、その答えは元の文字列のものです(今はアクセスできないでしょう！)。 変更された文字列のものではありません。</seg>
+        <seg>例えば、置換された文字列のマッチする位置を求めるとしたら、その答えは変更された文字列のポジションではなく元の文字列のものとして報告されます(今はアクセスできないかもしれません！)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The subtraction of two &lt;c0&gt;StrPos&lt;/c0&gt; objects gives a &lt;c1&gt;StrLen&lt;/c1&gt; object, which is also not an integer, because the string between two positions also has multiple integer interpretations depending on the units.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>2つの&lt;c0&gt;StrPos&lt;/c0&gt;オブジェクトの減算は&lt;c1&gt;StrLen&lt;/c1&gt;オブジェクトを与えます。それも整数ではありません。なぜなら2つのポジション間の文字列も単位に依存する複数の整数解釈を持つからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A given &lt;c2&gt;StrLen&lt;/c2&gt; may know that it represents 18 bytes, 7 codepoints, 3 graphemes, and 1 letter in Malayalam, but it might only know this lazily because it actually just hangs onto the two &lt;c3&gt;StrPos&lt;/c3&gt; endpoints within the string that in turn may or may not just lazily point into the string.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>与えられた&lt;c2&gt;StrLen&lt;/c2&gt;は18バイト、7コードポイント、3書記素、そしてマラヤーラムの1文字を表現すると知っているでしょう。しかしそれはいい加減にしか知っていないかもしれません。なぜならそれは文字列を単にいい加減にポイントするかしていない文字列内の2つの&lt;c3&gt;StrPos&lt;/c3&gt;の終点を捕まえているだけだからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(The lazy implementation of &lt;c4&gt;StrLen&lt;/c4&gt; is much like a &lt;c5&gt;Range&lt;/c5&gt; object in that respect.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(その点に関して&lt;c4&gt;StrLen&lt;/c4&gt;のいいかげんな実装は&lt;c5&gt;Range&lt;/c5&gt;オブジェクトにそっくりです。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1473,7 +1889,7 @@
         <seg>If you use integers as arguments where position objects are expected, it will be assumed that you mean the units of the current lexically scoped Unicode abstraction level.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ポジションオブジェクトが期待されるところで整数を使用すると、現在のレキシカルスコープのユニコード抽象化レベルの単位と見なされます。</seg>
+        <seg>ポジションオブジェクトが期待されるところで整数を引数として使用すると、現在のレキシカルスコープのユニコード抽象レベルの単位を意味すると見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1481,7 +1897,7 @@
         <seg>(Which defaults to graphemes.) Otherwise you'll need to coerce to the proper units:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(デフォルトはgraphemesです。)それ以外は適切な単位を強要する必要があります:</seg>
+        <seg>(デフォルトは書記素です。)それ以外は適切な単位を強制する必要があります:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1489,7 +1905,15 @@
         <seg>Of course, such a dimensional number will fail if used on a string that doesn't provide the appropriate abstraction level.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>もちろんそのような次元数は文字列が適切な抽象化レベルを提供しないなら失敗するでしょう。</seg>
+        <seg>もちろんそのような次元数は文字列が適切な抽象レベルを提供しないなら失敗するでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a &lt;c0&gt;StrPos&lt;/c0&gt; or &lt;c1&gt;StrLen&lt;/c1&gt; is forced into a numeric context, it will assume the units of the current Unicode abstraction level.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;StrPos&lt;/c0&gt;か&lt;c1&gt;StrLen&lt;/c1&gt;が数値コンテキストを強制されると、現在のユニコード抽象レベルの単位と見なされます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1497,7 +1921,111 @@
         <seg>It is erroneous to pass such a non-dimensional number to a routine that would interpret it with the wrong units.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>そのような次元的でない数を間違った単位で解釈するルーチンに渡すのは間違っています。</seg>
+        <seg>そのような次元的でない数を間違った単位で解釈するルーチンに渡すのは誤っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Implementation note: since Perl 6 mandates that the default Unicode processing level must view graphemes as the fundamental unit rather than codepoints, this has some implications regarding efficient implementation.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>実装上の注意: Perl 6はデフォルトのユニコード処理レベルをコードポイントよりも書記素を基本単位として見なければならないと命じるので、これは効率的な実装に注意を払ういくつかの意味合いを持っています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is suggested that all graphemes be translated on input to a unique grapheme numbers and represented as integers within some kind of uniform array for fast substr access.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>substrアクセスを高速化するため、いくつかの種類の均一な配列内で全ての書記素のインプットを固有の書記素数に変換し、整数として表現することが推奨されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For those graphemes that have a precomposed form, use of that codepoint is suggested.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これらの構成済みの形式を持つ書記素のために、そのコードポイントを使うことが推奨されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Note that this means Latin-1 can still be represented internally with 8-bit integers.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(これは、Latin-1がいまだに内部的に8ビット整数で表現されることができることに注意して下さい。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For graphemes that have no precomposed form, a temporary private id should be assigned that uniquely identifies the grapheme.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>構成済みの形式を持たない書記素のために、テンポラリのプライベートIDは書記素を固有に識別するように割り当てられるべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If such ids are assigned consistently thoughout the process, comparison of two graphemes is no more difficult than the comparison of two integers, and comparison of base characters no more difficult than a direct lookup into the id-to-NFD table.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このようなIDが処理を通して一貫して割り当てられるなら、2つの書記素の比較はもはや2つの整数の比較より難しくありません。そして基本文字の比較はもはやid-to-NFDテーブル内の直接検索より難しくありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Obviously, any temporary grapheme ids must be translated back to some universal form (such as NFD) on output, and normal precomposed graphemes may turn into either NFC or NFD forms depending on the desired output.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>もちろん、あらゆるテンポラリ書記素IDはいくつかの普遍的な形式(NFDのような)に再変換されて出力されなければなりません。そして普通の構成済みの書記素は望まれる出力に従ってNFCかNFDのどちらかの形式に変化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Maintaining a particular grapheme/id mapping over the life of the process may have some GC implications for long-running processes, but most processes will likely see a limited number of non-precomposed graphemes.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>処理の期間にわたる特定の書記素/IDマッピングを扱うことは長期実行中のプロセスのためのいくつかのGC実装を持つかもしれません。しかし、おそらくほとんどのプロセスは限られた数の構成済みでない書記素を参照するでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the program has a scope that wants a codepoint view rather than a grapheme view, the string visible to that lexical scope must also be translated to universal form, just as with output translation.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>もしプログラムが書記素表示よりもコードポイント表示を望むスコープを持つなら、そのレキシカルスコープに見える文字列もまた出力変換と同時に普遍的な形式に変換されなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Alternately, the temporary grapheme ids may be hidden behind an abstraction layer.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>代わりに、テンポラリ書記素IDは抽象化レイヤーから隠されるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In any case, codepoint scope should never see any temporary grapheme ids.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>どんな場合でも、コードポイントスコープはどのようなテンポラリ書記素IDも参照しないべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(The lexical codepoint declaration should probably specify which normalization form it prefers to view strings under.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(レキシカルコードポイント宣言はおそらく文字列を見下ろすことを好む正規化形式を指定するべきです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such a declaration could be applied to input translation as well.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このような宣言は入力変換にも同様に適用できます。)</seg>
       </tuv>
     </tu>
     <tu>
@@ -1505,7 +2033,7 @@
         <seg>A &lt;c0&gt;Buf&lt;/c0&gt; is a stringish view of an array of integers, and has no Unicode or character properties without explicit conversion to some kind of &lt;c1&gt;Str&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;Buf&lt;/c0&gt;は文字列的な整数の配列です。明示的にいくつかの種類の&lt;c1&gt;Str&lt;/c1&gt;に変換されるのでなければユニコードか文字のプロパティを持ちません。</seg>
+        <seg>&lt;c0&gt;Buf&lt;/c0&gt;は整数配列の文字列的な見方です。そしていくつかの種類の&lt;c1&gt;Str&lt;/c1&gt;へ明示的な変換がなければユニコードまたは文字のプロパティを持ちません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1513,7 +2041,7 @@
         <seg>(A &lt;c2&gt;buf&lt;/c2&gt; is the native counterpart.) Typically it's an array of bytes serving as a buffer.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>(&lt;c2&gt;buf&lt;/c2&gt;はネイティブ対応です。)通常はバッファを受け取るためのバイト列です。</seg>
+        <seg>(&lt;c2&gt;buf&lt;/c2&gt;はネイティブに相当するものです。)通常、それはバッファとして供給するバイト配列です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1521,7 +2049,7 @@
         <seg>Bitwise operations on a &lt;c3&gt;Buf&lt;/c3&gt; treat the entire buffer as a single large integer.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c3&gt;Buf&lt;/c3&gt;のビット演算は一つの巨大な整数として扱います。</seg>
+        <seg>&lt;c3&gt;Buf&lt;/c3&gt;のビット単位演算はバッファ全体を一つの巨大な整数として扱います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1529,7 +2057,7 @@
         <seg>Bitwise operations on a &lt;c4&gt;Str&lt;/c4&gt; generally fail unless the &lt;c5&gt;Str&lt;/c5&gt; in question can provide an abstract &lt;c6&gt;Buf&lt;/c6&gt; interface somehow.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c4&gt;Str&lt;/c4&gt;のビット演算は普通は失敗します。&lt;c5&gt;Str&lt;/c5&gt;が &lt;c6&gt;Buf&lt;/c6&gt;の抽象インターフェースを何とか提供しなければ。</seg>
+        <seg>問題になっている&lt;c5&gt;Str&lt;/c5&gt;が&lt;c6&gt;Buf&lt;/c6&gt;の抽象インターフェースをどうにかして提供しなければ、&lt;c4&gt;Str&lt;/c4&gt;のビット単位演算は普通は失敗します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1537,7 +2065,7 @@
         <seg>Coercion to &lt;c7&gt;Buf&lt;/c7&gt; should generally invalidate the &lt;c8&gt;Str&lt;/c8&gt; interface.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c7&gt;Buf&lt;/c7&gt;への強制は一般的には&lt;c8&gt;Str&lt;/c8&gt;のインターフェースを無効にするでしょう。</seg>
+        <seg>&lt;c7&gt;Buf&lt;/c7&gt;への強制は一般的には&lt;c8&gt;Str&lt;/c8&gt;のインターフェースを無効にするべきです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1545,7 +2073,15 @@
         <seg>As a generic type &lt;c9&gt;Buf&lt;/c9&gt; may be instantiated as (or bound to) any of &lt;c10&gt;buf8&lt;/c10&gt;, &lt;c11&gt;buf16&lt;/c11&gt;, or &lt;c12&gt;buf32&lt;/c12&gt; (or to any type that provides the appropriate &lt;c13&gt;Buf&lt;/c13&gt; interface), but when used to create a buffer &lt;c14&gt;Buf&lt;/c14&gt; defaults to &lt;c15&gt;buf8&lt;/c15&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>ジェネリック型としての&lt;c9&gt;Buf&lt;/c9&gt;は&lt;c10&gt;buf8&lt;/c10&gt;、&lt;c11&gt;buf16&lt;/c11&gt;、&lt;c12&gt;buf32&lt;/c12&gt;のどれか(または&lt;c13&gt;Buf&lt;/c13&gt;の適切なインターフェースを提供する何かの型)によってインスタンス化（またはバインド）されます。バッファとして使われる時の&lt;c14&gt;Buf&lt;/c14&gt;のデフォルトは&lt;c15&gt;buf8&lt;/c15&gt;になります。</seg>
+        <seg>ジェネリック型としての&lt;c9&gt;Buf&lt;/c9&gt;は&lt;c10&gt;buf8&lt;/c10&gt;、&lt;c11&gt;buf16&lt;/c11&gt;、&lt;c12&gt;buf32&lt;/c12&gt;のどれか(または&lt;c13&gt;Buf&lt;/c13&gt;の適切なインターフェースを提供する何らかの型)によってインスタンス化（またはバインド）されます。バッファとして使われる場合、&lt;c14&gt;Buf&lt;/c14&gt;のデフォルトは&lt;c15&gt;buf8&lt;/c15&gt;になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike &lt;c0&gt;Str&lt;/c0&gt; types, &lt;c1&gt;Buf&lt;/c1&gt; types prefer to deal with integer string positions, and map these directly to the underlying compact array as indices.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;Str&lt;/c0&gt;型と異なり、&lt;c1&gt;Buf&lt;/c1&gt;型は整数の文字列ポジションで処理することを好みます。そしてそれらをインデックスとして直接に基本的なコンパクト配列にマップします。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1553,7 +2089,31 @@
         <seg>That is, these are not necessarily byte positions--an integer position just counts over the number of underlying positions, where one position means one cell of the underlying integer type.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>それは必ずしもバイト位置ではありません ― 整数位置は単に基礎的な位置の数を数えるだけです。それはあるセルを意味するある位置の基礎的な整数型です。</seg>
+        <seg>それは必ずしもバイトポジションである必要はありません―整数ポジションは単にあるポジションがある基本的な整数型のセルを意味する基本的なポジションの数を数えるだけです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Builtin string operations on &lt;c2&gt;Buf&lt;/c2&gt; types return integers and expect integers when dealing with positions.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c2&gt;Buf&lt;/c2&gt;型のビルトイン文字列操作は整数を返し、ポジションを処理する時には整数を期待します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a limiting case, &lt;c3&gt;buf8&lt;/c3&gt; is just an old-school byte string, and the positions are byte positions.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>限られた場合として、&lt;c3&gt;buf8&lt;/c3&gt;はただの古い習慣のバイト文字列で、ポジションはバイトポジションです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Note, though, that if you remap a section of &lt;c4&gt;buf32&lt;/c4&gt; memory to be &lt;c5&gt;buf8&lt;/c5&gt;, you'll have to multiply all your positions by 4.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ただし、&lt;c4&gt;buf32&lt;/c4&gt;のメモリのセクションを&lt;c5&gt;buf8&lt;/c5&gt;に再マップするなら全てのポジションを4倍する必要があるので注意して下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1561,7 +2121,7 @@
         <seg>The &lt;c0&gt;utf8&lt;/c0&gt; type is derived from &lt;c1&gt;buf8&lt;/c1&gt;, with the additional constraint that it may only contain validly encoded UTF-8.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;utf8&lt;/c0&gt;型は&lt;c1&gt;buf8&lt;/c1&gt;型から派生し、正当にエンコードされたUTF-8だけであるという追加の制約があります。</seg>
+        <seg>&lt;c0&gt;utf8&lt;/c0&gt;型は&lt;c1&gt;buf8&lt;/c1&gt;型から派生し、正当にエンコードされたUTF-8だけを含むという追加の制約を伴います。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1577,7 +2137,7 @@
         <seg>Note that since these are type names, parentheses must always be used to call them as coercers, since the listop form is not allowed for coercions.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>これらは型名なので、リスト演算形式は制約には許可されないので、それらを制約として呼び出すために必ず括弧が使われます。</seg>
+        <seg>これらは型名であり、制約にリスト演算形式は認められないので、それらを制約として呼び出すためには括弧を使う必要があるので注意して下さい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1593,7 +2153,7 @@
         <seg>is always parsed as</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>は常に次のようにパースされます。</seg>
+        <seg>は常に次のように解析されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1609,7 +2169,7 @@
         <seg>The &lt;c0&gt;*&lt;/c0&gt; character as a standalone term captures the notion of &quot;Whatever&quot;, which is applied lazily by whatever operator it is an argument to.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>単項の文字&lt;c0&gt;*&lt;/c0&gt;は&quot;何でも&quot;という概念をとらえます。それはwhatever演算子が引数にいい加減に適用されます。</seg>
+        <seg>単項としての文字&lt;c0&gt;*&lt;/c0&gt;は“何でも”という概念を引き受けます。それは引数に対するwhatever演算子によっていいかげんに適用されます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1617,7 +2177,7 @@
         <seg>Generally it can just be thought of as a &quot;glob&quot; that gives you everything it can in that argument position.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>一般的にはそれは引数の位置に何でも与える&quot;glob&quot;と考えることが出来ます。</seg>
+        <seg>一般的に、それは引数のポジションに何でも与える“glob”と考えることが出来ます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1633,7 +2193,7 @@
         <seg>&lt;c0&gt;Whatever&lt;/c0&gt; is an undefined prototype object derived from &lt;c1&gt;Any&lt;/c1&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;Whatever&lt;/c0&gt;は&lt;c1&gt;Any&lt;/c1&gt;を継承した未定義のプロトタイプオブジェクトです。</seg>
+        <seg>&lt;c0&gt;Whatever&lt;/c0&gt;は&lt;c1&gt;Any&lt;/c1&gt;から派生した未定義のプロトタイプオブジェクトです。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1641,7 +2201,15 @@
         <seg>As a type it is abstract, and may not be instantiated as a defined object.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>型としては抽象型で、定義されたオブジェクトとしてインスタンス化されないでしょう。</seg>
+        <seg>型としては抽象型で、定義されたオブジェクトとしてインスタンス化されません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If for a particular MMD dispatch, nothing in the MMD system claims it, it dispatches to as an &lt;c2&gt;Any&lt;/c2&gt; with an undefined value, and usually blows up constructively.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>もし特定のMMDディスパッチに対してMMDシステムが何も主張しないなら、それは未定義値を伴う&lt;c2&gt;Any&lt;/c2&gt;にディスパッチされ、そして普通は前向きに怒ります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1649,7 +2217,7 @@
         <seg>you should probably not expect it to yield a reasonable answer, unless you think an exception is reasonable.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>例外が理にかなっていると考えないなら、理にかなった答えが与えられると期待しない方が良いでしょう。</seg>
+        <seg>あなたが例外を合理的だと思わないなら、合理的な答えを生じさせると期待しないべきかもしれません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1657,7 +2225,15 @@
         <seg>Since the &lt;c0&gt;Whatever&lt;/c0&gt; object is effectively immutable, the optimizer is free to recognize &lt;c1&gt;*&lt;/c1&gt; and optimize in the context of what operator it is being passed to.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;Whatever&lt;/c0&gt;オブジェクトは不変なので、オプティマイザは &lt;c1&gt;*&lt;/c1&gt;を自由に認識することができ、どの演算子に渡されるのかコンテキストの中で最適化できます。</seg>
+        <seg>&lt;c0&gt;Whatever&lt;/c0&gt;オブジェクトは事実上は不変なので、オプティマイザは&lt;c1&gt;*&lt;/c1&gt;を自由に認識することができ、どの演算子に渡されるのかコンテキストの中で最適化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Most of the built-in numeric operators treat an argument of &lt;c0&gt;*&lt;/c0&gt; as indicating the desire to create a function of a single unknown, so:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ほとんどのビルトイン数値演算子は引数の&lt;c4&gt;*&lt;/c4&gt;を単独の未知の関数を作成することを満たすとして扱います。つまり:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1665,7 +2241,7 @@
         <seg>produces a function of a single argument:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>引数1つの関数を生成します:</seg>
+        <seg>は単独の引数の関数を生成します:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1673,7 +2249,7 @@
         <seg>Likewise, the single dispatcher recognizes &lt;c0&gt;*.meth&lt;/c0&gt; and returns &lt;c1&gt;{ $_.meth }&lt;/c1&gt;, so it can be used where patterns are expected:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>同様に単一のディスパッチャーは&lt;c0&gt;*.meth&lt;/c0&gt;を認識して&lt;c1&gt;{ $_.meth }&lt;/c1&gt;を返すので、そのパターンが期待される場所で使用することが出来ます:</seg>
+        <seg>同様に単独のディスパッチャーは&lt;c0&gt;*.meth&lt;/c0&gt;を認識して&lt;c1&gt;{ $_.meth }&lt;/c1&gt;を返すので、そのパターンが期待される場所で使用することが出来ます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1681,7 +2257,7 @@
         <seg>These closures are of type &lt;c0&gt;Code:($)&lt;/c0&gt;, not &lt;c1&gt;Whatever&lt;/c1&gt;, so that constructs can distinguish via multiple dispatch:</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;Code:($)&lt;/c0&gt;はクロージャー型で&lt;c1&gt;Whatever&lt;/c1&gt;ではないので、構造はマルチディスパッチによって区別できます:</seg>
+        <seg>これらのクロージャーは&lt;c1&gt;Whatever&lt;/c1&gt;ではなく&lt;c0&gt;Code:($)&lt;/c0&gt;型なので、その構造はマルチディスパッチによって区別できます:</seg>
       </tuv>
     </tu>
     <tu>
@@ -1697,7 +2273,7 @@
         <seg>But note that this is &lt;i0&gt;not&lt;/i0&gt; what is happening above, or</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>しかしこれは上で起こっていることではありません。または</seg>
+        <seg>しかし注意として、これは上で起こっていることではありません。または</seg>
       </tuv>
     </tu>
     <tu>
@@ -1713,7 +2289,15 @@
         <seg>The &lt;c0&gt;...&lt;/c0&gt; operator is instead dispatching bare &lt;c1&gt;*&lt;/c1&gt; to a routine that does dwimmery, and in this case decides to supply a function { * + 1 }.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>&lt;c0&gt;...&lt;/c0&gt;演算子は代わりに&lt;c1&gt;*&lt;/c1&gt;を期待通りに動作するルーチンにディスパッチしています。そしてこの場合は関数{ * + 1 }を供給すると決定します。</seg>
+        <seg>&lt;c0&gt;...&lt;/c0&gt;演算子は代わりに&lt;c1&gt;*&lt;/c1&gt;を期待通りに動作するルーチンにディスパッチしています。そしてこの場合は関数 { * + 1 } を供給すると決定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The final element of an array is subscripted as &lt;c0&gt;@a[*-1]&lt;/c0&gt;, which means that when the subscripting operation discovers a &lt;c1&gt;Code&lt;/c1&gt; object for a subscript, it calls it and supplies an argument indicating the number of elements in (that dimension of) the array.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>配列の最後の要素は&lt;c0&gt;@a[*-1]&lt;/c0&gt;として添字化され、それは添字操作が&lt;c1&gt;Code&lt;/c1&gt;オブジェクトを添字に見つけると、それを呼んで(その次元の)配列内の要素数を示す引数を供給することを意味します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1722,6 +2306,30 @@
       </tuv>
       <tuv lang="JA">
         <seg>S09を参照して下さい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A variant of &lt;c0&gt;*&lt;/c0&gt; is the &lt;c1&gt;**&lt;/c1&gt; term, which is of type &lt;c2&gt;HyperWhatever&lt;/c2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;*&lt;/c0&gt;の変化形は&lt;c1&gt;**&lt;/c1&gt;という項で、それは&lt;c2&gt;HyperWhatever&lt;/c2&gt;型です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is generally understood to be a multidimension form of &lt;c3&gt;*&lt;/c3&gt; when that makes sense.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それは一般的に、意味をなす場合は多次元形式の&lt;c3&gt;*&lt;/c3&gt;と理解されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When modified by an operator that would turn &lt;c4&gt;*&lt;/c4&gt; into a function of one argument, &lt;c5&gt;**&lt;/c5&gt; instead turns into a function with a slurpy argument, of type &lt;c6&gt;Code:(*@)&lt;/c6&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>演算子によって&lt;c4&gt;*&lt;/c4&gt;が1つの引数の関数に変換される場合、 &lt;c5&gt;**&lt;/c5&gt;は代わりにすばらしい引数を伴う関数、&lt;c6&gt;Code:(*@)&lt;/c6&gt;型に変化します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1738,6 +2346,22 @@
       </tuv>
       <tuv lang="JA">
         <seg>(ただし&lt;c2&gt;@array[**]&lt;/c2&gt;は同じことを意味します。なぜなら (&lt;c3&gt;...&lt;/c3&gt;で述べたように)添字演算子は裸の&lt;c4&gt;**&lt;/c4&gt;を全ての添字と解釈し、次元のサイズのリストとは解釈しないからです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The meaning of &lt;c5&gt;Whatever&lt;/c5&gt; is always controlled by its immediate context.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c5&gt;Whatever&lt;/c5&gt;の意味は常にその場のコンテキストによってコントロールされます。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other uses for &lt;c0&gt;*&lt;/c0&gt; and &lt;c1&gt;**&lt;/c1&gt; will doubtless suggest themselves over time.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;*&lt;/c0&gt;と&lt;c1&gt;**&lt;/c1&gt;の他の用途はそのうちにそれら自身で示されるでしょう。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2758,6 +3382,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;$x&lt;/c0&gt; may be bound to any object, including any object that can be bound to any other sigil.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;$x&lt;/c0&gt; は，どんなオブジェクトにでも束縛されることが許されています。それにはそれ以外の sigil に束縛されたものをも含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Such a scalar variable is always treated as a singular item in any kind of list context, regardless of whether the object is essentially composite or unitary.</seg>
       </tuv>
       <tuv lang="JA">
@@ -2774,6 +3406,78 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In particular, when interpolating into list context, &lt;c1&gt;$x&lt;/c1&gt; never expands its object to anything other than the object itself as a single item, even if the object is a container object containing multiple items.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>特に、リストコンテキストに差し込まれている場合、&lt;c1&gt;$x&lt;/c1&gt; は単一のアイテムとしてオブジェクト自身以外の何か他のものとしてそのオブジェクトを展開しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;@x&lt;/c0&gt; may be bound to an object of the &lt;c1&gt;Array&lt;/c1&gt; class, but it may also be bound to any object that does the &lt;c2&gt;Positional&lt;/c2&gt; role, such as a &lt;c3&gt;List&lt;/c3&gt;, &lt;c4&gt;Seq&lt;/c4&gt;, &lt;c5&gt;Range&lt;/c5&gt;, &lt;c6&gt;Buf&lt;/c6&gt;, or &lt;c7&gt;Capture&lt;/c7&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;@x&lt;/c0&gt;は、単体の&lt;c1&gt;Array&lt;/c1&gt; クラスのオブジェクトに束縛されることが許されていますし、&lt;c3&gt;List&lt;/c3&gt;、&lt;c4&gt;Seq&lt;/c4&gt;、&lt;c5&gt;Range&lt;/c5&gt;、&lt;c6&gt;Buf&lt;/c6&gt;、&lt;c7&gt;Capture&lt;/c7&gt;のような&lt;c2&gt;Positional&lt;/c2&gt; role を負う全てのオブジェクトに束縛されることも許されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c8&gt;Positional&lt;/c8&gt; role implies the ability to support &lt;c9&gt;postcircumfix:&lt;[ ]&gt;&lt;/c9&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c8&gt;Positional&lt;/c8&gt; role は、&lt;c9&gt;postcircumfix:&lt;[ ]&gt;&lt;/c9&gt;をサポートする能力のことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Likewise, &lt;c0&gt;%x&lt;/c0&gt; may be bound to any object that does the &lt;c1&gt;Associative&lt;/c1&gt; role, such as &lt;c2&gt;Pair&lt;/c2&gt;, &lt;c3&gt;Mapping&lt;/c3&gt;, &lt;c4&gt;Set&lt;/c4&gt;, &lt;c5&gt;Bag&lt;/c5&gt;, &lt;c6&gt;KeyHash&lt;/c6&gt;, or &lt;c7&gt;Capture&lt;/c7&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>同様に&lt;c0&gt;%x&lt;/c0&gt; は，&lt;c2&gt;Pair&lt;/c2&gt;、&lt;c3&gt;Mapping&lt;/c3&gt;、&lt;c4&gt;Set&lt;/c4&gt;、&lt;c5&gt;Bag&lt;/c5&gt;、&lt;c6&gt;KeyHash&lt;/c6&gt;、&lt;c7&gt;Capture&lt;/c7&gt;のような&lt;c1&gt;Associative&lt;/c1&gt; role を負う全てのオブジェクトに束縛されることが許されています．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c8&gt;Associative&lt;/c8&gt; role implies the ability to support &lt;c9&gt;postcircumfix:&lt;{ }&gt;&lt;/c9&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c8&gt;Associative&lt;/c8&gt; role は、&lt;c9&gt;postcircumfix:&lt;{ }&gt;&lt;/c9&gt;をサポートする能力のことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;&amp;x&lt;/c0&gt; may be bound to any object that does the &lt;c1&gt;Callable&lt;/c1&gt; role, such as any &lt;c2&gt;Block&lt;/c2&gt; or &lt;c3&gt;Routine&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;&amp;x&lt;/c0&gt;は、&lt;c2&gt;Block&lt;/c2&gt;、&lt;c3&gt;Routine&lt;/c3&gt;のような&lt;c1&gt;Callable&lt;/c1&gt; role を負う全てのオブジェクトに束縛されることを許されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c4&gt;Callable&lt;/c4&gt; role implies the ability to support &lt;c5&gt;postcircumfix:&lt;( )&gt;&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c4&gt;Callable&lt;/c4&gt; role は、&lt;c5&gt;postcircumfix:&lt;( )&gt;&lt;/c5&gt;をサポートする能力のことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;::x&lt;/c0&gt; may be bound to any object that does the &lt;c1&gt;Abstraction&lt;/c1&gt; role, such as a package, module, class, role, grammar, or any other type object, or any immutable value object that can be used as a type.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;::x&lt;/c0&gt; は、package、module、class、role、grammar、それ以外の全ての型オブジェクトや型として使われるimmutable な値オブジェクトのような&lt;c1&gt;Abstraction&lt;/c1&gt; role を負う全てのオブジェクトに束縛されることを許されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This &lt;c2&gt;Abstraction&lt;/c2&gt; role implies the ability to do various symbol table and/or typological manipulations which may or may not be supported by any given abstraction.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c2&gt;Abstraction&lt;/c2&gt; role は、抽象化によりサポートすることを許可されたり，そうでないような様々なシンボルテーブルや型論理を操作する能力を意味します．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Mostly though it just means that you want to give some abstraction an official name that you can then use later in the compilation without any sigil.</seg>
       </tuv>
       <tuv lang="JA">
@@ -2786,6 +3490,38 @@
       </tuv>
       <tuv lang="JA">
         <seg>どのような場合でも、sigilによって意味づけされた最小のコンテナroleは最新のバインディング時にチェックされ、文法エラーがすぐに検出できるなら（コンパイル時のような）早期に失敗します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you wish to bind an object that doesn't yet do the appropriate role, you must either stick with the generic &lt;c0&gt;$&lt;/c0&gt; sigil, or mix in the appropriate role before binding to a more specific sigil.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>適切なroleを負わないオブジェクトを束縛したい場合、一般的な&lt;c0&gt;$&lt;/c0&gt; sigilにこだわるか、より特定されたsigilと束縛する前に適切なroleをミックスインしてやらなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An object is allowed to support both &lt;c0&gt;Positional&lt;/c0&gt; and &lt;c1&gt;Associative&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;Positional&lt;/c0&gt;と&lt;c1&gt;Associative&lt;/c1&gt;をサポートするオブジェクトも許されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An object that does not support &lt;c2&gt;Positional&lt;/c2&gt; may not be bound directly to &lt;c3&gt;@x&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c2&gt;Positional&lt;/c2&gt;をサポートしないオブジェクトを&lt;c3&gt;@x&lt;/c3&gt;に直接束縛することは許されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, any construct such as &lt;c4&gt;%x&lt;/c4&gt; that can interpolate the contents of such an object into list context can automatically construct a list value that may then be bound to an array variable.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ただし、リストコンテキスト内でのオブジェクトの内容を挿入するような&lt;c4&gt;%x&lt;/c4&gt;の構築は、1つの配列変数に束縛されているリスト値を自動的に構築する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2934,6 +3670,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To format an array value separated by commas, supply a second argument: &lt;c0&gt;.fmt('%03d', ', ')&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>配列の値をコンマで区切ってフォーマットするには&lt;c0&gt;.fmt('%03d', ', ')&lt;/c0&gt;のように第二引数を指定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To format a hash value or list of pairs, include formats for both key and value in the first string: &lt;c1&gt;.fmt('%s: %s', &quot;\n&quot;)&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ハッシュ値やペアのリストをフォーマットするには&lt;c1&gt;.fmt('%s: %s', &quot;\n&quot;)&lt;/c1&gt;のように最初の文字列にキィとバリューの両方に対してのフォーマットを含めてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Subscripts now consistently dereference the container produced by whatever was to their left.</seg>
       </tuv>
       <tuv lang="JA">
@@ -2969,7 +3721,7 @@
         <seg>Constant string subscripts may be placed in angles, so &lt;c3&gt;%bar.{'a'}&lt;/c3&gt; may also be written as &lt;c4&gt;%bar&lt;a&gt;&lt;/c4&gt; or &lt;c5&gt;%bar.&lt;a&gt;&lt;/c5&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>定数文字列の添字はangles内に置かれます。つまり&lt;c3&gt;%bar.{'a'}&lt;/c3&gt;は&lt;c4&gt;%bar&lt;a&gt;&lt;/c4&gt;か&lt;c5&gt;%bar.&lt;a&gt;&lt;/c5&gt;とも書けます。</seg>
+        <seg>添字が定数文字列の場合は、山括弧内に置くこともできます。つまり&lt;c3&gt;%bar.{'a'}&lt;/c3&gt;は&lt;c4&gt;%bar&lt;a&gt;&lt;/c4&gt;か&lt;c5&gt;%bar.&lt;a&gt;&lt;/c5&gt;とも書けます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2986,6 +3738,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>スライシングは添字の性質で指定され、sigilによってではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The context in which a subscript is evaluated is no longer controlled by the sigil either.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>添字が評価されているコンテキストは、もはやsigilによって制御されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3169,7 +3929,7 @@
         <seg>Unlike in Perl 5, the notation &lt;c0&gt;&amp;foo&lt;/c0&gt; merely stands for the &lt;c1&gt;foo&lt;/c1&gt; function as a &lt;c2&gt;Routine&lt;/c2&gt; object without calling it.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 5と異なり、&lt;c0&gt;&amp;foo&lt;/c0&gt;という表記は単に関数&lt;c1&gt;foo&lt;/c1&gt;を&lt;c2&gt;Routine&lt;/c2&gt;オブジェクトとして呼び出し無しに表します。</seg>
+        <seg>Perl 5と異なり、&lt;c0&gt;&amp;foo&lt;/c0&gt;という表記は単に関数&lt;c1&gt;foo&lt;/c1&gt;を&lt;c2&gt;Routine&lt;/c2&gt;オブジェクトとして呼び出さないで取得します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3482,6 +4242,582 @@
       </tuv>
       <tuv lang="JA">
         <seg>これは以下を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When not used as a sigil, the semantic function of &lt;c0&gt;::&lt;/c0&gt; within a name is to force the preceding portion of the name to be considered a package through which the subsequent portion of the name is to be located.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>sigilとして使わない場合、名前の範囲での&lt;c0&gt;::&lt;/c0&gt;の意味関数は後の位置の名前を伴っていれば、前の位置にパッケージとみなされる名前を強制します．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike in Perl 5, if a sigil is followed by comma, semicolon, a colon not followed by an identifier, or any kind of bracket or whitespace (including Unicode brackets and whitespace), it will be taken to be a sigil without a name rather than a punctuational variable.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl5と違って、sigilにコンマ、セミコロン、識別子が後に続かないコロン、括弧、空白(これにはUnicodeの括弧、空白を含む)が続く場合、お決まりの変数ではなく名前無しのsigilとみなされます．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This allows you to use sigils as coercion operators:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これはsigilをcoercion演算子として使えるということです</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In declarative contexts bare sigils may be used as placeholders for anonymous variables:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>宣言コンテキストでは、裸のsigilは無名変数のプレイスホルダとして使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Outside of declarative contexts you may use &lt;c0&gt;*&lt;/c0&gt; for a placeholder:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>宣言コンテキストの外側では、プレイスホルダとして&lt;c0&gt;*&lt;/c0&gt;を使うことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Attempts to say something like:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>似たようなことを言おうとして</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>will result in the message, &quot;Anonymous variable requires declarator&quot;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>とすると&quot;Anonymous variable requires declarator&quot;というメッセージを受け取るでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other all-caps names are semi-reserved.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それ以外の全てが大文字の名前は準予約になっています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When &quot;strict&quot; is in effect (which is the default except for one-liners), non-qualified variables (such as &lt;c0&gt;$x&lt;/c0&gt; and &lt;c1&gt;@y&lt;/c1&gt;) are only looked up from lexical scopes, but never from package scopes.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&quot;strict&quot;が有効な場合(これはワンライナー以外ではデフォルトの動作です)では、資格を持たない変数(&lt;c0&gt;$x&lt;/c0&gt;や&lt;c1&gt;@y&lt;/c1&gt;のような)は、レキシカルスコープからのみ見付けられますが，パッケージスコープからは見付けられません．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To bind package variables into a lexical scope, simply say &lt;c0&gt;our ($x, @y)&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>レキシカルスコープへパッケージスコープの変数を束縛するには、単に&lt;c0&gt;our ($x, @y)&lt;/c0&gt;を使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To bind global variables into a lexical scope, predeclare them with &lt;c1&gt;use&lt;/c1&gt;:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>グローバル変数をレキシカルスコープに束縛するには、&lt;c1&gt;use&lt;/c1&gt;でそれらをあらかじめ宣言する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Or just refer to them as &lt;c0&gt;$*IN&lt;/c0&gt; and &lt;c1&gt;$*OUT&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>か，&lt;c0&gt;$*IN&lt;/c0&gt;や&lt;c1&gt;$*OUT&lt;/c1&gt;のように参照します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Every block is a closure.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>全てのブロックはクロージャです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This synopsis summarizes Apocalypse 10, which discusses packages despite never having been written.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>この概要は、Apocalypse 10 をまとめたもので、これ以前に書かれなかったパッケージについて話しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As in Perl 5, packages are the basis of modules and classes.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl 5のように、パッケージは、モジュールとクラスの基礎となるものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike in Perl 5, modules and classes are declared with distinct keywords, but they're still just packages with extra behaviors.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl5とは異なり、モジュールとクラスは別々のキーワードで宣言されますが、それらは追加の機能を持ったパッケージでもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Likewise every typename has an associated package namespace, even if unused.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>同様に全ての型名は、パッケージを使うかどうかに関係なく、関係を持つパッケージの名前空間を持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An ordinary package is declared with the &lt;c0&gt;package&lt;/c0&gt; keyword.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>通常のパッケージは、&lt;c0&gt;package&lt;/c0&gt;キーワードで宣言されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike in Perl 5, in Perl 6 it can only be used with a block:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl5と違い、Perl6 ではブロックを伴ってのみ使用されることが許されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A named package declaration can occur as part of an expression, just like named subroutine declarations.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>名前付きのパッケージ宣言は、表現の一部として現われ、ただの名前付きサブルーチン宣言のようでもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a special exception, if a braceless &lt;c0&gt;package&lt;/c0&gt; declaration occurs as the first executable statement in a file, then it's taken to mean that the rest of the file is Perl 5 code.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>特別な表現として、括弧を伴わない&lt;c0&gt;package&lt;/c0&gt;宣言がファイルの実行可能な最初の文として現れた場合、ファイルの残りはPerl5のコードを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This form is illegal in a Perl 6 file.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>この形式は、Perl6のファイルとしては違法です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you wish to have a file-scoped package, either use the brace form or declare it with the &lt;c0&gt;module&lt;/c0&gt; keyword instead.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ファイルスコープのパッケージを作りたいなら、括弧形式を使うか、(packageの)代わりに&lt;c0&gt;module&lt;/c0&gt;キーワードを使って宣言します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since there are no barewords in Perl 6, package names must be predeclared, or use the sigil-like &lt;c0&gt;::PackageName&lt;/c0&gt; syntax to indicate that the type will be supplied some other way.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl6 では裸のワードは存在しないので、パッケージ名はあらかじめ宣言されていなければならず、そうでなければ型が他の場所で提供されている可能性を示すのにシジルみたいな&lt;c0&gt;::PackageName&lt;/c0&gt;構文を使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c1&gt;::&lt;/c1&gt; prefix does not imply globalness as it does in Perl 5.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c1&gt;::&lt;/c1&gt;の接頭辞は、perl5でのようにグローバル性を示す訳ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Use &lt;c2&gt;GLOBAL::&lt;/c2&gt; for that.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(それを示すためには&lt;c2&gt;GLOBAL::&lt;/c2&gt;を使いましょう。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A bare &lt;c0&gt;package&lt;/c0&gt; declarator (without an explicit scope declarator such as &lt;c1&gt;my&lt;/c1&gt;) declares an &lt;c2&gt;our&lt;/c2&gt; package within the current package (or module, or class, or role, or...).</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>裸の&lt;c0&gt;package&lt;/c0&gt;宣言(&lt;c1&gt;my&lt;/c1&gt;のようなスコープ宣言子を付けないような)は、現在のパッケージ(やモジュール、クラス、ロールなど)の中の&lt;c2&gt;our&lt;/c2&gt;パッケージを宣言します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use &lt;c3&gt;GLOBAL::&lt;/c3&gt; to declare a global package name.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>グローバルなパッケージ名を宣言するには、&lt;c3&gt;GLOBAL::&lt;/c3&gt;を使いましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To declare a lexically scoped package, use &lt;c0&gt;my package&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>レキシカルスコープなパッケージを宣言するには、&lt;c0&gt;my package&lt;/c0&gt;を使いましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To declare an anonymous package you can use either of</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>匿名のパッケージを宣言するには、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All files start out being parsed in the &lt;c0&gt;GLOBAL&lt;/c0&gt; package, but may switch to some other package scope depending on the first package-ish declaration.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>のどちらかが使えます。全てのファイルが&lt;c0&gt;GLOBAL&lt;/c0&gt;パッケージの中にあるとしてパースされますが，最初のパッケージ的な宣言に依存してそれ以外のパッケージスコープに変化していることもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If that first declaration is not a package variant, then the parsing switches to the &quot;&lt;c1&gt;main&lt;/c1&gt;&quot; package for Perl 5 code.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>最初の宣言がパッケージ変数でない場合、パースはPerl5コードとしてなら&quot;&lt;c1&gt;main&lt;/c1&gt;&quot;パッケージに変化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Perl 6 code stays &lt;c2&gt;GLOBAL&lt;/c2&gt; in that situation.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>同じようにPerl6のコードなら&lt;c2&gt;GLOBAL&lt;/c2&gt;のままです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The mainline code is thus in the &lt;c3&gt;GLOBAL&lt;/c3&gt; namespace unless declared otherwise.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それ以外に宣言されていなければ、メインラインのコードは&lt;c3&gt;GLOBAL&lt;/c3&gt;名前空間のままです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Package traits are set using &lt;c0&gt;is&lt;/c0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>パッケージトレイトは&lt;c0&gt;is&lt;/c0&gt;を使って設定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All symbolic links are done with the &lt;c0&gt;::($expr)&lt;/c0&gt; syntax, which is legal in any variable, package, module, or class name anywhere a &lt;c1&gt;::Ident&lt;/c1&gt; is legal.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>シンボリックリンクは、&lt;c0&gt;::($expr)&lt;/c0&gt;構文を使います、これは&lt;c1&gt;::Ident&lt;/c1&gt;が有効な場所のどこででも全ての変数、パッケージ、モジュール、クラスの名前で有効です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The string returned by the expression will be parsed for &lt;c2&gt;::&lt;/c2&gt; indicating subpackage names.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>この表現によって返される文字列は、&lt;c2&gt;::&lt;/c2&gt;の中のサブパッケージ名を差すとしてパースされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not confuse this with the</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これをシンボルテーブルの中を検索できるようにする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>syntax that lets you do a lookup in a particular symbol table.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>構文と混同しないでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, the key is not parsed for &lt;c0&gt;::&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>この場合、キィは&lt;c0&gt;::&lt;/c0&gt;の中としてパースされません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It's just a hash lookup.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これはハッシュの検索として働きます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A declaration of any object of the form &lt;c0&gt;A::B::c&lt;/c0&gt; also creates (if needed) an empty package &lt;c1&gt;A&lt;/c1&gt;, and an empty package &lt;c2&gt;B&lt;/c2&gt; inside of &lt;c3&gt;A&lt;/c3&gt;, in addition to creating &lt;c4&gt;c&lt;/c4&gt; inside of &lt;c5&gt;B&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;A::B::c&lt;/c0&gt;形式のオブジェクトの宣言は(必要であれば)空のパッケージ&lt;c1&gt;A&lt;/c1&gt;、&lt;c3&gt;A&lt;/c3&gt;の中の空のパッケージ&lt;c2&gt;B&lt;/c2&gt;、&lt;c5&gt;B&lt;/c5&gt;の中の&lt;c4&gt;c&lt;/c4&gt;を生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such empty packages may be subsequently be redeclared as any other package-like object (module, class, etc.), and no redeclaration warning will be issued for such a redeclaration.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このように空のパッケージは他のパッケージ的なオブジェクト(モジュール、クラス他)によって再宣言されるかもしれません。このような再宣言には再宣言の警告を引き起しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a parent package already exists, no stub package needs to be created, and no declaration of the form &lt;c6&gt;A::B::c&lt;/c6&gt; has anything to say about the type of package &lt;c7&gt;A&lt;/c7&gt; or package &lt;c8&gt;A::B&lt;/c8&gt;, since any package variant can function as a package for the purposes of naming things.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>親パッケージが既に存在する場合、スタブパッケージが作成される必要がありません。パッケージ変数は名前付けされた通りにパッケージとして機能しますので、&lt;c6&gt;A::B::c&lt;/c6&gt;形式の宣言は&lt;c7&gt;A&lt;/c7&gt;パッケージ、&lt;c8&gt;A::B&lt;/c8&gt;パッケージに何もしません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apart of package declaration constructs, package names are always searched for from the innermost lexical scope to outermost.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>パッケージ宣言の構成の一部であるパッケージ名は常に最も内側のレキシカルスコープから最も外側のそれの範囲から探されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If not defined in any surrounding lexical scope, the package is searched for from the current package up through the containing packages to &lt;c0&gt;GLOBAL&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>レキシカルスコープに囲まれて定義されていなければ、そのパッケージは現在のパッケージから&lt;c0&gt;GLOBAL&lt;/c0&gt;に向かって含んでいるパッケージを探されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If it is not found, a compiler error results.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それでも見付からなければ、結果としてコンパイルエラーを生じます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As with an initial &lt;c0&gt;::&lt;/c0&gt;, the presence of a &lt;c1&gt;::&lt;/c1&gt; within the name does not imply globalness (unlike in Perl 5).</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>先頭の&lt;c0&gt;::&lt;/c0&gt;のような、名前の中の&lt;c1&gt;::&lt;/c1&gt;は，グローバル性を意味するものではありません(Perl5と違い)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>True globals are always in the &lt;c2&gt;GLOBAL::&lt;/c2&gt; namespace.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>真のグローバルは常に&lt;c2&gt;GLOBAL::&lt;/c2&gt;名前空間の中にあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;PROCESS::&lt;/c0&gt; namespace, shared by all interpreters within the process, is notionally outside of &lt;c1&gt;GLOBAL::&lt;/c1&gt;, but package searches do not look there for anything.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;PROCESS::&lt;/c0&gt;名前空間は，プロセスの範囲でのインタプリタ全体で共有され、表記として&lt;c1&gt;GLOBAL::&lt;/c1&gt;の外側にあり、パッケージ検索はそこを探しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Contextual variable searches do; &lt;c2&gt;$*PID&lt;/c2&gt; will eventually locate &lt;c3&gt;$PROCESS::PID&lt;/c3&gt; if not hidden by an inner context's &lt;c4&gt;$PID&lt;/c4&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(コンテキスト変数検索は探すようになっていて、内側のコンテキストの&lt;c4&gt;$PID&lt;/c4&gt;によって隠されていなければ、&lt;c2&gt;$*PID&lt;/c2&gt;は最終的には&lt;c3&gt;$PROCESS::PID&lt;/c3&gt;を探し出せます。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A package (or any other similar namespace) can control autoloading.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>パッケージ(やそれ以外の同様な名前空間)はオートロードを制御できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, Perl 5's &lt;c0&gt;AUTOLOAD&lt;/c0&gt; is being superseded by MMD autoloaders that distinguish declaration from definition, but are not restricted to declaring subs.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl5の&lt;c0&gt;AUTOLOAD&lt;/c0&gt;は定義と宣言を区別するMMDのオートローダに取って代わられ、スタブを宣言することに制限されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A run-time declarator multisub is declared as:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>実行時の宣言のマルチスタブは</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>which stands in for the declaration of a container object within another container object; it is called when anyone is searching for a name in the package (or module, or class), and the name doesn't already exist in the package.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>のように宣言されています。これは別のコンテナオブジェクトの中のコンテナオブジェクトの宣言の代わりをしています。パッケージ(やモジュールやクラス)の中で名前を探す場合に呼ばれます。その名前はパッケージの中に既に存在している訳ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(In particular, &lt;c0&gt;.can&lt;/c0&gt; calls &lt;c1&gt;CANDO&lt;/c1&gt; when trying to determine if a class supports a particular method.) The arguments to &lt;c2&gt;CANDO&lt;/c2&gt; include type information on what kind of object is expected in context, or this may be intuited from the name requested.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(特にクラスが特定のメソッドをサポートしているかどうかを判断しようとする場合には&lt;c0&gt;.can&lt;/c0&gt;は&lt;c1&gt;CANDO&lt;/c1&gt;を呼び出します。)&lt;c2&gt;CANDO&lt;/c2&gt;への引数はコンテキストで期待されるオブジェクトの種類の型情報を含みます。これは呼び出される名前からも直感的でしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In any case, there may be multiple &lt;c3&gt;CANDO&lt;/c3&gt; routines that are dispatched via MMD:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>全ての場合で、MMD経由でディスパッチされるマルチな&lt;c3&gt;CANDO&lt;/c3&gt;ルーチンが存在する可能性はある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The package itself is just passed as the first argument, since it's the container object.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>パッケージ自身はコンテナオブジェクトなので、最初の引数として渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Subsequent arguments identify the desired type of the inner container and the &quot;name&quot; or &quot;key&quot; by which the object is to be looked up in the outer container.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>後続の引数は外側のコンテナから探されたオブジェクトによって内部コンテナとして望まれた型と&quot;名前&quot;や&quot;キィ&quot;を特定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such a name does not include its container name, unlike Perl 5's magical &lt;c0&gt;$AUTOLOAD&lt;/c0&gt; variable.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>その名前にはコンテナの名前を含みません。Perl5のマジカルな&lt;c0&gt;$AUTOLOAD&lt;/c0&gt;変数と違い。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Nor does it include the type information of a Code object's &quot;long name&quot;; this information comes in via the type parameter, and may be matched against using ordinary subsignature matching:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>コードオブジェクトの&quot;長い名前&quot;の型情報は含んでいないが、この情報は型パラメータに現われ、通常のサブシグネチャマッチを使いマッチされるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The slurpy &lt;c0&gt;%args&lt;/c0&gt; hash is likely to be empty in standard Perl 6 usage, but it's possible that some dialects of Perl will desire a mechanism to pass in additional contextual information, so this parameter is reserved for such purposes.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>通常のPerl6 の使用法では、丸呑み&lt;c0&gt;%args&lt;/c0&gt;ハッシュは空になりそうですが、渡すメカニズムを追加のコンテキスト情報の中で要求することが可能なPerlの方言もあります。そのためこのパラメータはこのような目的に対して予約されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;CANDO&lt;/c0&gt; is expected to return an inner container object of the proper sort (i.e. a variable, subroutine, or method object), or a proxy object that can &quot;autovivify&quot; lazily, or &lt;c1&gt;undef&lt;/c1&gt; if that name is not to be considered declared in the namespace in question.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>その名前が質問の際に名前空間に宣言されていないと考えられる場合、適切な種類(例えば、変数、サブルーチン、メソッドオブジェクト)の内部のコンテナオブジェクト、怠惰な&quot;自動活性&quot;のプロキシオブジェクト、&lt;c1&gt;undef&lt;/c1&gt;を返すことを&lt;c0&gt;CANDO&lt;/c0&gt;は期待されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Only bare &lt;c2&gt;undef&lt;/c2&gt; is interpreted as &quot;not there&quot;, since typed undefs may function as autovivifiable proxy objects.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(型付けられたundefは自動活性可能なプロキシオブジェクトとして機能しますので、裸の&lt;c2&gt;undef&lt;/c2&gt;は、&quot;そこに無い&quot;として解釈されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See S12.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>S12 参照のこと。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The declaration merely defines the interface to the new object.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>宣言は単に新しいオブジェクトへのインターフェイスを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That object need not be completely defined yet, though the &lt;c0&gt;CANDO&lt;/c0&gt; routine is certainly &lt;i1&gt;allowed&lt;/i1&gt; to define it eagerly, and even install the inner object into the outer container (the symbol table) if it wants to cache the declaration.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>そのオブジェクトはそのときまでには完全に定義されることを必要としませんが、宣言のキャッシュを望めば&lt;c0&gt;CANDO&lt;/c0&gt;ルーチンはそれを積極的に定義すること、内部オブジェクトを外部コンテナ(シンボルテーブル)に設定することを確実に&lt;i1&gt;許可&lt;/i1&gt;します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At declaration time it might not yet be known whether the inner container object will be used in lvalue or rvalue context; the use of a proxy object can supply either readonly or rw semantics later.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>宣言時には、まだ内部コンテナオブジェクトがlvalue、rvalueコンテキストのどちらで使われるかがわかっていないかもしれません。プロキシオブジェクトを使う場合、読み込み専用か読み書き可能な動作のどちらかが後で提供されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the package in question is a class, it is also possible to declare real methods or submethods:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>質問時のパッケージがクラスの場合、実際のメソッドやサブメソッドを宣言することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The method form is inherited by subclasses.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>メソッド形式はサブクラスにっよって継承されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Submethods are never inherited but may still do MMD within the class.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>サブメソッドは継承されませんが、クラスの範囲でMMDは起きます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Ordinary multisubs are inherited only to the extent allowed by the MMD mechanism.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(通常のマルチスタブはMMDメカニズムによって許可された拡張に対してのみ継承されます。)</seg>
       </tuv>
     </tu>
   </body>

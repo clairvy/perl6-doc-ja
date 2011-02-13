@@ -3,7 +3,7 @@
 <tmx version="1.1">
   <header
     creationtool="OmegaT"
-    creationtoolversion="2.0.5"
+    creationtoolversion="2.0.5_4"
     segtype="sentence"
     o-tmf="OmegaT TMX"
     adminlang="EN-US"
@@ -3382,6 +3382,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;$x&lt;/c0&gt; may be bound to any object, including any object that can be bound to any other sigil.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;$x&lt;/c0&gt; は，どんなオブジェクトにでも束縛されることが許されています。それにはそれ以外の sigil に束縛されたものをも含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Such a scalar variable is always treated as a singular item in any kind of list context, regardless of whether the object is essentially composite or unitary.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3398,6 +3406,78 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In particular, when interpolating into list context, &lt;c1&gt;$x&lt;/c1&gt; never expands its object to anything other than the object itself as a single item, even if the object is a container object containing multiple items.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>特に、リストコンテキストに差し込まれている場合、&lt;c1&gt;$x&lt;/c1&gt; は単一のアイテムとしてオブジェクト自身以外の何か他のものとしてそのオブジェクトを展開しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;@x&lt;/c0&gt; may be bound to an object of the &lt;c1&gt;Array&lt;/c1&gt; class, but it may also be bound to any object that does the &lt;c2&gt;Positional&lt;/c2&gt; role, such as a &lt;c3&gt;List&lt;/c3&gt;, &lt;c4&gt;Seq&lt;/c4&gt;, &lt;c5&gt;Range&lt;/c5&gt;, &lt;c6&gt;Buf&lt;/c6&gt;, or &lt;c7&gt;Capture&lt;/c7&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;@x&lt;/c0&gt;は、単体の&lt;c1&gt;Array&lt;/c1&gt; クラスのオブジェクトに束縛されることが許されていますし、&lt;c3&gt;List&lt;/c3&gt;、&lt;c4&gt;Seq&lt;/c4&gt;、&lt;c5&gt;Range&lt;/c5&gt;、&lt;c6&gt;Buf&lt;/c6&gt;、&lt;c7&gt;Capture&lt;/c7&gt;のような&lt;c2&gt;Positional&lt;/c2&gt; role を負う全てのオブジェクトに束縛されることも許されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c8&gt;Positional&lt;/c8&gt; role implies the ability to support &lt;c9&gt;postcircumfix:&lt;[ ]&gt;&lt;/c9&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c8&gt;Positional&lt;/c8&gt; role は、&lt;c9&gt;postcircumfix:&lt;[ ]&gt;&lt;/c9&gt;をサポートする能力のことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Likewise, &lt;c0&gt;%x&lt;/c0&gt; may be bound to any object that does the &lt;c1&gt;Associative&lt;/c1&gt; role, such as &lt;c2&gt;Pair&lt;/c2&gt;, &lt;c3&gt;Mapping&lt;/c3&gt;, &lt;c4&gt;Set&lt;/c4&gt;, &lt;c5&gt;Bag&lt;/c5&gt;, &lt;c6&gt;KeyHash&lt;/c6&gt;, or &lt;c7&gt;Capture&lt;/c7&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>同様に&lt;c0&gt;%x&lt;/c0&gt; は，&lt;c2&gt;Pair&lt;/c2&gt;、&lt;c3&gt;Mapping&lt;/c3&gt;、&lt;c4&gt;Set&lt;/c4&gt;、&lt;c5&gt;Bag&lt;/c5&gt;、&lt;c6&gt;KeyHash&lt;/c6&gt;、&lt;c7&gt;Capture&lt;/c7&gt;のような&lt;c1&gt;Associative&lt;/c1&gt; role を負う全てのオブジェクトに束縛されることが許されています．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c8&gt;Associative&lt;/c8&gt; role implies the ability to support &lt;c9&gt;postcircumfix:&lt;{ }&gt;&lt;/c9&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c8&gt;Associative&lt;/c8&gt; role は、&lt;c9&gt;postcircumfix:&lt;{ }&gt;&lt;/c9&gt;をサポートする能力のことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;&amp;x&lt;/c0&gt; may be bound to any object that does the &lt;c1&gt;Callable&lt;/c1&gt; role, such as any &lt;c2&gt;Block&lt;/c2&gt; or &lt;c3&gt;Routine&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;&amp;x&lt;/c0&gt;は、&lt;c2&gt;Block&lt;/c2&gt;、&lt;c3&gt;Routine&lt;/c3&gt;のような&lt;c1&gt;Callable&lt;/c1&gt; role を負う全てのオブジェクトに束縛されることを許されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c4&gt;Callable&lt;/c4&gt; role implies the ability to support &lt;c5&gt;postcircumfix:&lt;( )&gt;&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c4&gt;Callable&lt;/c4&gt; role は、&lt;c5&gt;postcircumfix:&lt;( )&gt;&lt;/c5&gt;をサポートする能力のことを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;::x&lt;/c0&gt; may be bound to any object that does the &lt;c1&gt;Abstraction&lt;/c1&gt; role, such as a package, module, class, role, grammar, or any other type object, or any immutable value object that can be used as a type.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;::x&lt;/c0&gt; は、package、module、class、role、grammar、それ以外の全ての型オブジェクトや型として使われるimmutable な値オブジェクトのような&lt;c1&gt;Abstraction&lt;/c1&gt; role を負う全てのオブジェクトに束縛されることを許されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This &lt;c2&gt;Abstraction&lt;/c2&gt; role implies the ability to do various symbol table and/or typological manipulations which may or may not be supported by any given abstraction.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c2&gt;Abstraction&lt;/c2&gt; role は、抽象化によりサポートすることを許可されたり，そうでないような様々なシンボルテーブルや型論理を操作する能力を意味します．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Mostly though it just means that you want to give some abstraction an official name that you can then use later in the compilation without any sigil.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3410,6 +3490,38 @@
       </tuv>
       <tuv lang="JA">
         <seg>どのような場合でも、sigilによって意味づけされた最小のコンテナroleは最新のバインディング時にチェックされ、文法エラーがすぐに検出できるなら（コンパイル時のような）早期に失敗します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you wish to bind an object that doesn't yet do the appropriate role, you must either stick with the generic &lt;c0&gt;$&lt;/c0&gt; sigil, or mix in the appropriate role before binding to a more specific sigil.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>適切なroleを負わないオブジェクトを束縛したい場合、一般的な&lt;c0&gt;$&lt;/c0&gt; sigilにこだわるか、より特定されたsigilと束縛する前に適切なroleをミックスインしてやらなければなりません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An object is allowed to support both &lt;c0&gt;Positional&lt;/c0&gt; and &lt;c1&gt;Associative&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;Positional&lt;/c0&gt;と&lt;c1&gt;Associative&lt;/c1&gt;をサポートするオブジェクトも許されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An object that does not support &lt;c2&gt;Positional&lt;/c2&gt; may not be bound directly to &lt;c3&gt;@x&lt;/c3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c2&gt;Positional&lt;/c2&gt;をサポートしないオブジェクトを&lt;c3&gt;@x&lt;/c3&gt;に直接束縛することは許されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, any construct such as &lt;c4&gt;%x&lt;/c4&gt; that can interpolate the contents of such an object into list context can automatically construct a list value that may then be bound to an array variable.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ただし、リストコンテキスト内でのオブジェクトの内容を挿入するような&lt;c4&gt;%x&lt;/c4&gt;の構築は、1つの配列変数に束縛されているリスト値を自動的に構築する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3558,6 +3670,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To format an array value separated by commas, supply a second argument: &lt;c0&gt;.fmt('%03d', ', ')&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>配列の値をコンマで区切ってフォーマットするには&lt;c0&gt;.fmt('%03d', ', ')&lt;/c0&gt;のように第二引数を指定してください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To format a hash value or list of pairs, include formats for both key and value in the first string: &lt;c1&gt;.fmt('%s: %s', &quot;\n&quot;)&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ハッシュ値やペアのリストをフォーマットするには&lt;c1&gt;.fmt('%s: %s', &quot;\n&quot;)&lt;/c1&gt;のように最初の文字列にキィとバリューの両方に対してのフォーマットを含めてください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Subscripts now consistently dereference the container produced by whatever was to their left.</seg>
       </tuv>
       <tuv lang="JA">
@@ -3593,7 +3721,7 @@
         <seg>Constant string subscripts may be placed in angles, so &lt;c3&gt;%bar.{'a'}&lt;/c3&gt; may also be written as &lt;c4&gt;%bar&lt;a&gt;&lt;/c4&gt; or &lt;c5&gt;%bar.&lt;a&gt;&lt;/c5&gt;.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>定数文字列の添字はangles内に置かれます。つまり&lt;c3&gt;%bar.{'a'}&lt;/c3&gt;は&lt;c4&gt;%bar&lt;a&gt;&lt;/c4&gt;か&lt;c5&gt;%bar.&lt;a&gt;&lt;/c5&gt;とも書けます。</seg>
+        <seg>添字が定数文字列の場合は、山括弧内に置くこともできます。つまり&lt;c3&gt;%bar.{'a'}&lt;/c3&gt;は&lt;c4&gt;%bar&lt;a&gt;&lt;/c4&gt;か&lt;c5&gt;%bar.&lt;a&gt;&lt;/c5&gt;とも書けます。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3610,6 +3738,14 @@
       </tuv>
       <tuv lang="JA">
         <seg>スライシングは添字の性質で指定され、sigilによってではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The context in which a subscript is evaluated is no longer controlled by the sigil either.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>添字が評価されているコンテキストは、もはやsigilによって制御されません。</seg>
       </tuv>
     </tu>
     <tu>
@@ -3793,7 +3929,7 @@
         <seg>Unlike in Perl 5, the notation &lt;c0&gt;&amp;foo&lt;/c0&gt; merely stands for the &lt;c1&gt;foo&lt;/c1&gt; function as a &lt;c2&gt;Routine&lt;/c2&gt; object without calling it.</seg>
       </tuv>
       <tuv lang="JA">
-        <seg>Perl 5と異なり、&lt;c0&gt;&amp;foo&lt;/c0&gt;という表記は単に関数&lt;c1&gt;foo&lt;/c1&gt;を&lt;c2&gt;Routine&lt;/c2&gt;オブジェクトとして呼び出し無しに表します。</seg>
+        <seg>Perl 5と異なり、&lt;c0&gt;&amp;foo&lt;/c0&gt;という表記は単に関数&lt;c1&gt;foo&lt;/c1&gt;を&lt;c2&gt;Routine&lt;/c2&gt;オブジェクトとして呼び出さないで取得します。</seg>
       </tuv>
     </tu>
     <tu>
@@ -4106,6 +4242,582 @@
       </tuv>
       <tuv lang="JA">
         <seg>これは以下を含みます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When not used as a sigil, the semantic function of &lt;c0&gt;::&lt;/c0&gt; within a name is to force the preceding portion of the name to be considered a package through which the subsequent portion of the name is to be located.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>sigilとして使わない場合、名前の範囲での&lt;c0&gt;::&lt;/c0&gt;の意味関数は後の位置の名前を伴っていれば、前の位置にパッケージとみなされる名前を強制します．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike in Perl 5, if a sigil is followed by comma, semicolon, a colon not followed by an identifier, or any kind of bracket or whitespace (including Unicode brackets and whitespace), it will be taken to be a sigil without a name rather than a punctuational variable.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl5と違って、sigilにコンマ、セミコロン、識別子が後に続かないコロン、括弧、空白(これにはUnicodeの括弧、空白を含む)が続く場合、お決まりの変数ではなく名前無しのsigilとみなされます．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This allows you to use sigils as coercion operators:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これはsigilをcoercion演算子として使えるということです</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In declarative contexts bare sigils may be used as placeholders for anonymous variables:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>宣言コンテキストでは、裸のsigilは無名変数のプレイスホルダとして使われます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Outside of declarative contexts you may use &lt;c0&gt;*&lt;/c0&gt; for a placeholder:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>宣言コンテキストの外側では、プレイスホルダとして&lt;c0&gt;*&lt;/c0&gt;を使うことができます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Attempts to say something like:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>似たようなことを言おうとして</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>will result in the message, &quot;Anonymous variable requires declarator&quot;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>とすると&quot;Anonymous variable requires declarator&quot;というメッセージを受け取るでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other all-caps names are semi-reserved.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それ以外の全てが大文字の名前は準予約になっています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When &quot;strict&quot; is in effect (which is the default except for one-liners), non-qualified variables (such as &lt;c0&gt;$x&lt;/c0&gt; and &lt;c1&gt;@y&lt;/c1&gt;) are only looked up from lexical scopes, but never from package scopes.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&quot;strict&quot;が有効な場合(これはワンライナー以外ではデフォルトの動作です)では、資格を持たない変数(&lt;c0&gt;$x&lt;/c0&gt;や&lt;c1&gt;@y&lt;/c1&gt;のような)は、レキシカルスコープからのみ見付けられますが，パッケージスコープからは見付けられません．</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To bind package variables into a lexical scope, simply say &lt;c0&gt;our ($x, @y)&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>レキシカルスコープへパッケージスコープの変数を束縛するには、単に&lt;c0&gt;our ($x, @y)&lt;/c0&gt;を使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To bind global variables into a lexical scope, predeclare them with &lt;c1&gt;use&lt;/c1&gt;:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>グローバル変数をレキシカルスコープに束縛するには、&lt;c1&gt;use&lt;/c1&gt;でそれらをあらかじめ宣言する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Or just refer to them as &lt;c0&gt;$*IN&lt;/c0&gt; and &lt;c1&gt;$*OUT&lt;/c1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>か，&lt;c0&gt;$*IN&lt;/c0&gt;や&lt;c1&gt;$*OUT&lt;/c1&gt;のように参照します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Every block is a closure.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>全てのブロックはクロージャです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This synopsis summarizes Apocalypse 10, which discusses packages despite never having been written.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>この概要は、Apocalypse 10 をまとめたもので、これ以前に書かれなかったパッケージについて話しています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As in Perl 5, packages are the basis of modules and classes.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl 5のように、パッケージは、モジュールとクラスの基礎となるものです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike in Perl 5, modules and classes are declared with distinct keywords, but they're still just packages with extra behaviors.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl5とは異なり、モジュールとクラスは別々のキーワードで宣言されますが、それらは追加の機能を持ったパッケージでもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Likewise every typename has an associated package namespace, even if unused.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>同様に全ての型名は、パッケージを使うかどうかに関係なく、関係を持つパッケージの名前空間を持ちます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An ordinary package is declared with the &lt;c0&gt;package&lt;/c0&gt; keyword.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>通常のパッケージは、&lt;c0&gt;package&lt;/c0&gt;キーワードで宣言されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Unlike in Perl 5, in Perl 6 it can only be used with a block:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl5と違い、Perl6 ではブロックを伴ってのみ使用されることが許されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A named package declaration can occur as part of an expression, just like named subroutine declarations.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>名前付きのパッケージ宣言は、表現の一部として現われ、ただの名前付きサブルーチン宣言のようでもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a special exception, if a braceless &lt;c0&gt;package&lt;/c0&gt; declaration occurs as the first executable statement in a file, then it's taken to mean that the rest of the file is Perl 5 code.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>特別な表現として、括弧を伴わない&lt;c0&gt;package&lt;/c0&gt;宣言がファイルの実行可能な最初の文として現れた場合、ファイルの残りはPerl5のコードを意味します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This form is illegal in a Perl 6 file.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>この形式は、Perl6のファイルとしては違法です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you wish to have a file-scoped package, either use the brace form or declare it with the &lt;c0&gt;module&lt;/c0&gt; keyword instead.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>ファイルスコープのパッケージを作りたいなら、括弧形式を使うか、(packageの)代わりに&lt;c0&gt;module&lt;/c0&gt;キーワードを使って宣言します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Since there are no barewords in Perl 6, package names must be predeclared, or use the sigil-like &lt;c0&gt;::PackageName&lt;/c0&gt; syntax to indicate that the type will be supplied some other way.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl6 では裸のワードは存在しないので、パッケージ名はあらかじめ宣言されていなければならず、そうでなければ型が他の場所で提供されている可能性を示すのにシジルみたいな&lt;c0&gt;::PackageName&lt;/c0&gt;構文を使います。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c1&gt;::&lt;/c1&gt; prefix does not imply globalness as it does in Perl 5.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c1&gt;::&lt;/c1&gt;の接頭辞は、perl5でのようにグローバル性を示す訳ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Use &lt;c2&gt;GLOBAL::&lt;/c2&gt; for that.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(それを示すためには&lt;c2&gt;GLOBAL::&lt;/c2&gt;を使いましょう。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A bare &lt;c0&gt;package&lt;/c0&gt; declarator (without an explicit scope declarator such as &lt;c1&gt;my&lt;/c1&gt;) declares an &lt;c2&gt;our&lt;/c2&gt; package within the current package (or module, or class, or role, or...).</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>裸の&lt;c0&gt;package&lt;/c0&gt;宣言(&lt;c1&gt;my&lt;/c1&gt;のようなスコープ宣言子を付けないような)は、現在のパッケージ(やモジュール、クラス、ロールなど)の中の&lt;c2&gt;our&lt;/c2&gt;パッケージを宣言します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use &lt;c3&gt;GLOBAL::&lt;/c3&gt; to declare a global package name.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>グローバルなパッケージ名を宣言するには、&lt;c3&gt;GLOBAL::&lt;/c3&gt;を使いましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To declare a lexically scoped package, use &lt;c0&gt;my package&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>レキシカルスコープなパッケージを宣言するには、&lt;c0&gt;my package&lt;/c0&gt;を使いましょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To declare an anonymous package you can use either of</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>匿名のパッケージを宣言するには、</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All files start out being parsed in the &lt;c0&gt;GLOBAL&lt;/c0&gt; package, but may switch to some other package scope depending on the first package-ish declaration.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>のどちらかが使えます。全てのファイルが&lt;c0&gt;GLOBAL&lt;/c0&gt;パッケージの中にあるとしてパースされますが，最初のパッケージ的な宣言に依存してそれ以外のパッケージスコープに変化していることもあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If that first declaration is not a package variant, then the parsing switches to the &quot;&lt;c1&gt;main&lt;/c1&gt;&quot; package for Perl 5 code.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>最初の宣言がパッケージ変数でない場合、パースはPerl5コードとしてなら&quot;&lt;c1&gt;main&lt;/c1&gt;&quot;パッケージに変化します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Perl 6 code stays &lt;c2&gt;GLOBAL&lt;/c2&gt; in that situation.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>同じようにPerl6のコードなら&lt;c2&gt;GLOBAL&lt;/c2&gt;のままです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The mainline code is thus in the &lt;c3&gt;GLOBAL&lt;/c3&gt; namespace unless declared otherwise.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それ以外に宣言されていなければ、メインラインのコードは&lt;c3&gt;GLOBAL&lt;/c3&gt;名前空間のままです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Package traits are set using &lt;c0&gt;is&lt;/c0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>パッケージトレイトは&lt;c0&gt;is&lt;/c0&gt;を使って設定されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>All symbolic links are done with the &lt;c0&gt;::($expr)&lt;/c0&gt; syntax, which is legal in any variable, package, module, or class name anywhere a &lt;c1&gt;::Ident&lt;/c1&gt; is legal.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>シンボリックリンクは、&lt;c0&gt;::($expr)&lt;/c0&gt;構文を使います、これは&lt;c1&gt;::Ident&lt;/c1&gt;が有効な場所のどこででも全ての変数、パッケージ、モジュール、クラスの名前で有効です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The string returned by the expression will be parsed for &lt;c2&gt;::&lt;/c2&gt; indicating subpackage names.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>この表現によって返される文字列は、&lt;c2&gt;::&lt;/c2&gt;の中のサブパッケージ名を差すとしてパースされます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not confuse this with the</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これをシンボルテーブルの中を検索できるようにする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>syntax that lets you do a lookup in a particular symbol table.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>構文と混同しないでください。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, the key is not parsed for &lt;c0&gt;::&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>この場合、キィは&lt;c0&gt;::&lt;/c0&gt;の中としてパースされません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It's just a hash lookup.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>これはハッシュの検索として働きます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A declaration of any object of the form &lt;c0&gt;A::B::c&lt;/c0&gt; also creates (if needed) an empty package &lt;c1&gt;A&lt;/c1&gt;, and an empty package &lt;c2&gt;B&lt;/c2&gt; inside of &lt;c3&gt;A&lt;/c3&gt;, in addition to creating &lt;c4&gt;c&lt;/c4&gt; inside of &lt;c5&gt;B&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;A::B::c&lt;/c0&gt;形式のオブジェクトの宣言は(必要であれば)空のパッケージ&lt;c1&gt;A&lt;/c1&gt;、&lt;c3&gt;A&lt;/c3&gt;の中の空のパッケージ&lt;c2&gt;B&lt;/c2&gt;、&lt;c5&gt;B&lt;/c5&gt;の中の&lt;c4&gt;c&lt;/c4&gt;を生成します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such empty packages may be subsequently be redeclared as any other package-like object (module, class, etc.), and no redeclaration warning will be issued for such a redeclaration.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>このように空のパッケージは他のパッケージ的なオブジェクト(モジュール、クラス他)によって再宣言されるかもしれません。このような再宣言には再宣言の警告を引き起しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a parent package already exists, no stub package needs to be created, and no declaration of the form &lt;c6&gt;A::B::c&lt;/c6&gt; has anything to say about the type of package &lt;c7&gt;A&lt;/c7&gt; or package &lt;c8&gt;A::B&lt;/c8&gt;, since any package variant can function as a package for the purposes of naming things.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>親パッケージが既に存在する場合、スタブパッケージが作成される必要がありません。パッケージ変数は名前付けされた通りにパッケージとして機能しますので、&lt;c6&gt;A::B::c&lt;/c6&gt;形式の宣言は&lt;c7&gt;A&lt;/c7&gt;パッケージ、&lt;c8&gt;A::B&lt;/c8&gt;パッケージに何もしません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apart of package declaration constructs, package names are always searched for from the innermost lexical scope to outermost.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>パッケージ宣言の構成の一部であるパッケージ名は常に最も内側のレキシカルスコープから最も外側のそれの範囲から探されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If not defined in any surrounding lexical scope, the package is searched for from the current package up through the containing packages to &lt;c0&gt;GLOBAL&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>レキシカルスコープに囲まれて定義されていなければ、そのパッケージは現在のパッケージから&lt;c0&gt;GLOBAL&lt;/c0&gt;に向かって含んでいるパッケージを探されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If it is not found, a compiler error results.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>それでも見付からなければ、結果としてコンパイルエラーを生じます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As with an initial &lt;c0&gt;::&lt;/c0&gt;, the presence of a &lt;c1&gt;::&lt;/c1&gt; within the name does not imply globalness (unlike in Perl 5).</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>先頭の&lt;c0&gt;::&lt;/c0&gt;のような、名前の中の&lt;c1&gt;::&lt;/c1&gt;は，グローバル性を意味するものではありません(Perl5と違い)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>True globals are always in the &lt;c2&gt;GLOBAL::&lt;/c2&gt; namespace.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>真のグローバルは常に&lt;c2&gt;GLOBAL::&lt;/c2&gt;名前空間の中にあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;PROCESS::&lt;/c0&gt; namespace, shared by all interpreters within the process, is notionally outside of &lt;c1&gt;GLOBAL::&lt;/c1&gt;, but package searches do not look there for anything.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>&lt;c0&gt;PROCESS::&lt;/c0&gt;名前空間は，プロセスの範囲でのインタプリタ全体で共有され、表記として&lt;c1&gt;GLOBAL::&lt;/c1&gt;の外側にあり、パッケージ検索はそこを探しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Contextual variable searches do; &lt;c2&gt;$*PID&lt;/c2&gt; will eventually locate &lt;c3&gt;$PROCESS::PID&lt;/c3&gt; if not hidden by an inner context's &lt;c4&gt;$PID&lt;/c4&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(コンテキスト変数検索は探すようになっていて、内側のコンテキストの&lt;c4&gt;$PID&lt;/c4&gt;によって隠されていなければ、&lt;c2&gt;$*PID&lt;/c2&gt;は最終的には&lt;c3&gt;$PROCESS::PID&lt;/c3&gt;を探し出せます。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A package (or any other similar namespace) can control autoloading.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>パッケージ(やそれ以外の同様な名前空間)はオートロードを制御できます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, Perl 5's &lt;c0&gt;AUTOLOAD&lt;/c0&gt; is being superseded by MMD autoloaders that distinguish declaration from definition, but are not restricted to declaring subs.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>Perl5の&lt;c0&gt;AUTOLOAD&lt;/c0&gt;は定義と宣言を区別するMMDのオートローダに取って代わられ、スタブを宣言することに制限されていません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A run-time declarator multisub is declared as:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>実行時の宣言のマルチスタブは</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>which stands in for the declaration of a container object within another container object; it is called when anyone is searching for a name in the package (or module, or class), and the name doesn't already exist in the package.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>のように宣言されています。これは別のコンテナオブジェクトの中のコンテナオブジェクトの宣言の代わりをしています。パッケージ(やモジュールやクラス)の中で名前を探す場合に呼ばれます。その名前はパッケージの中に既に存在している訳ではありません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(In particular, &lt;c0&gt;.can&lt;/c0&gt; calls &lt;c1&gt;CANDO&lt;/c1&gt; when trying to determine if a class supports a particular method.) The arguments to &lt;c2&gt;CANDO&lt;/c2&gt; include type information on what kind of object is expected in context, or this may be intuited from the name requested.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(特にクラスが特定のメソッドをサポートしているかどうかを判断しようとする場合には&lt;c0&gt;.can&lt;/c0&gt;は&lt;c1&gt;CANDO&lt;/c1&gt;を呼び出します。)&lt;c2&gt;CANDO&lt;/c2&gt;への引数はコンテキストで期待されるオブジェクトの種類の型情報を含みます。これは呼び出される名前からも直感的でしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In any case, there may be multiple &lt;c3&gt;CANDO&lt;/c3&gt; routines that are dispatched via MMD:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>全ての場合で、MMD経由でディスパッチされるマルチな&lt;c3&gt;CANDO&lt;/c3&gt;ルーチンが存在する可能性はある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The package itself is just passed as the first argument, since it's the container object.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>パッケージ自身はコンテナオブジェクトなので、最初の引数として渡されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Subsequent arguments identify the desired type of the inner container and the &quot;name&quot; or &quot;key&quot; by which the object is to be looked up in the outer container.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>後続の引数は外側のコンテナから探されたオブジェクトによって内部コンテナとして望まれた型と&quot;名前&quot;や&quot;キィ&quot;を特定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Such a name does not include its container name, unlike Perl 5's magical &lt;c0&gt;$AUTOLOAD&lt;/c0&gt; variable.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>その名前にはコンテナの名前を含みません。Perl5のマジカルな&lt;c0&gt;$AUTOLOAD&lt;/c0&gt;変数と違い。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Nor does it include the type information of a Code object's &quot;long name&quot;; this information comes in via the type parameter, and may be matched against using ordinary subsignature matching:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>コードオブジェクトの&quot;長い名前&quot;の型情報は含んでいないが、この情報は型パラメータに現われ、通常のサブシグネチャマッチを使いマッチされるでしょう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The slurpy &lt;c0&gt;%args&lt;/c0&gt; hash is likely to be empty in standard Perl 6 usage, but it's possible that some dialects of Perl will desire a mechanism to pass in additional contextual information, so this parameter is reserved for such purposes.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>通常のPerl6 の使用法では、丸呑み&lt;c0&gt;%args&lt;/c0&gt;ハッシュは空になりそうですが、渡すメカニズムを追加のコンテキスト情報の中で要求することが可能なPerlの方言もあります。そのためこのパラメータはこのような目的に対して予約されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;CANDO&lt;/c0&gt; is expected to return an inner container object of the proper sort (i.e. a variable, subroutine, or method object), or a proxy object that can &quot;autovivify&quot; lazily, or &lt;c1&gt;undef&lt;/c1&gt; if that name is not to be considered declared in the namespace in question.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>その名前が質問の際に名前空間に宣言されていないと考えられる場合、適切な種類(例えば、変数、サブルーチン、メソッドオブジェクト)の内部のコンテナオブジェクト、怠惰な&quot;自動活性&quot;のプロキシオブジェクト、&lt;c1&gt;undef&lt;/c1&gt;を返すことを&lt;c0&gt;CANDO&lt;/c0&gt;は期待されています。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Only bare &lt;c2&gt;undef&lt;/c2&gt; is interpreted as &quot;not there&quot;, since typed undefs may function as autovivifiable proxy objects.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(型付けられたundefは自動活性可能なプロキシオブジェクトとして機能しますので、裸の&lt;c2&gt;undef&lt;/c2&gt;は、&quot;そこに無い&quot;として解釈されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>See S12.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>S12 参照のこと。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The declaration merely defines the interface to the new object.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>宣言は単に新しいオブジェクトへのインターフェイスを定義します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>That object need not be completely defined yet, though the &lt;c0&gt;CANDO&lt;/c0&gt; routine is certainly &lt;i1&gt;allowed&lt;/i1&gt; to define it eagerly, and even install the inner object into the outer container (the symbol table) if it wants to cache the declaration.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>そのオブジェクトはそのときまでには完全に定義されることを必要としませんが、宣言のキャッシュを望めば&lt;c0&gt;CANDO&lt;/c0&gt;ルーチンはそれを積極的に定義すること、内部オブジェクトを外部コンテナ(シンボルテーブル)に設定することを確実に&lt;i1&gt;許可&lt;/i1&gt;します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At declaration time it might not yet be known whether the inner container object will be used in lvalue or rvalue context; the use of a proxy object can supply either readonly or rw semantics later.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>宣言時には、まだ内部コンテナオブジェクトがlvalue、rvalueコンテキストのどちらで使われるかがわかっていないかもしれません。プロキシオブジェクトを使う場合、読み込み専用か読み書き可能な動作のどちらかが後で提供されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the package in question is a class, it is also possible to declare real methods or submethods:</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>質問時のパッケージがクラスの場合、実際のメソッドやサブメソッドを宣言することも可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The method form is inherited by subclasses.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>メソッド形式はサブクラスにっよって継承されます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Submethods are never inherited but may still do MMD within the class.</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>サブメソッドは継承されませんが、クラスの範囲でMMDは起きます。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Ordinary multisubs are inherited only to the extent allowed by the MMD mechanism.)</seg>
+      </tuv>
+      <tuv lang="JA">
+        <seg>(通常のマルチスタブはMMDメカニズムによって許可された拡張に対してのみ継承されます。)</seg>
       </tuv>
     </tu>
     <tu>
